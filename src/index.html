@@ -34,31 +34,31 @@
                         class="flex flex-col mt-2 font-medium md:p-0 md:flex-row md:space-x-4 lg:space-x-6 md:mt-0 md:border-0 ">
                         <li class="my-0 md:my-auto">
                             <a href="/"
-                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 dark:text-white md:dark:hover:text-white-500 dark:hover:text-white md:hover:scale-110 hover:text-sky-900">
+                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 md:hover:scale-110 hover:text-sky-900">
                                 For Candidate
                             </a>
                         </li>
                         <li class="my-0 md:my-auto">
                             <a href="#"
-                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 dark:text-white md:dark:hover:text-white-500 dark:hover:text-white md:hover:scale-110 hover:text-sky-900">
+                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 md:hover:scale-110 hover:text-sky-900">
                                 For Employer
                             </a>
                         </li>
                         <li class="my-0 md:my-auto">
                             <a href="#"
-                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 dark:text-white md:dark:hover:text-white-500 dark:hover:text-white md:hover:scale-110 hover:text-sky-900">
+                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 md:hover:scale-110 hover:text-sky-900">
                                 For College
                             </a>
                         </li>
                         <li class="my-0 md:my-auto">
                             <a href="/login"
-                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 dark:text-white md:dark:hover:text-white-500 dark:hover:text-white md:hover:scale-110 hover:text-sky-900">
+                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 md:hover:scale-110 hover:text-sky-900">
                                 $login
                             </a>
                         </li>
                         <li class="my-0 md:my-auto">
                             <a href="/register"
-                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 dark:text-white md:dark:hover:text-white-500 dark:hover:text-white md:hover:scale-110 hover:text-sky-900">
+                                class="block py-2 pl-2 pr-4 duration-200 ease-in rounded hover:bg-sky-100 md:hover:bg-white text-sky-700 md:border-0 md:p-0 md:hover:scale-110 hover:text-sky-900">
                                 $register
                             </a>
                         </li>
@@ -112,6 +112,12 @@
                 <h1 class="font-serif text-2xl font-bold text-center text-cyan-900 sm:text-4xl"> Latest Openings</h1>
                 <img src="../assets/section-shape.webp" alt="shape" class="py-3 mx-auto" width="100px" height="auto">
 
+                <div class="p-4 my-3 bg-yellow-100 rounded">
+                    $slot1
+                </div>
+                <div class="p-4 my-3 bg-green-100 rounded">
+                    {{ $slot2 }}
+                </div>
                 <div class="grid grid-cols-12 my-8 sm:gap-8 place-content-between">
                     <!--post-->
                     <div
