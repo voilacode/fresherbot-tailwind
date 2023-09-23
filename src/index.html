@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Unlocking Opportunities for Fresh Graduates. A pool of genuine fresher job openings, hackathons and job interview preparation" />
-    <link rel="icon" type="image/x-icon" href="../assets/fresherbot_banner.jpg">
     <meta property="og:url" content="https://fresherbot.com" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="FresherBot - Job search for freshers, Interview Prep, Hiring assessments" />
     <meta property="og:description"
         content="Unlocking Opportunities for Fresh Graduates. A pool of genuine fresher job openings, hackathons and job interview preparation" />
-    <meta property="og:image" content="@yield('image')" />
+    <meta property="og:image" content="../assets/fresherbot_banner.jpg" />
     <link rel="shortcut icon" href="../assets/favicon_fresherbot.png" />
     <link href="../dist/output.css" rel="stylesheet">
-
     <title>FresherBot - Job search for freshers, Interview Prep, Hiring assessments </title>
 </head>
 
@@ -23,7 +21,7 @@
 
     <header>
         <!--navbar-->
-        <nav class="w-full shadow" style="">
+        <nav class="w-full shadow">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 px-4 py-2 mx-auto sm:px-20">
                 <a href="./index.html" class="flex items-center py-2 rounded logo">
                     <img src="../assets/fresherbot_logo_dark.png" class="h-8 " alt="Logo" />
@@ -98,16 +96,17 @@
                         </h1>
                         <div class="pt-4 mt-4 mb-5 text-lg font-semibold lg:mt-1 text-sky-800">
                             <div class="inline-block px-4 py-1 mr-3 rounded shadow bg-sky-100">Job Openings </div>
-                            <div class="inline-block px-4 py-1 mt-3 mr-3 rounded shadow bg-sky-100">Hackathons</div>
-                            <div class="inline-block px-4 py-1 mr-3 rounded shadow bg-sky-100">Interview Prep </div>
+                            <div class="inline-block px-4 py-1 mr-3 rounded shadow bg-sky-100">Hackathons</div>
+                            <div class="inline-block px-4 py-1 mt-3 mr-3 rounded shadow bg-sky-100">Interview Prep
+                            </div>
                         </div>
 
                         <div class="grid grid-cols-2 gap-3 px-4 mx-2 my-2 lg:gap-5 md:px-8 ">
 
                             <a href="/login"
-                                class="col-span-1 p-2 m-1 text-white duration-200 ease-in transform rounded shadow-xl bg-sky-400 hover:-translate-y-1 hover:bg-green-500">$login</a>
+                                class="col-span-1 p-2 m-1 text-white duration-200 ease-in transform rounded shadow-xl bg-sky-700 hover:-translate-y-1 hover:bg-green-500">$login</a>
                             <a href="/register"
-                                class="col-span-1 p-2 m-1 text-white duration-200 ease-in transform rounded shadow-xl bg-sky-400 hover:-translate-y-1 hover:bg-green-500">$register</a>
+                                class="col-span-1 p-2 m-1 text-white duration-200 ease-in transform rounded shadow-xl bg-sky-700 hover:-translate-y-1 hover:bg-green-500">$register</a>
                         </div>
                     </div>
                 </div>
@@ -117,17 +116,10 @@
         <section class="my-4 bg-sky-50">
 
             <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-16">
-                <h1 class="font-serif text-2xl font-bold text-center text-sky-900 sm:text-4xl"> Latest Openings</h1>
-                <img src="../assets/section-shape.webp" alt="shape" class="py-4 pb-5 mx-auto" width="100px"
-                    height="auto">
-
-
+                <h2 class="font-serif text-2xl font-bold text-center text-sky-900 sm:text-3xl"> Latest Openings</h2>
                 <div class="">
                     <x-homepage.jobs.index :data="$data" />
-
-
                 </div>
-
             </div>
 
         </section>
@@ -136,11 +128,8 @@
         <section class="my-4">
 
             <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-16">
-                <h1 class="font-serif text-2xl font-bold text-center text-sky-900 sm:text-4xl"> Why Choose FresherBot?
-                </h1>
-                <img src="../assets/section-shape.webp" alt="shape" class="py-3 mx-auto" width="100px" height="auto">
-
-
+                <h2 class="font-serif text-2xl font-bold text-center text-sky-900 sm:text-3xl"> Why Choose FresherBot?
+                </h2>
                 <div class="grid max-w-screen-xl grid-cols-12 mx-auto md:mt-8 sm:gap-8 place-items-center">
                     <!--first-->
                     <div
@@ -331,9 +320,8 @@
         <section class="mt-4 bg-sky-100">
 
             <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-16">
-                <h1 class="font-serif text-2xl font-bold text-center text-sky-800 sm:text-4xl"> Interview Preparation
-                </h1>
-                <img src="../assets/section-shape.webp" alt="shape" class="py-3 mx-auto" width="100px" height="auto">
+                <h2 class="font-serif text-2xl font-bold text-center text-sky-800 sm:text-3xl"> Interview Preparation
+                </h2>
 
 
                 <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-8 sm:gap-8 place-items-between">
