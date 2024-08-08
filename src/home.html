@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Unlocking Opportunities for Fresh Graduates. A pool of genuine fresher job openings, hackathons and job interview preparation" />
+    <meta property="og:url" content="https://fresherbot.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FresherBot - Job search for freshers, Interview Prep, Hiring assessments" />
+    <meta property="og:description"
+        content="Unlocking Opportunities for Fresh Graduates. A pool of genuine fresher job openings, hackathons and job interview preparation" />
+    <meta property="og:image" content="../assets/fresherbot_banner.jpg" />
+    <link rel="shortcut icon" href="../assets/favicon_fresherbot.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
+</head>
+
+<body class="font-open bg-gradient-to-br h-screen from-gray-900 to-purple-900 ">
+
+    <!-- header 1 -->
+    <nav class="">
+        <header class="border-b border-white">
+            <div class="max-w-screen-xl p-4 py-2 sm:px-16 mx-auto">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <img src="../assets/logo_fresherbot_dark.png" alt="logo" class="w-[180px] sm:w-[240px]">
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menuToggle" class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="hidden md:flex items-center">
+                        <li class="mx-4">
+                            <a href="" class="flex items-center px-5 py-2 my-auto mb-1 rounded-lg font-semibold text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contactus.html" class="flex items-center px-5 py-2 my-auto mb-1 rounded-lg group font-semibold text-white">
+                                <span class="mr-2 text-[16px]">Contact Us</span>
+                                <svg class="stroke-current hidden sm:flex" width="10" height="10" stroke-width="2" viewBox="0 0 10 10" aria-hidden="true">
+                                    <g fill-rule="evenodd">
+                                        <path class="transition duration-200 ease-in-out opacity-0 group-hover:opacity-100" d="M0 5h7"></path>
+                                        <path class="transition duration-200 ease-in-out opacity-100 group-hover:transform group-hover:translate-x-1" d="M1 1l4 4-4 4"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="mobileMenu" class="px-4 max-w-screen-xl mx-auto sm:px-16">
+            <ul class="flex flex-col md:flex-row justify-center space-y-4 py-4 md:text-white sm:grid sm:grid-cols-2 sm:gap-4 px-4 md:flex md:space-y-0 md:space-x-2 bg-white md:bg-inherit rounded-b-lg ">
+                <li class="md:hidden sm:pt-4 lg:pt-0">
+                    <a href="" class="py-2 rounded-lg font-semibold">About Us</a>
+                </li>
+                <li class="md:hidden">
+                    <a href="" class="py-2 rounded-lg font-semibold">Contact Us</a>
+                </li>
+                <li>
+                    <a href="" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">For Colleges</a>
+                </li>
+                <li>
+                    <a href="" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">For Candidates</a>
+                </li>
+                <li>
+                    <a href="" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">For Companies</a>
+                </li>
+                <li>
+                    <a href="" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">Register</a>
+                </li>
+                <li>
+                    <a href="#" class="py-2 rounded-lg font-medium hover:text-purple-200 duration-300 ease-in-out">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+       
+    <main>
+        <!-- hero -->
+        <section class="max-w-screen-xl mx-auto p-4 sm:px-16 mb-4 flex justify-between items-center text-white">
+            <!-- text -->
+            <div class="transition-opacity duration-500 ease-in-out opacity-0" id="content">
+                <h1 class="font-bold text-3xl md:text-6xl py-4">Building Your Future?</h1>
+                <p class="text-yellow-400 font-semibold text-lg md:text-2xl py-4">We have got your back!</p>
+                <div class="flex flex-wrap lg:space-x-4">
+                    <div class="py-2 sm:p-4 ps-0 rounded-lg flex items-center text-gray-300 transition-all duration-500 ease-in-out transform opacity-0" id="job-openings">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 me-2 mx-auto text-center">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                        </svg>
+                        <span>Job Openings</span>                          
+                    </div>
+        
+                    <div class="p-2 sm:p-4 rounded-lg flex items-center text-gray-300 transition-all duration-500 ease-in-out transform opacity-0" id="hackathons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 me-2 mx-auto text-center">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                        </svg>
+                        <span>Hackathons</span>                          
+                    </div>
+        
+                    <div class="py-2 sm:p-4 rounded-lg flex items-center text-gray-300 transition-all duration-500 ease-in-out transform opacity-0" id="interview-prep">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 me-2 mx-auto text-center">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                        </svg>
+                        <span>Interview Prep</span>
+                    </div>
+                </div>
+        
+                <div class="flex space-x-6 my-4 transition-all duration-500 ease-in-out transform opacity-0" id="cta-buttons">
+                    <a href="" class="bg-yellow-500 font-semibold text-lg hover:bg-yellow-600 duration-300 ease-in-out text-white px-6 w-fit md:w-60 text-center py-2 rounded-lg my-1">Login</a>
+                    <a href="" class="bg-emerald-500 font-semibold text-lg hover:bg-emerald-600 duration-300 ease-in-out text-white px-6 w-fit md:w-60 text-center py-2 rounded-lg my-1">Register</a>
+                </div>
+            </div>
+            <!-- img -->
+            <div class="hidden lg:block transition-opacity duration-500 ease-in-out opacity-0" id="hero-image">
+                <img src="../assets/hero_5.png" alt="hero" class="w-[500px]">
+            </div>
+        </section>       
+
+         <!-- how do we do it -->
+          <section class="relative w-full h-fit bg-[#1e1938] text-white">
+                <div class="max-w-screen-xl mx-auto p-4 md:px-16">
+                    <h1 class="text-center text-2xl md:text-4xl font-semibold">How do we do it?</h1>
+                    <div class="hidden sm:absolute w-10 h-10 bg-gradient-to-tr from-purple-700 to-purple-500 rounded-full overflow-hidden" style="top: 10%; left: 10%;"></div>
+                    <div class="hidden sm:absolute w-4 h-4 bg-gradient-to-tr from-emerald-700 to-emerald-200 rounded-full overflow-hidden animate-pulse" style="top: 2%; left: 70%;"></div>
+                    <div class="hidden sm:absolute w-20 h-20 overflow-hidden" style="top: 80%; left: 90%;">
+                        <img src="../assets/star.png" alt="">
+                    </div>
+                    <div class="hidden sm:absolute w-10 h-10 overflow-hidden" style="top: 80%; left: 85%;">
+                        <img src="../assets/star.png" alt="">
+                    </div>
+                    <div class="my-8 sm:flex flex-wrap sm:space-x-10 justify-center">
+                        <div class="rounded-xl p-6 text-lg bg-pink-100 text-pink-600 font-semibold sm:w-[40vw] md:w-[25vw] my-4">
+                            <svg fill="#db2777" width="60px" class="pb-2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 193.03 193.031" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M184.098,96.174c-0.05-5.312-0.105-10.623-0.118-15.934c-0.031-13.951,2.977-28.119-2.926-41.258 c-0.32-0.713-1.229-0.735-1.803-0.342c-2.272-0.85-5.129-0.486-7.403-0.478c-5.481,0.02-10.964,0.194-16.444,0.276 c-17.081,0.255-34.089-2.028-51.212-1.434c-17.603,0.61-35.079,0.261-52.681-0.401c-15.729-0.592-31.999-1.779-47.643,0.54 c-0.967-0.622-2.543-0.4-3.042,0.692c-1.201,2.63-0.67,5.802-0.699,8.65c-0.035,3.502-0.027,6.998-0.125,10.502 c-0.048,1.722,2.068,2.389,3.202,1.545c21.189,4.664,42.603,2.145,64.057,0.719c14.824-0.985,28.941-0.364,43.639,1.218 c14.228,1.531,28.48,3.131,42.796,3.507c2.603,0.068,6.698,0.365,10.815,0.158c0.23,0.557,0.647,1.032,1.253,1.197 c4.227,1.15,9.192,1.161,13.709,1.182c-0.179,10.069-0.638,20.159-0.635,30.185c-0.092,0.028-0.175,0.039-0.269,0.069 c-0.887,0.285-1.693,1.076-1.955,2.002c-11.688,7.142-7.828,32.899-6.173,43.774c0.123,0.809,1.063,1.771,1.881,1.881 c4.876,0.658,9.702,0.814,14.624,0.832c1.202,0.004,2.327-0.836,2.635-2.006C191.857,134.557,198.315,98.368,184.098,96.174z"></path> </g> <path d="M162.11,72.844c-0.245-0.172-0.521-0.325-0.856-0.435c-8.332-2.742-18.084-1.337-26.717-1.445 c-13.32-0.167-26.413,0.529-39.72,1.102C74.669,72.935,54.76,69.375,34.69,68.68c-0.931-0.032-1.607,0.473-1.986,1.159 c-0.663-0.276-1.426-0.275-2.146,0.205c-5.917,3.948-5.181,17.147-5.63,23.217c-0.734,9.919-2.147,21.414-0.166,31.248 c1.986,9.865,13.607,7.703,20.887,7.513c18.641-0.486,35.031,10.848,46.746,24.386c0.994,1.148,3.128,1.133,4.124,0 c8.912-10.133,21.069-16.506,33.599-21.068c5.89-2.146,11.803-3.603,18.098-3.602c3.739,0.001,8.012,2.561,11.513,2.148 c1.275-0.15,2.165-0.926,2.547-1.873c0.967-0.157,1.831-0.86,1.729-2.006c-0.803-8.955-0.912-17.793-0.613-26.774 c0.133-4.009,0.394-8.018,0.616-12.023c0.133-2.392-0.488-8.297,0.153-11.85c0.36-0.375,0.629-0.876,0.701-1.509 c0.084-0.741,0.467-1.359,0.493-2.151C165.412,74.016,163.675,72.707,162.11,72.844z"></path> </g> </g> </g></svg>
+                            Well defined Teaching Methodology
+                        </div>
+                        <div class="rounded-xl p-6 text-lg bg-lime-100 text-lime-600 font-semibold sm:w-[40vw] md:w-[25vw] my-4">
+                            <svg fill="#65a30d" width="60px" class="pb-2" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style> .cls-1 { fill: none; } </style> </defs> <title>skill-level--intermediate</title> <path d="M30,30H22V4h8Zm-6-2h4V6H24Z"></path> <path d="M20,30H12V12h8Z"></path> <path d="M10,30H2V18h8Z"></path> <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect> </g></svg>
+                            Tech Enable Learning & Skilling
+                        </div>
+                        <div class="rounded-xl p-6 text-lg bg-teal-100 text-teal-600 font-semibold sm:w-[40vw] md:w-[25vw] my-4">
+                            <svg fill="#0d9488" width="60px" class="pb-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M89.398,38.617c0-16.908,13.714-30.601,30.606-30.601c16.9,0,30.609,13.696,30.609,30.601 c0,16.891-13.709,30.631-30.609,30.631C103.113,69.248,89.398,55.509,89.398,38.617z M246,91.896V292H30V140h12v76h73v12H42v52 h104.064L146,207H82c-22,0-31.928-16.618-30.148-32.766l8.86-78.583c1.78-16.147,16.319-27.791,32.461-26.015 c9.309,1.026,16.898,6.18,21.91,13.28c3.049,4.319,12.956,16.95,12.956,16.95l34.363-18.481l-1.41-2.639 c-0.937-1.754-0.276-3.936,1.479-4.874c1.754-0.935,3.936-0.276,4.874,1.479l1.408,2.634c6.385-3.275,14.24-0.859,17.654,5.487 c3.424,6.366,1.084,14.285-5.213,17.788l4.99,9.336l79.605-43.052l5.711,10.561L246,91.896z M234,280V162h-69v-26.298 l-22.037,11.918l-5.711-10.561l42.595-23.036l-4.993-9.342l-44.037,23.683c-1.978,1.066-4.124,1.578-6.248,1.578 c-2.943,0-5.844-0.984-8.199-2.846L110.743,177h45.507c10.908,0,19.75,8.842,19.75,19.75V280H234z"></path> </g></svg>
+                            Mentorship and Special Guidance
+                        </div>  
+                        <div class="rounded-xl p-6 text-lg bg-yellow-100 text-yellow-600 font-semibold sm:w-[40vw] md:w-[25vw] my-4">
+                            <svg fill="#ca8a04" width="60px" class="pb-2" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ca8a04"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="_x37_28_x2C__Bulb_x2C__develop_x2C__idea_x2C__innovation_x2C__light"> <g> <path d="M256,178.747c15.929,0,28.838,12.909,28.838,28.839 c0,15.928-12.909,28.84-28.838,28.84s-28.839-12.912-28.839-28.84C227.161,191.656,240.071,178.747,256,178.747 M184.07,207.586 v5.17l19.897,2.962c0.559,3.772,1.564,7.377,2.878,10.843l-15.733,12.519l5.17,8.944l18.723-7.352 c2.347,2.906,5.002,5.561,7.936,7.909l-7.377,18.724l8.942,5.169l12.519-15.733c3.465,1.343,7.07,2.32,10.842,2.906l2.99,19.869 h10.311l2.99-19.869c3.745-0.586,7.378-1.563,10.814-2.906l12.548,15.733l8.914-5.169l-7.349-18.724 c2.905-2.349,5.561-5.003,7.907-7.909l18.724,7.352l5.169-8.944l-15.732-12.519c1.341-3.466,2.319-7.07,2.906-10.843l19.896-2.989 v-5.143v-5.169l-19.896-2.99c-0.587-3.745-1.565-7.378-2.906-10.814l15.732-12.548l-5.169-8.914l-18.724,7.349 c-2.347-2.906-5.002-5.562-7.907-7.907l7.349-18.723l-8.914-5.17l-12.548,15.731c-3.437-1.341-7.069-2.317-10.814-2.905 l-2.99-19.896h-10.311l-2.99,19.896c-3.772,0.588-7.377,1.564-10.842,2.905l-12.519-15.731l-8.942,5.17l7.377,18.723 c-2.934,2.346-5.589,5.001-7.936,7.907l-18.723-7.349l-5.17,8.914l15.733,12.548c-1.313,3.437-2.319,7.069-2.878,10.814 l-19.897,2.99V207.586z M405.896,118.219c1.62-0.949,3.716-0.391,4.666,1.23c0.95,1.647,0.392,3.744-1.257,4.693l-30.544,17.634 c-1.649,0.951-3.745,0.392-4.694-1.229c-0.95-1.648-0.391-3.745,1.258-4.695L405.896,118.219z M431.465,206.804 c1.9,0,3.438,1.537,3.438,3.438s-1.537,3.437-3.438,3.437H396.17c-1.9,0-3.438-1.536-3.438-3.437s1.537-3.438,3.438-3.438H431.465 z M166.661,57.69c-0.95-1.647-0.391-3.745,1.23-4.694c1.648-0.951,3.745-0.391,4.695,1.257l17.632,30.573 c0.95,1.619,0.392,3.717-1.229,4.666c-1.648,0.951-3.745,0.391-4.695-1.259L166.661,57.69z M102.695,124.143 c-1.648-0.949-2.208-3.046-1.257-4.693c0.95-1.621,3.046-2.18,4.695-1.23l30.543,17.633c1.648,0.95,2.208,3.047,1.257,4.695 c-0.95,1.621-3.045,2.181-4.667,1.229L102.695,124.143z M80.536,213.678c-1.9,0-3.438-1.536-3.438-3.437s1.537-3.438,3.438-3.438 h35.294c1.9,0,3.437,1.537,3.437,3.438s-1.537,3.437-3.437,3.437H80.536z M250.103,29.383c0.028-1.873,1.565-3.381,3.466-3.381 c1.872,0.027,3.381,1.593,3.381,3.465l-0.419,30.068c-0.028,1.9-1.565,3.409-3.465,3.381c-1.872,0-3.409-1.565-3.381-3.464 L250.103,29.383z M164.09,471.327c-1.9,0-3.437-1.535-3.437-3.436s1.537-3.438,3.437-3.438h125.667 c1.872,0,3.438,1.537,3.438,3.438s-1.565,3.436-3.438,3.436H164.09z M230.011,485.999c-1.9,0-3.437-1.538-3.437-3.41 c0-1.9,1.536-3.438,3.437-3.438h99.735c1.9,0,3.437,1.537,3.437,3.438c0,1.872-1.536,3.41-3.437,3.41H230.011z M339.945,485.999 c-1.9,0-3.437-1.538-3.437-3.41c0-1.9,1.536-3.438,3.437-3.438h12.491c1.872,0,3.409,1.537,3.409,3.438 c0,1.872-1.537,3.41-3.409,3.41H339.945z M139.946,485.385c-1.9,0-3.438-1.537-3.438-3.438s1.537-3.438,3.438-3.438H187.2 c1.9,0,3.438,1.537,3.438,3.438s-1.537,3.438-3.438,3.438H139.946z M179.99,347.282c1.313,0,2.655-0.867,3.102-1.929 c1.146-2.32-0.614-4.946-3.102-4.946h-6.874c-1.286,0-2.627,0.839-3.074,1.929c-1.146,2.291,0.615,4.946,3.074,4.946H179.99z M331.701,347.282c1.287,0,2.655-0.867,3.074-1.929c1.146-2.32-0.586-4.946-3.074-4.946h-6.873c-1.286,0-2.656,0.839-3.074,1.929 c-1.146,2.291,0.587,4.946,3.074,4.946H331.701z M359.172,347.282c1.285,0,2.654-0.867,3.074-1.929 c1.146-2.32-0.588-4.946-3.074-4.946h-6.875c-1.285,0-2.654,0.839-3.073,1.929c-1.146,2.291,0.586,4.946,3.073,4.946H359.172z M145.674,340.407c-1.313,0-2.655,0.839-3.102,1.929c-1.145,2.291,0.615,4.946,3.102,4.946h6.846c1.313,0,2.655-0.867,3.103-1.929 c1.145-2.32-0.615-4.946-3.103-4.946H145.674z M179.99,329.761c1.313,0,2.655-0.839,3.102-1.929 c1.146-2.291-0.614-4.946-3.102-4.946h-6.874c-1.286,0-2.627,0.839-3.074,1.929c-1.146,2.291,0.615,4.946,3.074,4.946H179.99z M331.701,329.761c1.287,0,2.655-0.839,3.074-1.929c1.146-2.291-0.586-4.946-3.074-4.946h-6.873c-1.286,0-2.656,0.839-3.074,1.929 c-1.146,2.291,0.587,4.946,3.074,4.946H331.701z M359.172,329.761c1.285,0,2.654-0.839,3.074-1.929 c1.146-2.291-0.588-4.946-3.074-4.946h-6.875c-1.285,0-2.654,0.839-3.073,1.929c-1.146,2.291,0.586,4.946,3.073,4.946H359.172z M145.674,322.886c-1.313,0-2.655,0.839-3.102,1.929c-1.145,2.291,0.615,4.946,3.102,4.946h6.846c1.313,0,2.655-0.839,3.103-1.929 c1.145-2.291-0.615-4.946-3.103-4.946H145.674z M339.414,54.253c0.951-1.647,3.047-2.208,4.695-1.257 c1.621,0.949,2.18,3.047,1.258,4.694l-17.661,30.543c-0.95,1.649-3.046,2.21-4.667,1.259c-1.648-0.949-2.207-3.047-1.257-4.666 L339.414,54.253z M205.812,382.408h100.405v23.947H205.812V382.408z M215.313,430.276h81.375V413.23h-81.375V430.276z M280.312,437.151v17.074h-48.624v-17.074H280.312z M256,96.617c62.623,0,113.398,50.775,113.398,113.399 c0,38.843-19.532,73.131-49.321,93.56l-21.043,69.722c-0.223,0.727-0.363,1.481-0.475,2.235H213.44 c-0.084-0.754-0.224-1.509-0.448-2.235l-21.07-69.722c-29.761-20.429-49.323-54.717-49.323-93.56 C142.6,147.393,193.375,96.617,256,96.617z" style="fill-rule:evenodd;clip-rule:evenodd;"></path> </g> </g> <g id="Layer_1"></g> </g></svg>
+                            Leadership & Personal Development
+                        </div>
+                        <div class="rounded-xl p-6 text-lg bg-gray-100 text-gray-600 font-semibold sm:w-[40vw] md:w-[25vw] my-4">
+                            <svg fill="#4b5563" width="60px" class="pb-2" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>network</title> <path d="M27 21.75c-0.795 0.004-1.538 0.229-2.169 0.616l0.018-0.010-2.694-2.449c0.724-1.105 1.154-2.459 1.154-3.913 0-1.572-0.503-3.027-1.358-4.212l0.015 0.021 3.062-3.062c0.57 0.316 1.249 0.503 1.971 0.508h0.002c2.347 0 4.25-1.903 4.25-4.25s-1.903-4.25-4.25-4.25c-2.347 0-4.25 1.903-4.25 4.25v0c0.005 0.724 0.193 1.403 0.519 1.995l-0.011-0.022-3.062 3.062c-1.147-0.84-2.587-1.344-4.144-1.344-0.868 0-1.699 0.157-2.467 0.443l0.049-0.016-0.644-1.17c0.726-0.757 1.173-1.787 1.173-2.921 0-2.332-1.891-4.223-4.223-4.223s-4.223 1.891-4.223 4.223c0 2.332 1.891 4.223 4.223 4.223 0.306 0 0.605-0.033 0.893-0.095l-0.028 0.005 0.642 1.166c-1.685 1.315-2.758 3.345-2.758 5.627 0 0.605 0.076 1.193 0.218 1.754l-0.011-0.049-0.667 0.283c-0.78-0.904-1.927-1.474-3.207-1.474-2.334 0-4.226 1.892-4.226 4.226s1.892 4.226 4.226 4.226c2.334 0 4.226-1.892 4.226-4.226 0-0.008-0-0.017-0-0.025v0.001c-0.008-0.159-0.023-0.307-0.046-0.451l0.003 0.024 0.667-0.283c1.303 2.026 3.547 3.349 6.1 3.349 1.703 0 3.268-0.589 4.503-1.574l-0.015 0.011 2.702 2.455c-0.258 0.526-0.41 1.144-0.414 1.797v0.001c0 2.347 1.903 4.25 4.25 4.25s4.25-1.903 4.25-4.25c0-2.347-1.903-4.25-4.25-4.25v0zM8.19 5c0-0.966 0.784-1.75 1.75-1.75s1.75 0.784 1.75 1.75c0 0.966-0.784 1.75-1.75 1.75v0c-0.966-0.001-1.749-0.784-1.75-1.75v-0zM5 22.42c-0.966-0.001-1.748-0.783-1.748-1.749s0.783-1.749 1.749-1.749c0.966 0 1.748 0.782 1.749 1.748v0c-0.001 0.966-0.784 1.749-1.75 1.75h-0zM27 3.25c0.966 0 1.75 0.784 1.75 1.75s-0.784 1.75-1.75 1.75c-0.966 0-1.75-0.784-1.75-1.75v0c0.001-0.966 0.784-1.749 1.75-1.75h0zM11.19 16c0-0.001 0-0.002 0-0.003 0-2.655 2.152-4.807 4.807-4.807 1.328 0 2.53 0.539 3.4 1.409l0.001 0.001 0.001 0.001c0.87 0.87 1.407 2.072 1.407 3.399 0 2.656-2.153 4.808-4.808 4.808s-4.808-2.153-4.808-4.808c0-0 0-0 0-0v0zM27 27.75c-0.966 0-1.75-0.784-1.75-1.75s0.784-1.75 1.75-1.75c0.966 0 1.75 0.784 1.75 1.75v0c-0.001 0.966-0.784 1.749-1.75 1.75h-0z"></path> </g></svg>
+                            Network access & Leverage
+                        </div>    
+                    </div>
+                </div>
+          </section>
+
+          <!-- models -->
+           <section class="bg-white">
+                <div class="max-w-screen-xl p-4 sm:px-16 sm:py-8 mx-auto">
+                    <h1 class="text-center text-2xl md:text-4xl font-semibold">Our Models</h1>
+                    <h3 class=" text-center text-emerald-600 py-2 sm:pb-6">Fresherbot is rethinking the traditional Engineering Model</h3>
+                    <p class="text-center lg:w-[70vw] mx-auto text-lg my-4">We believe this model is more focused on traditional methods of education rather than technology-based approaches and does not adequately address the various opportunities students can explore in current ecosystem. Our approach aims to bridge this gap by integrating cutting-edge technologies, providing hands-on experiences, and offering diverse learning pathways. This way, students can develop essential skills, engage in innovative projects, and prepare for a rapidly evolving world.</p>
+
+                    <h1 class="text-center text-2xl md:text-4xl my-8 md:mt-12 font-semibold">Our Resources</h1>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="rounded p-4 shadow-xl">
+                            <img src="../assets/resources.svg" class="w-20 h-20 text-center mx-auto" />
+                            <h3 class="text-lg py-2 font-semibold text-cyan-600 text-center">Access resources & Knowledge</h3>
+                        </div>
+                        <div class="rounded p-4 shadow-xl">
+                            <img src="../assets/insight.svg" class="w-20 h-20 text-center mx-auto" />
+                            <h3 class="text-lg py-2 font-semibold text-cyan-600 text-center">Valuable Insights</h3>
+                        </div>
+                        <div class="rounded p-4 shadow-xl">
+                            <img src="../assets/network.svg" class="w-20 h-20 text-center mx-auto" />
+                            <h3 class="text-lg py-2 font-semibold text-cyan-600 text-center">Leverage a pool of network</h3>
+                        </div>
+                        <div class="rounded p-4 shadow-xl">
+                            <img src="../assets/enterpreneur.svg" class="w-20 h-20 text-center mx-auto" />
+                            <h3 class="text-lg py-2 font-semibold text-cyan-600 text-center">Enterpreneurship</h3>
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+           <!-- colleges -->
+           <section class="bg-[#1e1938] text-white">
+                <div class="max-w-screen-xl mx-auto p-4 lg:py-8 sm:px-16">
+                    <div class="lg:flex justify-between lg:space-x-10 items-center">
+                        <div class="lg:w-1/2">
+                            <h1 class="font-bold my-auto text-2xl md:text-4xl text-center lg:text-start">Partnered Colleges</h1>
+                            <p class="italic py-2 text-teal-400 text-center lg:text-start">Transformed their learning pedagogy by collaborating with us!</p>
+                        </div>
+                        <div class="lg:w-1/2 flex items-center justify-center lg:justify-between flex-wrap">
+                            <img src="../assets/gnit.png" class="w-60 mx-4 p-4 bg-white rounded my-2" alt="gnit" />
+                            <img src="../assets/ace.jpg" class="w-60 mx-4 p-4 bg-white rounded my-2" alt="ace" />
+                            <img src="../assets/stmarys.png" class="w-60 mx-4 p-4 bg-white rounded my-2" alt="stmarys" />
+                            <img src="../assets/megha.png" class="w-60 mx-4 p-4 bg-white rounded my-2" alt="megha" />
+                            <img src="../assets/kbn.jpg" class="w-36 mx-4 p-4 bg-white rounded my-2" alt="kbn" />
+                            <img src="../assets/hindu.jpeg" class="w-36 mx-4 p-4 bg-white rounded my-2" alt="hindu" />
+                            <img src="../assets/aits.jpeg" class="w-36 mx-4 p-4 bg-white rounded my-2" alt="aits" />
+
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+           <!-- testimonials -->
+            <section class="bg-gradient-to-br from-gray-900 to-purple-900 text-white">
+                <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                    <h1 class="text-center text-4xl my-4 font-semibold">Hear it from them</h1>
+                    <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
+                        <!--first-->
+                        <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  shadow-lg bg-white text-black">
+                            <div class="d-flex" style="width: 100%; display: inline-block;">
+                                <div class="my-4 d-flex flex-column justify-space-between rounded-xl">
+                                    <svg fill="#be80c6" width="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>quote</title> <path d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z"></path> </g></svg>
+                                    <p class="py-4 text-lg font-open">
+                                        The fresherbot team work was good. The service they provided for the student was nice and the team was encouraging the student for placements as well. This platform has that capability to provide guidance to fresher as well as placement offers for students
+                                    </p>
+                                    <br>
+                                    <div class="flex ">
+                                        <div class="my-auto">
+                                            <img src="../assets/profile.png" width="45px" class="me-2" alt="profile">
+                                        </div>
+                                        <div class="my-2">
+                                            <p class="font-semibold ">Sravani</p>
+                                            <a href="https://www.instagram.com/p/C0B0t6Ph7oW/?hl=en"
+                                                target="_blank"
+                                                class="my-0 italic font-semibold text-blue-700 font-italic">Original 
+                                                Review</a>
+                                        </div>
+        
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+        
+                        <!--second-->
+                        <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  shadow-lg bg-white text-black">
+                            <div class="d-flex" style="width: 100%; display: inline-block;">
+                                <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
+                                    <svg fill="#be80c6" width="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>quote</title> <path d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z"></path> </g></svg>
+                                    <p class="py-4 text-lg">
+                                        I've been using Fresherbot for my job search, and I couldn't be more impressed with the platform. It has been a game changer in my quest to find the right job as a fresher<br><br><br><br>
+                                    </p>
+                                    <br>
+                                    <div class="flex ">
+                                        <div class="my-auto">
+                                            <img src="../assets/profile1.png" width="45px" class="me-2" alt="profile">
+                                        </div>
+                                        <div class="my-2">
+                                            <p class="font-semibold ">Varshith</p>
+                                            <a href="https://www.instagram.com/p/Czx-Hi-B00m/?hl=en"
+                                                target="_blank"
+                                                class="my-0 italic font-semibold text-blue-700 font-italic">Original Review</a>
+                                        </div>
+        
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!--third-->
+                        <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px] shadow-lg bg-white text-black">
+                            <div class="d-flex" style="width: 100%; display: inline-block;">
+                                <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
+                                    <svg fill="#be80c6" width="50px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>quote</title> <path d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z"></path> </g></svg>
+                                    <p class="py-4 text-lg">Recently, I have attended drive through FresherBot. During this, a reliable and trustworthy relationaship has been established. I would like to thank FresherBot for this guidance and commitment. They were available everytime for us!<br><br></p>
+                                    <div class="flex ">
+                                        <div class="my-auto">
+                                            <img src="../assets/profile2.png" width="45px" class="me-2"
+                                                alt="profile">
+                                        </div>
+                                        <div class="my-2">
+                                            <p class="font-semibold">Naseem</p>
+                                            <a href="https://www.instagram.com/reel/C7jDhVyBVCL/?hl=en"
+                                                target="_blank"
+                                                class="my-0 italic font-semibold text-blue-700 font-italic">Original 
+                                                Review</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </section>
+
+           <!-- current scenarios -->
+            <section class="lg:py-4 bg-gradient-to-bl from-purple-900 to-gray-900  text-white">
+                <div class="max-w-screen-xl mx-auto p-4 sm:px-16">
+                    <h1 class="text-center text-4xl my-4 font-semibold">Current Scenarios</h1>
+                   
+                    <div class="relative w-full overflow-hidden">
+                        <div class="flex transition-transform duration-300" id="carousel">
+                            
+                            <!-- Card 1 -->
+                            <div class="min-w-[30%] mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl">
+                                <img src="../assets/card1.jpg" class="rounded-t-lg" alt="ielts">
+                                <div class="p-5">
+                                    <p class="font-semibold text-pink-600">Digital Credentials
+                                    </p>
+                                    <p class="text-xl font-semibold text-purple-600 my-2 ">Wonderlic Case Study</p>
+                                    <p class="font-semibold text-black">Wonderlic recently introduced the “Soft Skills Training Bootcamp,” with corresponding digital badges for competencies like...</p>
+                                    
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="min-w-[30%] mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl">
+                                <img src="../assets/card2.jpg" class="rounded-t-lg" alt="ielts">
+                                <div class="p-5">
+                                    <p class="font-semibold text-pink-600">Skill Development</p>
+                                    <p class="text-xl font-semibold text-purple-600 my-2 ">Personalized Learning Pathways
+                                    </p>
+                                    <p class="font-semibold text-black">Students can access a personalized learning pathway based on their career goals, current skills, and industry trends....
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="min-w-[30%] mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl">
+                                <img src="../assets/card3.jpg" class="rounded-t-lg" alt="ielts">
+                                <div class="p-5">
+                                    <p class="font-semibold text-pink-600">Coding Challenges</p>
+                                    <p class="text-xl font-semibold text-purple-600 my-2 ">Real-time Coding Challenges and Hackathons
+                                    </p>
+                                    <p class="font-semibold text-black">An interactive platform where students can participate in real-time coding challenges and hackathons. These events ....
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="min-w-[30%] mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl">
+                                <img src="../assets/card4.jpg" height="280px" class="rounded-t-lg" alt="ielts">
+                                <div class="p-5">
+                                    <p class="font-semibold text-pink-600">Networking</p>
+                                    <p class="text-xl font-semibold text-purple-600 my-2 ">Professional Networking Workshops</p>
+                                    <p class="font-semibold text-black">Regularly scheduled virtual workshops focusing on professional networking skills. These workshops can cover topics such as ....</p>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="min-w-[30%] mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl">
+                                <img src="https://whatfix.com/blog/wp-content/uploads/2021/11/change-management-checklist-48.png" class="rounded-t-lg" alt="ielts">
+                                <div class="p-5">
+                                    <p class="font-semibold text-pink-600">Peer Learning</p>
+                                    <p class="text-xl font-semibold text-teal-custom my-2 text-purple-600">Tech Talks, Webinars, Knowledge Sharing
+                                    </p>
+                                    <p class="font-semibold text-black">Regularly scheduled tech talks and webinars featuring industry leaders, innovators, and subject matter experts. These sessions....
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Navigation Buttons -->
+                        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" id="prevBtn">
+                            <svg fill="#ffffff" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 p-2" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M656 852L294 535q-16-14-16-35t16-35l362-317q13-10 28-9t26 11.5 11 27.5v644q0 17-11 27.5T684 861t-28-9z"></path></g></svg>
+                        </button>
+                        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" id="nextBtn">
+                            <svg fill="#fff" viewBox="0 0 24 24" id="next" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 p-2 icon flat-color" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M18.6,11.2l-12-9A1,1,0,0,0,5,3V21a1,1,0,0,0,.55.89,1,1,0,0,0,1-.09l12-9a1,1,0,0,0,0-1.6Z" style="fill: #fff;"></path></g></svg>
+                        </button>
+                    </div>
+                    
+                      
+                </div>
+            </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900">
+        <div class="w-full max-w-screen-xl px-4 py-8 mx-auto sm:px-16">
+            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
+                <div>
+                    <img src="../assets/logo_fresherbot_dark.png" alt="logo" class="w-[180px] sm:w-[240px] mb-6">
+                    <a href="tel:+918977945750" class="text-blue-200 text-sm block font-semibold py-1">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 inline" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" fill="#c5def2"></path> </g></svg>
+                        +91 89779 45750</a>
+                    <a href="tel:+919000045750" class="text-blue-200 text-sm block font-semibold py-1">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 inline" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" fill="#c5def2"></path> </g></svg>
+                        +91 90000 45750</a>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-semibold uppercase text-purple-200">Company</h2>
+                    <ul class="font-medium text-sm text-gray-50 ">
+                        <li class="mb-3">
+                            <a href="#" class=" hover:underline">About</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Careers</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">News</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Blog</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="./contact.html" class="hover:underline">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-semibold uppercase text-purple-200">Products</h2>
+                    <ul class="font-medium text-sm text-gray-50 ">
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Hiring Assessments</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Job Posting</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Campus Hiring</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Hackathon Tool</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-semibold uppercase text-purple-200">Assessments</h2>
+                    <ul class="font-medium text-sm text-gray-50 ">
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Aptitude Test</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Technical Test</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Coding Test</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">English Test</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Psychometric Test</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-semibold uppercase text-purple-200">Interivew Prep</h2>
+                    <ul class="font-medium text-sm text-gray-50 ">
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Learning Videos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Practice Questions</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Study Material</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Skill Tests</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-purple-200">Legal</h2>
+                    <ul class="font-medium text-gray-50 ">
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Security</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+            </div>
+            <div class="px-4 py-6 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-50 dark:text-gray-300 sm:text-center">© 2023 <a
+                        href="https://fresherbot.com/">Fresherbot</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
+                    <a href="https:wa.me/+918977945750"
+                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                        <svg class="w-8 h-8 rounded-full" xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#25d366"></rect><path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path><path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path></g></svg>
+                        <span class="sr-only">Whatsapp page</span>
+                    </a>
+                    <a href="https://facebook.com/fresherbot"
+                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#3B5998"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"></path> </g></svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/fresherbot"
+                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#0077B5"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2393 22.9446C22.2393 21.1357 22.1797 19.5935 22.1201 18.3182H26.0351L26.2432 20.305H26.3322C26.9254 19.3854 28.4079 17.9927 30.8101 17.9927C33.7752 17.9927 35.9995 19.9502 35.9995 24.219V32.821H31.4922V24.7838C31.4922 22.9144 30.8404 21.6399 29.2093 21.6399C27.9633 21.6399 27.2224 22.4999 26.9263 23.3297C26.8071 23.6268 26.7484 24.0412 26.7484 24.4574V32.821H22.2411V22.9446H22.2393Z" fill="white"></path> </g></svg>
+                        <span class="sr-only">Linkedin</span>
+                    </a>
+                    <a href="https://www.youtube.com/@fresherbot"
+                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#cc0505"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3005 16.3781C35.6996 16.7772 35.9872 17.2739 36.1346 17.8187C36.9835 21.2357 36.7873 26.6324 36.1511 30.1813C36.0037 30.7261 35.7161 31.2228 35.317 31.6219C34.9179 32.021 34.4212 32.3086 33.8764 32.456C31.8819 33 23.8544 33 23.8544 33C23.8544 33 15.8269 33 13.8324 32.456C13.2876 32.3086 12.7909 32.021 12.3918 31.6219C11.9927 31.2228 11.7051 30.7261 11.5577 30.1813C10.7038 26.7791 10.9379 21.3791 11.5412 17.8352C11.6886 17.2903 11.9762 16.7936 12.3753 16.3945C12.7744 15.9954 13.2711 15.7079 13.8159 15.5604C15.8104 15.0165 23.8379 15 23.8379 15C23.8379 15 31.8654 15 33.8599 15.544C34.4047 15.6914 34.9014 15.979 35.3005 16.3781ZM27.9423 24L21.283 27.8571V20.1428L27.9423 24Z" fill="white"></path> </g></svg>
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                    <a href="https://www.instagram.com/fresherbot/"
+                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#C13584"></circle> <path d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z" fill="white"></path> <path d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z" fill="white"></path> <path d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z" fill="white"></path> </g></svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3Q48CYWJG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E3Q48CYWJG');
+    </script>
+
+    <script src="../dist/voilaui.js"></script>
+</body>
+
+</html>
