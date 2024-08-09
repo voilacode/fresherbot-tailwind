@@ -62,13 +62,56 @@ prevBtn.addEventListener('click', () => {
   moveCarousel();
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(() => {
-      document.getElementById('content').classList.remove('opacity-0');
-      document.getElementById('job-openings').classList.remove('opacity-0');
-      document.getElementById('hackathons').classList.remove('opacity-0');
-      document.getElementById('interview-prep').classList.remove('opacity-0');
-      document.getElementById('cta-buttons').classList.remove('opacity-0');
-      document.getElementById('hero-image').classList.remove('opacity-0');
-  }, 200); // delay to make the transition noticeable
-});
+// load effect
+
+// typewriter effect
+const sentence = "Building Your Future?";
+let currentLetterIndex = 0;
+const textElement = document.getElementById("text");
+let isTypewriting = true;
+
+function showNextLetter() {
+    if (isTypewriting && currentLetterIndex < sentence.length) {
+        const letter = sentence[currentLetterIndex];
+
+        if (letter === "?") {
+            textElement.innerHTML += `<span class="color-change">${letter}</span>`;
+        } else if (currentLetterIndex > sentence.indexOf("?")) {
+            textElement.innerHTML += `<span class="color-change">${letter}</span>`;
+        } else {
+            textElement.innerHTML += `<span>${letter}</span>`;
+        }
+        currentLetterIndex++;
+    } else {
+        isTypewriting = false;
+        clearInterval(typewriterInterval); // Stop the interval once typing is done
+    }
+    // Update the cursor position
+    updateCursor();
+}
+
+function updateCursor() {
+    // Remove existing cursor
+    document.querySelectorAll(".cursor").forEach(cursor => cursor.remove());
+
+    // Add the cursor at the end
+    if (isTypewriting || !isTypewriting && currentLetterIndex === sentence.length) {
+        textElement.innerHTML += `<span class="cursor text-gray-500">|</span>`;
+    }
+}
+
+const typewriterInterval = setInterval(() => {
+    showNextLetter();
+}, 150);
+
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+    .cursor {
+        animation: blink 1s step-end infinite;
+    }
+`;
+document.head.appendChild(style);
