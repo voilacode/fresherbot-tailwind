@@ -674,6 +674,10 @@ video {
   z-index: 50;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .order-last {
   order: 9999;
 }
@@ -865,6 +869,11 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ms-2 {
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
 }
 
 .box-border {
@@ -2794,6 +2803,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2988,6 +3001,11 @@ video {
   .md\:hover\:bg-white:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:text-purple-200:hover {
+    --tw-text-opacity: 1;
+    color: rgb(233 213 255 / var(--tw-text-opacity));
   }
 }
 

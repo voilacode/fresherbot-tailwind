@@ -1,11 +1,7 @@
-// navbar
+// Navbar toggle button for mobile menu
 document.getElementById('menuToggle').addEventListener('click', function() {
   var mobileMenu = document.getElementById('mobileMenu');
-  if (mobileMenu.classList.contains('hidden')) {
-      mobileMenu.classList.remove('hidden');
-  } else {
-      mobileMenu.classList.add('hidden');
-  }
+  mobileMenu.classList.toggle('hidden');
 });
 
 document.getElementById('dropdownToggle2').addEventListener('click', function (event) {
@@ -27,6 +23,12 @@ document.addEventListener('click', function (event) {
   });
 });
 
+// Toggle the dropdown and handle the show/hide behavior
+function toggleDropdown(dropdownId) {
+  const dropdownMenu = document.getElementById(dropdownId);
+  dropdownMenu.classList.toggle('hidden');
+}
+
 // Appear on hover
 function showDropdown(id) {
   document.getElementById(id).classList.remove("hidden");
@@ -35,6 +37,7 @@ function showDropdown(id) {
 function hideDropdown(id) {
   document.getElementById(id).classList.add("hidden");
 }
+
 
 
 // current scenarios carousel

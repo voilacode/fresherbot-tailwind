@@ -59,7 +59,7 @@
                 </div>
             </div>
         </header>
-        <div id="mobileMenu" class="max-w-screen-xl px-4 mx-auto sm:px-16">
+        <div id="mobileMenu" class="hidden md:block max-w-screen-xl px-4 mx-auto sm:px-16">
             <ul class="flex flex-col justify-end px-4 py-4 space-y-4 bg-white rounded-b-lg md:flex-row md:text-white sm:grid sm:grid-cols-2 sm:gap-4 md:flex md:space-y-0 md:space-x-2 md:bg-inherit ">
                 <li class="md:hidden sm:pt-4 lg:pt-0">
                     <a href="" class="py-2 font-semibold rounded-lg">About Us</a>
@@ -70,10 +70,10 @@
                 <li class="relative" onmouseover="showDropdown('dropdownMenu')"
                 onmouseout="hideDropdown('dropdownMenu')" onclick="toggleDropdown('dropdownMenu')">
                 <button
-                    class="duration-300 ease-in-out rounded-lg p hover:text-purple-200"
+                    class="duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full"
                     id="dropdownToggle">
                     For Colleges
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 md:hidden ">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
                 </button>
@@ -106,10 +106,10 @@
                 <li class="relative" onmouseover="showDropdown('dropdownMenu1')"
                 onmouseout="hideDropdown('dropdownMenu1')" onclick="toggleDropdown('dropdownMenu1')">
                 <button
-                    class="duration-300 ease-in-out rounded-lg p hover:text-purple-200"
+                    class="duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full"
                     id="dropdownToggle1">
-                    For Companies
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                    <span>For Companies</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class=" w-4 h-4 mt-1 md:hidden ">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
                 </button>
@@ -139,17 +139,14 @@
                     </div>
                 </div>
                 </li>
-                <li class="relative" onmouseover="showDropdown('dropdownMenu2')"
-                                onmouseout="hideDropdown('dropdownMenu2')" onclick="toggleDropdown('dropdownMenu2')">
-                                <button
-                                    class="font-medium duration-300 ease-in-out rounded-lg p hover:text-purple-200"
-                                    id="dropdownToggle2">
+                <li class="relative" onmouseover="showDropdown('dropdownMenu2')" onmouseout="hideDropdown('dropdownMenu2')" onclick="toggleDropdown('dropdownMenu2')">
+                    <button class="font-medium duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full" id="dropdownToggle2">
                                     For Candidates
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 md:hidden ">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                       </svg>
                                 </button>
-                                <div class="right-0 z-50 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
+                    <div class="right-0 z-30 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
                                     <div
                                         class="transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-20 ">
                                         <ul class="text-[16px] lg:w-48">
@@ -237,18 +234,17 @@
             <!-- img -->
             <div class="relative flex flex-col items-center lg:w-2/5">
                 <!-- Image -->
-                <div class="z-30 hidden lg:block" id="hero-image">
+                <div class="z-20 hidden lg:block" id="hero-image">
                     <img src="../assets/main.png" alt="hero" class="w-[500px]">
                 </div>
             
                 <!-- Shape -->
-                <div class="hidden lg:block w-[450px] h-[400px] bg-yellow-200 p-4 mt-4 absolute z-10" style="border-radius: 38% 62% 70% 30% / 49% 30% 70% 51%;"></div>
-                <!-- <div class="hidden lg:block w-[500px] h-[450px] bg-yellow-50 p-4 mt-4 absolute z-0 -translate-y-8" style="border-radius: 38% 20% 70% 30% / 49% 30% 70% 51%;"></div> -->
+                <div class="hidden lg:block w-[450px] h-[400px] bg-yellow-200 p-4 mt-4 absolute" style="border-radius: 38% 62% 70% 30% / 49% 30% 70% 51%;"></div>
 
                 <!-- tops -->
-                <img src="../assets/hires.png" alt="hired" class="hidden lg:block w-40 absolute top-[70px] -right-[70px] overflow-auto z-40" />
-                <img src="../assets/bulb.png" alt="bulb" class="hidden lg:block w-20 absolute top-[300px] -left-[3px] translate-x-5 overflow-auto z-40" />
-                <img src="../assets/badge.png" alt="badge" class="hidden lg:block w-8 transform absolute top-[60px] -left-[0px] translate-x-10 overflow-auto z-40" style="rotate: -10deg;" />
+                <img src="../assets/hires.png" alt="hired" class="hidden lg:block w-40 absolute top-[70px] -right-[70px] overflow-auto z-30" />
+                <img src="../assets/bulb.png" alt="bulb" class="hidden lg:block w-20 absolute top-[300px] -left-[3px] translate-x-5 overflow-auto z-30" />
+                <img src="../assets/badge.png" alt="badge" class="hidden lg:block w-8 transform absolute top-[60px] -left-[0px] translate-x-10 overflow-auto z-30" style="rotate: -10deg;" />
 
             </div>
             
