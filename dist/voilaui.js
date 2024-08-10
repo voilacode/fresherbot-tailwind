@@ -8,6 +8,34 @@ document.getElementById('menuToggle').addEventListener('click', function() {
   }
 });
 
+document.getElementById('dropdownToggle2').addEventListener('click', function (event) {
+  event.stopPropagation();
+  toggleDropdown('dropdownMenu2');
+});
+
+// Close the dropdowns when clicking outside of them
+document.addEventListener('click', function (event) {
+  const dropdowns = ['dropdownMenu', 'dropdownMenu1', 'dropdownMenu2'];
+
+  dropdowns.forEach((dropdownId) => {
+      const dropdownMenu = document.getElementById(dropdownId);
+      const dropdownToggle = document.getElementById(`dropdownToggle${dropdownId === 'dropdownMenu' ? '' : dropdownId.slice(-1)}`);
+      
+      if (dropdownToggle && dropdownMenu && !dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+          dropdownMenu.classList.add('hidden');
+      }
+  });
+});
+
+// Appear on hover
+function showDropdown(id) {
+  document.getElementById(id).classList.remove("hidden");
+}
+
+function hideDropdown(id) {
+  document.getElementById(id).classList.add("hidden");
+}
+
 
 // current scenarios carousel
 const carousel = document.getElementById('carousel');
@@ -15,50 +43,52 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 let index = 0;
-const totalCards = carousel.children.length; // Total number of cards
-const visibleCards = 3; // Number of visible cards at a time
-const cardWidth = carousel.children[0].offsetWidth + parseFloat(window.getComputedStyle(carousel.children[0]).marginRight); // Card width including margin
 
-// Initialize carousel
-carousel.style.transform = `translateX(0px)`;
+function getVisibleCards() {
+  const cardWidth = carousel.children[0].offsetWidth;
+  return Math.floor(carousel.offsetWidth / cardWidth);
+}
 
-// Function to move the carousel
+function getCardWidth() {
+  return carousel.children[0].offsetWidth + parseFloat(window.getComputedStyle(carousel.children[0]).marginRight);
+}
+
 function moveCarousel() {
+  const cardWidth = getCardWidth();
   carousel.style.transition = 'transform 0.3s ease-in-out';
   carousel.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-// Next button click event
 nextBtn.addEventListener('click', () => {
+  const visibleCards = getVisibleCards();
+  const totalCards = carousel.children.length;
+
   if (index >= totalCards - visibleCards) {
-    // Loop back to the first card
-    carousel.style.transition = 'none';
     index = 0;
-    carousel.style.transform = `translateX(-${index * cardWidth}px)`;
-    // Trigger reflow to reset transition
-    carousel.offsetWidth; 
-    carousel.style.transition = 'transform 0.3s ease-in-out';
-    index++;
   } else {
     index++;
   }
+
   moveCarousel();
 });
 
-// Previous button click event
 prevBtn.addEventListener('click', () => {
+  const visibleCards = getVisibleCards();
+  const totalCards = carousel.children.length;
+
   if (index <= 0) {
-    // Loop back to the last card
-    carousel.style.transition = 'none';
     index = totalCards - visibleCards;
-    carousel.style.transform = `translateX(-${index * cardWidth}px)`;
-    // Trigger reflow to reset transition
-    carousel.offsetWidth; 
-    carousel.style.transition = 'transform 0.3s ease-in-out';
-    index--;
   } else {
     index--;
   }
+
+  moveCarousel();
+});
+
+// Recalculate and reset the carousel on window resize
+window.addEventListener('resize', () => {
+  index = 0;
+  carousel.style.transition = 'none';
   moveCarousel();
 });
 
