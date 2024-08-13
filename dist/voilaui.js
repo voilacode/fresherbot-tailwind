@@ -38,6 +38,16 @@ function hideDropdown(id) {
   document.getElementById(id).classList.add("hidden");
 }
 
+// hero section transitions
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('.transition-transform');
+
+  images.forEach(image => {
+      setTimeout(() => {
+          image.classList.remove('translate-y-20', '-translate-x-20', 'translate-x-20');
+      }, 0); // Slight delay to ensure it starts immediately
+  });
+});  
 
 
 // current scenarios carousel

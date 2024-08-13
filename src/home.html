@@ -23,7 +23,7 @@
     <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
 </head>
 
-<body class="h-screen font-open bg-gradient-to-br from-gray-900 to-purple-900 ">
+<body class="font-open bg-gradient-to-br from-gray-900 to-purple-900 ">
 
     <!-- header 1 -->
     <nav class="font-julius">
@@ -113,9 +113,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
                 </button>
-                <div class="right-0 hidden p-2 lg:absolute dropdown-menu font-open" id="dropdownMenu1">
+                <div class="right-0 z-50 hidden p-2 lg:absolute dropdown-menu font-open" id="dropdownMenu1">
                     <div
-                        class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
+                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
                         <ul class=" text-[15px] lg:w-44">
                             <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-purple-100">
                                 <a href="./reading.html"
@@ -192,12 +192,13 @@
     </nav>
        
     <main>
+        
         <!-- hero -->
-        <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-0 lg:mb-0 sm:px-16">
+        <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-10 sm:px-16">
             <!-- text -->
             <div class="lg:w-3/5" id="content">
                 <h1 class="py-2 text-4xl font-bold sm:py-4 sm:text-7xl font-julius" id="text"></h1>
-                <p class="py-4 text-lg tracking-wider text-yellow-400 uppercase md:text-xl font-archivo">We have got your back!</p>
+                <p class="py-4 text-lg tracking-wider text-purple-200 md:text-xl font-archivo">We have got your back!</p>
                 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-x-2 w-fit">
                     <div class="p-4 rounded-lg shadow-xl bg-cyan-500" id="job-openings">
@@ -232,24 +233,18 @@
             </div>
             
             <!-- img -->
-            <div class="relative flex flex-col items-center lg:w-2/5">
-                <!-- Image -->
-                <div class="z-20 hidden lg:block" id="hero-image">
-                    <img src="../assets/main.png" alt="hero" class="w-[500px]">
-                </div>
-            
-                <!-- Shape -->
-                <div class="hidden lg:block w-[450px] h-[400px] bg-purple-200 p-4 mt-4 absolute" style="border-radius: 38% 62% 70% 30% / 49% 30% 70% 51%;"></div>
-
-                <!-- tops -->
-                <img src="../assets/hires.png" alt="hired" class="hidden lg:block w-40 absolute top-[70px] -right-[70px] overflow-auto z-30" />
-                <img src="../assets/bulb.png" alt="bulb" class="hidden lg:block w-20 absolute top-[300px] -left-[3px] translate-x-5 overflow-auto z-30" />
-                <img src="../assets/badge.png" alt="badge" class="hidden lg:block w-8 transform absolute top-[60px] -left-[0px] translate-x-10 overflow-auto z-30" style="rotate: -10deg;" />
-
-            </div>
+            <div class="relative flex flex-col items-center lg:w-2/5 lg:my-4 lg:mb-8">
+                <img src="../assets/main/4.jpg"
+                    class="transition-transform ease-in-out transform translate-y-20 rounded-bl-none shadow-xl w-72 duration-[1000ms]"
+                    style="border-radius: 100px; border-bottom-left-radius: 0;" />
+                <img src="../assets/main/2.jpg"
+                    class="z-0 absolute w-40 transition-transform ease-in-out transform -translate-x-20 rounded-full rounded-tr-none -left-8 duration-[1000ms]" />
+                <img src="../assets/main/1.jpg"
+                    class="absolute w-32 transition-transform ease-in-out transform translate-x-20 rounded-full rounded-br-none bottom-6 right-0 duration-[1000ms]" />
+            </div>                   
             
         </section>  
-
+        
          <!-- how do we do it -->
           <section class="relative w-full h-fit bg-[#1e1938] text-white">
                 <div class="max-w-screen-xl p-8 mx-auto md:px-16">
