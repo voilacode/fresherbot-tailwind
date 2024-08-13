@@ -6,6 +6,8 @@ module.exports = {
       fontFamily: {
         'open': ['Open Sans', 'sans-serif'],
         'noto': ['Noto Serif', 'serif'],
+        'archivo': ["Archivo", 'sans-serif'],
+        'julius': ["Julius Sans One", 'sans-serif'],
     }
     },
   },

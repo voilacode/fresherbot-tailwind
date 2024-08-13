@@ -15,10 +15,10 @@
     <link rel="shortcut icon" href="../assets/favicon_fresherbot.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="../dist/output.css" rel="stylesheet">
     <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
 </head>
@@ -26,7 +26,7 @@
 <body class="h-screen font-open bg-gradient-to-br from-gray-900 to-purple-900 ">
 
     <!-- header 1 -->
-    <nav>
+    <nav class="font-julius">
         <header class="border-b border-white">
             <div class="max-w-screen-xl p-4 py-2 mx-auto sm:px-16">
                 <div class="flex items-center justify-between">
@@ -59,27 +59,27 @@
                 </div>
             </div>
         </header>
-        <div id="mobileMenu" class="hidden md:block max-w-screen-xl px-4 mx-auto sm:px-16">
+        <div id="mobileMenu" class="hidden max-w-screen-xl px-4 mx-auto md:block sm:px-16">
             <ul class="flex flex-col justify-end px-4 py-4 space-y-4 bg-white rounded-b-lg md:flex-row md:text-white sm:grid sm:grid-cols-2 sm:gap-4 md:flex md:space-y-0 md:space-x-2 md:bg-inherit ">
                 <li class="md:hidden sm:pt-4 lg:pt-0">
-                    <a href="" class="py-2 font-semibold rounded-lg">About Us</a>
+                    <a href="" class="py-2 rounded-lg md:font-semibold">About Us</a>
                 </li>
                 <li class="md:hidden">
-                    <a href="" class="py-2 font-semibold rounded-lg">Contact Us</a>
+                    <a href="" class="py-2 rounded-lg md:font-semibold">Contact Us</a>
                 </li>
                 <li class="relative" onmouseover="showDropdown('dropdownMenu')"
                 onmouseout="hideDropdown('dropdownMenu')" onclick="toggleDropdown('dropdownMenu')">
                 <button
-                    class="duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full"
+                    class="flex justify-between w-full duration-300 ease-in-out rounded-lg p md:hover:text-purple-200"
                     id="dropdownToggle">
                     For Colleges
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 md:hidden ">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
                 </button>
-                <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu">
+                <div class="right-0 hidden p-2 lg:absolute font-open dropdown-menu" id="dropdownMenu">
                     <div
-                        class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-24">
+                        class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
                         <ul class=" text-[15px] lg:w-44">
                             <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-purple-100">
                                 <a href="./reading.html"
@@ -106,16 +106,16 @@
                 <li class="relative" onmouseover="showDropdown('dropdownMenu1')"
                 onmouseout="hideDropdown('dropdownMenu1')" onclick="toggleDropdown('dropdownMenu1')">
                 <button
-                    class="duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full"
+                    class="flex justify-between w-full duration-300 ease-in-out rounded-lg p md:hover:text-purple-200"
                     id="dropdownToggle1">
                     <span>For Companies</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class=" w-4 h-4 mt-1 md:hidden ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 md:hidden">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                       </svg>
                 </button>
-                <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu1">
+                <div class="right-0 hidden p-2 lg:absolute dropdown-menu font-open" id="dropdownMenu1">
                     <div
-                        class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-20">
+                        class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
                         <ul class=" text-[15px] lg:w-44">
                             <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-purple-100">
                                 <a href="./reading.html"
@@ -140,13 +140,13 @@
                 </div>
                 </li>
                 <li class="relative" onmouseover="showDropdown('dropdownMenu2')" onmouseout="hideDropdown('dropdownMenu2')" onclick="toggleDropdown('dropdownMenu2')">
-                    <button class="font-medium duration-300 ease-in-out rounded-lg p md:hover:text-purple-200 flex justify-between w-full" id="dropdownToggle2">
+                    <button class="flex justify-between w-full font-medium duration-300 ease-in-out rounded-lg p md:hover:text-purple-200" id="dropdownToggle2">
                                     For Candidates
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 md:hidden ">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                       </svg>
                                 </button>
-                    <div class="right-0 z-30 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
+                    <div class="right-0 z-30 hidden p-2 font-open lg:absolute dropdown-menu" id="dropdownMenu2">
                                     <div
                                         class="transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-20 ">
                                         <ul class="text-[16px] lg:w-48">
@@ -196,8 +196,8 @@
         <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-0 lg:mb-0 sm:px-16">
             <!-- text -->
             <div class="lg:w-3/5" id="content">
-                <h1 class="py-2 text-4xl font-bold sm:py-4 sm:text-7xl" id="text"></h1>
-                <p class="py-4 text-lg font-semibold text-yellow-400 md:text-xl">We have got your back!</p>
+                <h1 class="py-2 text-4xl font-bold sm:py-4 sm:text-7xl font-julius" id="text"></h1>
+                <p class="py-4 text-lg tracking-wider text-yellow-400 uppercase md:text-xl font-archivo">We have got your back!</p>
                 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-x-2 w-fit">
                     <div class="p-4 rounded-lg shadow-xl bg-cyan-500" id="job-openings">
@@ -239,7 +239,7 @@
                 </div>
             
                 <!-- Shape -->
-                <div class="hidden lg:block w-[450px] h-[400px] bg-yellow-200 p-4 mt-4 absolute" style="border-radius: 38% 62% 70% 30% / 49% 30% 70% 51%;"></div>
+                <div class="hidden lg:block w-[450px] h-[400px] bg-purple-200 p-4 mt-4 absolute" style="border-radius: 38% 62% 70% 30% / 49% 30% 70% 51%;"></div>
 
                 <!-- tops -->
                 <img src="../assets/hires.png" alt="hired" class="hidden lg:block w-40 absolute top-[70px] -right-[70px] overflow-auto z-30" />
@@ -252,8 +252,8 @@
 
          <!-- how do we do it -->
           <section class="relative w-full h-fit bg-[#1e1938] text-white">
-                <div class="max-w-screen-xl p-8 mx-auto md:p-4 md:px-16">
-                    <h1 class="text-2xl font-semibold text-center md:text-4xl">How do we do it?</h1>
+                <div class="max-w-screen-xl p-8 mx-auto md:px-16">
+                    <h1 class="text-2xl font-semibold text-center md:text-4xl font-julius">How do we do it?</h1>
                     <div class="hidden w-10 h-10 overflow-hidden rounded-full sm:absolute bg-gradient-to-tr from-purple-700 to-purple-500" style="top: 10%; left: 10%;"></div>
                     <div class="hidden w-4 h-4 overflow-hidden rounded-full sm:absolute bg-gradient-to-tr from-emerald-700 to-emerald-200 animate-pulse" style="top: 2%; left: 70%;"></div>
                     <div class="hidden w-20 h-20 overflow-hidden sm:absolute" style="top: 80%; left: 90%;">
@@ -290,11 +290,11 @@
           <!-- models -->
            <section class="bg-white">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16 sm:py-8">
-                    <h1 class="text-2xl font-semibold text-center md:text-4xl">Our Models</h1>
-                    <h3 class="py-2 text-center text-emerald-600 sm:pb-6">Fresherbot is rethinking the traditional Engineering Model</h3>
+                    <h1 class="text-2xl font-semibold text-center md:text-4xl font-julius">Our Models</h1>
+                    <h3 class="py-2 tracking-wider text-center uppercase text-emerald-600 sm:pb-6 font-archivo">Fresherbot is rethinking the traditional Engineering Model</h3>
                     <p class="text-center lg:w-[70vw] mx-auto text-lg my-4">We believe this model is more focused on traditional methods of education rather than technology-based approaches and does not adequately address the various opportunities students can explore in current ecosystem. Our approach aims to bridge this gap by integrating cutting-edge technologies, providing hands-on experiences, and offering diverse learning pathways. This way, students can develop essential skills, engage in innovative projects, and prepare for a rapidly evolving world.</p>
 
-                    <h1 class="my-8 text-2xl font-semibold text-center md:text-4xl md:mt-12">Our Resources</h1>
+                    <h1 class="my-8 text-2xl font-semibold text-center md:text-4xl md:mt-12 font-julius">Our Resources</h1>
                     <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
                         <div class="p-4 rounded shadow-xl">
                             <img src="../assets/resources.svg" class="w-20 h-20 mx-auto text-center" />
@@ -321,8 +321,8 @@
                 <div class="max-w-screen-xl p-4 mx-auto lg:py-8 sm:px-16">
                     <div class="items-center justify-between lg:flex lg:space-x-10">
                         <div class="lg:w-1/2">
-                            <h1 class="my-auto text-2xl font-bold text-center md:text-4xl lg:text-start">Partnered Colleges</h1>
-                            <p class="py-2 italic text-center text-teal-400 lg:text-start">Transformed their learning pedagogy by collaborating with us!</p>
+                            <h1 class="my-auto text-2xl font-bold text-center md:text-4xl lg:text-start font-julius">Partnered Colleges</h1>
+                            <p class="py-2 italic tracking-wider text-center text-teal-400 lg:text-start font-archivo">Transformed their learning pedagogy by collaborating with us!</p>
                         </div>
                         <div class="flex flex-wrap items-center justify-center lg:w-1/2 lg:justify-between">
                             <img src="../assets/gnit.png" class="p-4 mx-4 my-2 bg-white rounded w-60" alt="gnit" />
@@ -341,7 +341,7 @@
            <!-- testimonials -->
             <section class="text-white bg-gradient-to-br from-gray-900 to-purple-900">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <h1 class="my-4 text-4xl font-semibold text-center">Hear it from them</h1>
+                    <h1 class="my-4 text-4xl font-semibold text-center font-julius">Hear it from them</h1>
                     <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
                         <!--first-->
                         <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  shadow-lg bg-white text-black">
@@ -426,7 +426,7 @@
            <!-- current scenarios -->
             <section class="text-white lg:py-4 bg-gradient-to-bl from-purple-900 to-gray-900">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <h1 class="my-4 text-4xl font-semibold text-center">Current Scenarios</h1>
+                    <h1 class="my-4 text-4xl font-semibold text-center font-julius">Current Scenarios</h1>
                    
                     <div class="relative w-full overflow-hidden">
                         <div class="flex transition-transform duration-300" id="carousel">
@@ -435,7 +435,7 @@
                             <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%] h-max mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden ">
                                 <img src="https://plus.unsplash.com/premium_photo-1686052553631-fa2a509f8bbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-t-xl" alt="ielts">
                                 <div class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                    <p class="pb-2 font-semibold text-pink-600">Digital Credentials</p>
+                                    <p class="pb-2 font-semibold tracking-wider text-pink-600 font-archivo">Digital Credentials</p>
                                     <p class="font-semibold text-black">Wonderlic recently introduced the “Soft Skills Training Bootcamp,” with corresponding digital badges for competencies like...</p>
                                 </div>
                             </div>  
@@ -443,7 +443,7 @@
                             <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%] h-max mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden">
                                 <img src="https://plus.unsplash.com/premium_photo-1686052553631-fa2a509f8bbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-t-2xl" alt="ielts">
                                 <div class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                    <p class="pb-2 font-semibold text-pink-600">Skill Development</p>
+                                    <p class="pb-2 font-semibold tracking-wider text-pink-600 font-archivo">Skill Development</p>
                                     <p class="font-semibold text-black">Students can access a personalized learning pathway based on their career goals, current skills, and industry trends....
                                     </p>
                                    
@@ -453,7 +453,7 @@
                             <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%] h-max mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden">
                                 <img src="https://plus.unsplash.com/premium_photo-1686052553631-fa2a509f8bbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-t-2xl" alt="ielts">
                                 <div class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                    <p class="pb-2 font-semibold text-pink-600">Coding Challenges</p>
+                                    <p class="pb-2 font-semibold tracking-wider text-pink-600 font-archivo">Coding Challenges</p>
                                     <p class="font-semibold text-black">An interactive platform where students can participate in real-time coding challenges and hackathons. These events are the ....
                                     </p>
                                 </div>
@@ -462,7 +462,7 @@
                             <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%] h-max mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden">
                                 <img src="https://plus.unsplash.com/premium_photo-1686052553631-fa2a509f8bbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="280px" class="rounded-t-2xl" alt="ielts">
                                 <div class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                    <p class="pb-2 font-semibold text-pink-600">Networking</p>
+                                    <p class="pb-2 font-semibold tracking-wider text-pink-600 font-archivo">Networking</p>
                                    
                                     <p class="font-semibold text-black">Regularly scheduled virtual workshops focusing on professional networking skills. These workshops can cover topics such as ....</p>
                                 </div>
@@ -471,7 +471,7 @@
                             <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%] h-max mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden">
                                 <img src="https://plus.unsplash.com/premium_photo-1686052553631-fa2a509f8bbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-t-2xl" alt="ielts">
                                 <div class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                    <p class="pb-2 font-semibold text-pink-600">Peer Learning</p>
+                                    <p class="pb-2 font-semibold tracking-wider text-pink-600 font-archivo">Peer Learning</p>
                                     
                                     <p class="font-semibold text-black">Regularly scheduled tech talks and webinars featuring industry leaders, innovators, and subject matter experts. These sessions....
                                     </p>
