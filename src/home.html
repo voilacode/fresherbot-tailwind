@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="../dist/output.css" rel="stylesheet">
-    <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
+    <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>    
 </head>
 
 <body class="font-open bg-gradient-to-br from-gray-900 to-purple-900 ">
@@ -192,15 +192,14 @@
     </nav>
        
     <main>
-        
         <!-- hero -->
         <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-10 sm:px-16">
             <!-- text -->
-            <div class="lg:w-3/5" id="content">
-                <h1 class="py-2 text-4xl font-bold sm:py-4 sm:text-7xl font-julius" id="text"></h1>
-                <p class="py-4 text-lg tracking-wider text-purple-200 md:text-xl font-archivo">We have got your back!</p>
+            <div class="w-screen my-auto lg:w-3/5" id="content">
+                <h1 class="py-2 text-4xl font-bold text-center sm:py-4 sm:text-5xl md:text-7xl font-julius md:text-start w-[80vw] mx-auto md:mx-0 lg:w-fit word-wrap" id="text"></h1>
+                <p class="py-4 text-lg tracking-wider text-center text-gray-200 md:text-xl font-archivo md:text-start w-[80vw] mx-auto md:mx-0 md:w-fit">We have got your back!</p>
                 
-                <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-x-2 w-fit">
+                <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-x-2 w-[80vw] mx-auto md:mx-0 md:w-fit">
                     <div class="p-4 rounded-lg shadow-xl bg-cyan-500" id="job-openings">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 p-1 text-white rounded me-2 ">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
@@ -233,7 +232,7 @@
             </div>
             
             <!-- img -->
-            <div class="relative flex flex-col items-center lg:w-2/5 lg:my-4 lg:mb-8">
+            <div class="relative flex-col items-center hidden my-auto lg:flex lg:w-2/5 lg:my-4 lg:mb-8">
                 <img src="../assets/main/4.jpg"
                     class="transition-transform ease-in-out transform translate-y-20 rounded-bl-none shadow-xl w-72 duration-[1000ms]"
                     style="border-radius: 100px; border-bottom-left-radius: 0;" />
@@ -241,17 +240,16 @@
                     class="z-0 absolute w-40 transition-transform ease-in-out transform -translate-x-20 rounded-full rounded-tr-none -left-8 duration-[1000ms]" />
                 <img src="../assets/main/1.jpg"
                     class="absolute w-32 transition-transform ease-in-out transform translate-x-20 rounded-full rounded-br-none bottom-6 right-0 duration-[1000ms]" />
-            </div>                   
-            
+            </div>                       
         </section>  
         
          <!-- how do we do it -->
-          <section class="relative w-full h-fit bg-[#1e1938] text-white">
+          <section class="relative w-full h-fit bg-[#1e1938] text-white opacity-0 transition-opacity duration-1000">
                 <div class="max-w-screen-xl p-8 mx-auto md:px-16">
                     <h1 class="text-2xl font-semibold text-center md:text-4xl font-julius">How do we do it?</h1>
-                    <div class="hidden w-10 h-10 overflow-hidden rounded-full sm:absolute bg-gradient-to-tr from-purple-700 to-purple-500" style="top: 10%; left: 10%;"></div>
-                    <div class="hidden w-4 h-4 overflow-hidden rounded-full sm:absolute bg-gradient-to-tr from-emerald-700 to-emerald-200 animate-pulse" style="top: 2%; left: 70%;"></div>
-                    <div class="hidden w-20 h-20 overflow-hidden sm:absolute" style="top: 80%; left: 90%;">
+                    <div class="hidden w-10 h-10 overflow-hidden rounded-full lg:block sm:absolute bg-gradient-to-tr from-purple-700 to-purple-500" style="top: 10%; left: 10%;"></div>
+                    <div class="hidden w-4 h-4 overflow-hidden rounded-full lg:block sm:absolute bg-gradient-to-tr from-emerald-700 to-emerald-200 animate-pulse" style="top: 2%; left: 70%;"></div>
+                    <div class="hidden w-20 h-20 overflow-hidden lg:block sm:absolute" style="top: 80%; left: 90%;">
                         <img src="../assets/star.png" alt="">
                     </div>
                     <div class="hidden w-10 h-10 overflow-hidden sm:absolute" style="top: 80%; left: 85%;">
@@ -283,10 +281,10 @@
           </section>
 
           <!-- models -->
-           <section class="bg-white">
+           <section class="transition-opacity duration-1000 bg-white opacity-0">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16 sm:py-8">
                     <h1 class="text-2xl font-semibold text-center md:text-4xl font-julius">Our Models</h1>
-                    <h3 class="py-2 tracking-wider text-center uppercase text-emerald-600 sm:pb-6 font-archivo">Fresherbot is rethinking the traditional Engineering Model</h3>
+                    <h3 class="py-2 tracking-wider text-center text-emerald-600 sm:pb-6 font-archivo">Fresherbot is rethinking the traditional Engineering Model</h3>
                     <p class="text-center lg:w-[70vw] mx-auto text-lg my-4">We believe this model is more focused on traditional methods of education rather than technology-based approaches and does not adequately address the various opportunities students can explore in current ecosystem. Our approach aims to bridge this gap by integrating cutting-edge technologies, providing hands-on experiences, and offering diverse learning pathways. This way, students can develop essential skills, engage in innovative projects, and prepare for a rapidly evolving world.</p>
 
                     <h1 class="my-8 text-2xl font-semibold text-center md:text-4xl md:mt-12 font-julius">Our Resources</h1>
@@ -312,7 +310,7 @@
            </section>
 
            <!-- colleges -->
-           <section class="bg-[#1e1938] text-white">
+           <section class="bg-[#1e1938] text-white opacity-0 transition-opacity duration-1000">
                 <div class="max-w-screen-xl p-4 mx-auto lg:py-8 sm:px-16">
                     <div class="items-center justify-between lg:flex lg:space-x-10">
                         <div class="lg:w-1/2">
@@ -333,12 +331,74 @@
                 </div>
            </section>
 
+           <!-- companies -->
+           <section class="transition-opacity duration-1000 bg-white opacity-0">
+            <section class="max-w-screen-xl p-4 mx-auto sm:px-16 lg:py-8">
+                <h1 class="my-4 text-2xl font-semibold text-center md:text-4xl font-julius">Associated With</h1>
+
+                <div class="block p-4 mx-auto text-center">
+                    <div class="grid items-center grid-cols-6 gap-4 mx-auto lg:mt-8">
+                        <img src="../assets/companies/Inncircles Word Mark.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="inncircles">
+                        <img src="../assets/companies/constructn.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="constructn">
+                        <img src="../assets/companies/chezuba.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="chezuba">
+                        <img src="../assets/companies/acads360_procure-to-pay-suites_1591087483499.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="prm360">
+                        <img src="../assets/companies/voltus.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="voltus">
+                        <img src="../assets/companies/prudent.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="prudent">
+                        <img src="../assets/companies/voila.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="voila">
+                        <img src="../assets/companies/Zithara_Technologies_Logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="zithara">
+                        <img src="../assets/companies/bbg logo.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="bbg">
+                        <img src="../assets/companies/ziegler.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="ziegler">
+                        <img src="../assets/companies/peopletech.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="peopletech">
+                        <img src="../assets/companies/smarketers.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="smarketers">
+                        <img src="../assets/companies/townhall.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="townhall">
+                        <img src="../assets/companies/digitaltrust.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="digitaltrust">
+                        <img src="../assets/companies/zestiot_logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="zestiot">
+                        <img src="../assets/companies/accellor.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="accellor">
+                        <img src="../assets/companies/raybiz.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="raybiz">
+                        <img src="../assets/companies/yupptv.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="yupptv">
+                        <img src="../assets/companies/adp.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="adp">
+                        <img src="../assets/companies/quixy_logo.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="quixy">
+                        <img src="../assets/companies/netenrich.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="netenrich">
+                        <img src="../assets/companies/ibaseit.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="ibaseit">
+                        <img src="../assets/companies/autocracy.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
+                            alt="autocracy">
+                        <img src="../assets/companies/download (6).jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="planful">
+                    </div>
+           </section>
+           </section>
+
            <!-- testimonials -->
-            <section class="text-white bg-gradient-to-br from-gray-900 to-purple-900">
+            <section class="text-white transition-opacity duration-1000 opacity-0 bg-gradient-to-br from-gray-900 to-purple-900">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <h1 class="my-4 text-4xl font-semibold text-center font-julius">Hear it from them</h1>
+                    <h1 class="my-4 text-2xl font-semibold text-center md:text-4xl font-julius">Hear it from them</h1>
+
                     <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
-                        <!--first-->
+                        <div class="col-span-12 my-4 text-black bg-white rounded-br-none shadow-lg sm:col-span-6 lg:col-span-4 rounded-3xl">
+                            <video src="../assets/reviews/review1 (1).mp4" controls class="w-[80vw] sm:w-[20vw] rounded-lg"></video>
+                        </div>
+                        <div class="col-span-12 my-4 text-black bg-white rounded-br-none shadow-lg sm:col-span-6 lg:col-span-4 rounded-3xl">
+                            <video src="../assets/reviews/review1 (2).mp4" controls class="w-[80vw] sm:w-[20vw] rounded-lg"></video>
+                        </div>
+                        <div class="col-span-12 my-4 text-black bg-white rounded-br-none shadow-lg sm:col-span-6 lg:col-span-4 rounded-3xl">
+                            <video src="../assets/reviews/review1 (3).mp4" controls class="w-[80vw] sm:w-[20vw] rounded-lg"></video>
+                        </div>
+                    
+                    <!-- <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
                         <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  shadow-lg bg-white text-black">
                             <div class="d-flex" style="width: 100%; display: inline-block;">
                                 <div class="my-4 d-flex flex-column justify-space-between rounded-xl">
@@ -364,7 +424,6 @@
                             </div>
                         </div>
         
-                        <!--second-->
                         <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  shadow-lg bg-white text-black">
                             <div class="d-flex" style="width: 100%; display: inline-block;">
                                 <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
@@ -391,7 +450,6 @@
                             </div>
                         </div>
         
-                        <!--third-->
                         <div class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px] shadow-lg bg-white text-black">
                             <div class="d-flex" style="width: 100%; display: inline-block;">
                                 <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
@@ -414,14 +472,14 @@
                             </div>
                         </div>
         
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
            <!-- current scenarios -->
-            <section class="text-white lg:py-4 bg-gradient-to-bl from-purple-900 to-gray-900">
+            <section class="text-white transition-opacity duration-1000 opacity-0 lg:py-4 bg-gradient-to-bl from-purple-900 to-gray-900">
                 <div class="max-w-screen-xl p-4 mx-auto sm:px-16">
-                    <h1 class="my-4 text-4xl font-semibold text-center font-julius">Current Scenarios</h1>
+                    <h1 class="my-4 text-2xl font-semibold text-center md:text-4xl font-julius">Current Scenarios</h1>
                    
                     <div class="relative w-full overflow-hidden">
                         <div class="flex transition-transform duration-300" id="carousel">
@@ -486,149 +544,322 @@
                       
                 </div>
             </section>
-
             
     </main>
 
     <!-- footer -->
     <footer class="bg-gray-900">
-        <div class="w-full max-w-screen-xl px-4 py-8 mx-auto sm:px-16">
-            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
-                <div>
-                    <img src="../assets/logo_fresherbot_dark.png" alt="logo" class="w-[180px] sm:w-[240px] mb-6">
-                    <a href="tel:+918977945750" class="block py-1 text-sm font-semibold text-blue-200">
-                        <svg viewBox="0 0 24 24" class="inline w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" fill="#c5def2"></path> </g></svg>
-                        +91 89779 45750</a>
-                    <a href="tel:+919000045750" class="block py-1 text-sm font-semibold text-blue-200">
-                        <svg viewBox="0 0 24 24" class="inline w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" fill="#c5def2"></path> </g></svg>
-                        +91 90000 45750</a>
-                </div>
-                <div>
-                    <h2 class="mb-6 font-semibold text-purple-200 uppercase">Company</h2>
-                    <ul class="text-sm font-medium text-gray-50 ">
-                        <li class="mb-3">
-                            <a href="#" class=" hover:underline">About</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Careers</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">News</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Blog</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="./contact.html" class="hover:underline">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 font-semibold text-purple-200 uppercase">Products</h2>
-                    <ul class="text-sm font-medium text-gray-50 ">
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Hiring Assessments</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Job Posting</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Campus Hiring</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Hackathon Tool</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 font-semibold text-purple-200 uppercase">Assessments</h2>
-                    <ul class="text-sm font-medium text-gray-50 ">
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Aptitude Test</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Technical Test</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Coding Test</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">English Test</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Psychometric Test</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 font-semibold text-purple-200 uppercase">Interivew Prep</h2>
-                    <ul class="text-sm font-medium text-gray-50 ">
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Learning Videos</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Practice Questions</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Study Material</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Skill Tests</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div>
-                    <h2 class="mb-6 text-sm font-semibold text-purple-200 uppercase">Legal</h2>
-                    <ul class="font-medium text-gray-50 ">
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Security</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                        </li>
-                    </ul>
-                </div> -->
-
+        <footer class="py-10 border-b border-purple-200 contact" id="contact">
+            <div class="mb-8 text-center title">
+                <h2 class="text-2xl font-bold text-white font-julius md:text-4xl">Connect With Us</h2>
             </div>
-            <div class="px-4 py-6 md:flex md:items-center md:justify-between">
-                <span class="text-sm text-gray-50 dark:text-gray-300 sm:text-center">© 2023 <a
-                        href="https://fresherbot.com/">Fresherbot</a>. All Rights Reserved.
-                </span>
-                <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
-                    <a href="https:wa.me/+918977945750"
-                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
-                        <svg class="w-8 h-8 rounded-full" xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#25d366"></rect><path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path><path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path></g></svg>
-                        <span class="sr-only">Whatsapp page</span>
+            <div class="content">
+                <div class="flex flex-wrap justify-center row">
+                    <a href="https://www.linkedin.com/company/fresherbot" target="_blank" class="flex flex-col items-center p-6 m-5 bg-white rounded-lg shadow-lg card w-60 group">
+                        <div class="mb-4 text-5xl text-gray-800 transition-transform duration-500 ease-in-out transform contact-icon group-hover:-translate-y-2">
+                            <svg viewBox="0 0 24 24" class="w-20" id="meteor-icon-kit__solid-linkedin" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2857 0H1.70893C0.766071 0 0 0.776786 0 1.73036V22.2696C0 23.2232 0.766071 24 1.70893 24H22.2857C23.2286 24 24 23.2232 24 22.2696V1.73036C24 0.776786 23.2286 0 22.2857 0ZM7.25357 20.5714H3.69643V9.11786H7.25893V20.5714H7.25357ZM5.475 7.55357C4.33393 7.55357 3.4125 6.62679 3.4125 5.49107C3.4125 4.35536 4.33393 3.42857 5.475 3.42857C6.61071 3.42857 7.5375 4.35536 7.5375 5.49107C7.5375 6.63214 6.61607 7.55357 5.475 7.55357ZM20.5875 20.5714H17.0304V15C17.0304 13.6714 17.0036 11.9625 15.1821 11.9625C13.3286 11.9625 13.0446 13.4089 13.0446 14.9036V20.5714H9.4875V9.11786H12.9V10.6821H12.9482C13.425 9.78214 14.5875 8.83393 16.3179 8.83393C19.9179 8.83393 20.5875 11.2071 20.5875 14.2929V20.5714Z" fill="#758CA3"></path></g></svg>
+                        </div>
+                        <div class="text-center info">
+                            <h3 class="mb-2 text-xl font-semibold">LinkedIn</h3>
+                        </div>
                     </a>
-                    <a href="https://facebook.com/fresherbot"
-                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
-                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#3B5998"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"></path> </g></svg>
-                        <span class="sr-only">Facebook page</span>
+                    <a href="https://www.instagram.com/fresherbot/" target="_blank" class="flex flex-col items-center p-6 m-5 bg-white rounded-lg shadow-lg card w-60 group">
+                        <div class="mb-1 text-5xl text-gray-800 transition-transform duration-500 ease-in-out transform contact-icon group-hover:-translate-y-2">
+                            <svg viewBox="0 0 24 24" class="w-24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM12 15.88C9.86 15.88 8.12 14.14 8.12 12C8.12 9.86 9.86 8.12 12 8.12C14.14 8.12 15.88 9.86 15.88 12C15.88 14.14 14.14 15.88 12 15.88ZM17.92 6.88C17.87 7 17.8 7.11 17.71 7.21C17.61 7.3 17.5 7.37 17.38 7.42C17.26 7.47 17.13 7.5 17 7.5C16.73 7.5 16.48 7.4 16.29 7.21C16.2 7.11 16.13 7 16.08 6.88C16.03 6.76 16 6.63 16 6.5C16 6.37 16.03 6.24 16.08 6.12C16.13 5.99 16.2 5.89 16.29 5.79C16.52 5.56 16.87 5.45 17.19 5.52C17.26 5.53 17.32 5.55 17.38 5.58C17.44 5.6 17.5 5.63 17.56 5.67C17.61 5.7 17.66 5.75 17.71 5.79C17.8 5.89 17.87 5.99 17.92 6.12C17.97 6.24 18 6.37 18 6.5C18 6.63 17.97 6.76 17.92 6.88Z" fill="#758CA3"></path> </g></svg>    
+                        </div>
+                        <div class="text-center info">
+                            <h3 class="mb-2 text-xl font-semibold">Instagram</h3>
+                        </div>
                     </a>
-                    <a href="https://www.linkedin.com/company/fresherbot"
-                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
-                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#0077B5"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2393 22.9446C22.2393 21.1357 22.1797 19.5935 22.1201 18.3182H26.0351L26.2432 20.305H26.3322C26.9254 19.3854 28.4079 17.9927 30.8101 17.9927C33.7752 17.9927 35.9995 19.9502 35.9995 24.219V32.821H31.4922V24.7838C31.4922 22.9144 30.8404 21.6399 29.2093 21.6399C27.9633 21.6399 27.2224 22.4999 26.9263 23.3297C26.8071 23.6268 26.7484 24.0412 26.7484 24.4574V32.821H22.2411V22.9446H22.2393Z" fill="white"></path> </g></svg>
-                        <span class="sr-only">Linkedin</span>
+                    <a href="https:wa.me/+918977945750" target="_blank" class="flex flex-col items-center p-6 m-5 bg-white rounded-lg shadow-lg card w-60 group">
+                        <div class="mb-4 text-5xl text-gray-800 transition-transform duration-500 ease-in-out transform contact-icon group-hover:-translate-y-2">
+                            <svg viewBox="0 0 24 24" class="w-20" id="meteor-icon-kit__solid-whatsapp" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.5129 3.4866C18.2882 1.24722 15.2597 -0.00837473 12.1032 4.20445e-05C5.54964 4.20445e-05 0.216056 5.33306 0.213776 11.8883C0.210977 13.9746 0.75841 16.0247 1.80085 17.8319L0.114014 23.9932L6.41672 22.34C8.15975 23.2898 10.1131 23.7874 12.0981 23.7874H12.1032C18.6556 23.7874 23.9897 18.4538 23.992 11.8986C24.0022 8.74248 22.7494 5.71347 20.5129 3.4866ZM17.5234 14.3755C17.2264 14.2267 15.7659 13.5085 15.4934 13.4064C15.2209 13.3044 15.0231 13.2576 14.8253 13.5552C14.6275 13.8528 14.058 14.5215 13.8847 14.7199C13.7114 14.9182 13.5381 14.9427 13.241 14.794C12.944 14.6452 11.9869 14.3316 10.8519 13.3198C9.96884 12.5319 9.36969 11.5594 9.19867 11.2618C9.02765 10.9642 9.18043 10.8057 9.32922 10.6552C9.46261 10.5224 9.62622 10.3086 9.77444 10.1348C9.92266 9.9609 9.97283 9.83776 10.0714 9.63938C10.1701 9.44099 10.121 9.26769 10.0469 9.1189C9.97283 8.97011 9.37824 7.50788 9.13083 6.9133C8.88969 6.3341 8.64513 6.4122 8.46271 6.40023C8.29169 6.39168 8.09102 6.38997 7.89264 6.38997C7.58822 6.39793 7.30097 6.53267 7.10024 6.76166C6.82831 7.05923 6.061 7.77752 6.061 9.23976C6.061 10.702 7.12532 12.1146 7.27354 12.313C7.42176 12.5114 9.36855 15.5117 12.3472 16.7989C12.9004 17.0375 13.4657 17.2468 14.0409 17.426C14.7523 17.654 15.3999 17.6204 15.9118 17.544C16.4819 17.4585 17.6694 16.8251 17.9173 16.1313C18.1653 15.4376 18.1648 14.8424 18.0884 14.7187C18.012 14.595 17.8204 14.5266 17.5234 14.3778V14.3755Z" fill="#758CA3"></path></g></svg>                    
+                        </div>
+                        <div class="text-center info">
+                            <h3 class="mb-2 text-xl font-semibold">Whatsapp</h3>
+                        </div>
                     </a>
-                    <a href="https://www.youtube.com/@fresherbot"
-                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
-                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#cc0505"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3005 16.3781C35.6996 16.7772 35.9872 17.2739 36.1346 17.8187C36.9835 21.2357 36.7873 26.6324 36.1511 30.1813C36.0037 30.7261 35.7161 31.2228 35.317 31.6219C34.9179 32.021 34.4212 32.3086 33.8764 32.456C31.8819 33 23.8544 33 23.8544 33C23.8544 33 15.8269 33 13.8324 32.456C13.2876 32.3086 12.7909 32.021 12.3918 31.6219C11.9927 31.2228 11.7051 30.7261 11.5577 30.1813C10.7038 26.7791 10.9379 21.3791 11.5412 17.8352C11.6886 17.2903 11.9762 16.7936 12.3753 16.3945C12.7744 15.9954 13.2711 15.7079 13.8159 15.5604C15.8104 15.0165 23.8379 15 23.8379 15C23.8379 15 31.8654 15 33.8599 15.544C34.4047 15.6914 34.9014 15.979 35.3005 16.3781ZM27.9423 24L21.283 27.8571V20.1428L27.9423 24Z" fill="white"></path> </g></svg>
-                        <span class="sr-only">Youtube</span>
+                    <a href="https://www.youtube.com/@fresherbot" target="_blank" class="flex flex-col items-center p-6 m-5 bg-white rounded-lg shadow-lg card w-60 group">
+                        <div class="mb-4 text-5xl text-gray-800 transition-transform duration-500 ease-in-out transform contact-icon group-hover:-translate-y-2">
+                            <svg viewBox="0 -3 20 20" class="w-20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#758CA3168]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#758CA3"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#758CA3168]"> </path> </g> </g> </g> </g></svg>
+                        </div>
+                        <div class="text-center info">
+                            <h3 class="mb-2 text-xl font-semibold">Youtube</h3>
+                        </div>
                     </a>
-                    <a href="https://www.instagram.com/fresherbot/"
-                        class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
-                        <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#C13584"></circle> <path d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z" fill="white"></path> <path d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z" fill="white"></path> <path d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z" fill="white"></path> </g></svg>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-
                 </div>
             </div>
-        </div>
+        </footer>
+        
+        <footer class="max-w-screen-xl p-4 mx-auto sm:px-16">
+            
+            <!--footer links-->
+            <section class="text-white">
+                <div class="p-4 sm:px-0">
+                    <div class="">
+                        <div class="space-y-6">
+                            <div class="justify-between px-2 sm:px-4 lg:flex md:pt-4">
+                                <!--footer logo-->
+                                <div class="py-2 lg:w-1/4 md:p-0 d:mb-6">
+                                    <div class="">
+                                        <img src="../assets/logo_fresherbot_dark.png" width="180px" height="35px" alt="fa logo" />
+                                        <br>
+                                        <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3bcb916c2ed5ff65:0x8c672557b26d8d6d?source=g.page.default" target="_blank" class="mt-5 sm:mt-0 lg:mt-5 test-sm">
+    
+                                            <div class="flex flex-row-2">
+                                                <div>
+                                                    <svg xmlns="#" viewBox="0 0 20 20"
+                                                        fill="currentColor" class="w-5 h-5 mr-1 text-purple-200">
+                                                        <path fill-rule="evenodd"
+                                                            d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+    
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm ">2nd Floor, Oyester Uptown, Beside Durgam Cheruvu Metro Station, Madhapur, Hyderabad, Telengana, 500081.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+    
+                                        <div class="flex py-4 mt-3 sm:mt-0 lg:mt-3 test-sm ">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor" class="w-6 h-4 text-purple-200">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+    
+                                            </div>
+                                            <div class="">
+                                                <p class="text-sm">
+                                                    <a href="tel:+918977945750">+91 89779 45750</a>
+                                                    <br>
+                                                    <a href="tel:+919000045750">+91 90000 45750</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!--links-->
+                                <div
+                                    class="hidden grid-cols-2 mt-4 md:grid w-100 lg:w-3/4 gap-x-16 md:gap-4 md:grid-cols-4 place-content-between lg:mt-0">
+                                    <div>
+                                        <h5 class="mb-4 text-lg font-bold">Company</h5>
+                                        <ul class="flex flex-col space-y-2 text-lg ">
+                                            <li class="mb-0 text-md"><a href="#"
+                                                    class="text-sm hover:text-purple-200">Blog</a></li>
+                                            <li class="mb-0 text-md"><a href="#"
+                                                    class="text-sm hover:text-purple-200">About Us</a></li>
+                                            <li class="mb-0 text-md"><a href="#"
+                                                    class="text-sm hover:text-purple-200"> Contact Us</a></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div>
+                                        <h5 class="mb-4 text-lg font-bold ">Products</h5>
+                                        <ul class="flex flex-col space-y-2 text-lg ">
+                                            <li class=" text-md"><a href="#"
+                                                    class="text-sm hover:text-purple-200">Hiring Assessment</a></li>
+                                            <li class="my-2 text-md"><a href="#"
+                                                    class="text-sm hover:text-purple-200">Campus Hiring</a>
+                                            </li>
+                                            <li class="my-2 text-md">
+                                                <a href="#" class="text-sm hover:text-purple-200"> Job Posting</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div>
+                                        <h2 class="mb-6 font-semibold">Assessments</h2>
+                                        <ul class="text-sm font-medium text-gray-50 ">
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Aptitude Test</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Technical Test</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Coding Test</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">English Test</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Psychometric Test</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="mb-6 font-semibold ">Interivew Prep</h2>
+                                        <ul class="text-sm font-medium text-gray-50 ">
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Learning Videos</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Practice Questions</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Study Material</a>
+                                            </li>
+                                            <li class="mb-3">
+                                                <a href="#" class="hover:text-purple-200">Skill Tests</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--footer accordion  -->
+                <section class="block max-w-screen-xl px-2 py-2 mx-auto mb-4 md:hidden md:px-16 md:mb-0">
+                    <!-- Company -->
+                    <div class="mb-2">
+                        <button
+                            class="flex justify-between w-full px-5 font-semibold text-left duration-300 ease-in-out rounded-t outline-none cursor-pointer accordion">
+                            <div>Company</div>
+                            <div class="text-xl font-bold icon">+</div>
+                        </button>
+                        <div class="hidden p-1 overflow-hidden duration-300 ease-in-out panel transition-height">
+                            <ul class="flex flex-col space-y-1 text-lg ps-8">
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">Blog</a></li>
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">About Us</a></li>
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="mb-2">
+                        <button
+                            class="flex justify-between w-full px-5 font-semibold text-left duration-300 ease-in-out rounded-t outline-none cursor-pointer accordion">
+                            <div>Products</div>
+                            <div class="text-xl font-bold icon">+</div>
+                        </button>
+                        <div class="hidden p-1 overflow-hidden duration-300 ease-in-out panel transition-height">
+                            <ul class="flex flex-col space-y-1 text-lg ps-8">
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">Hiring Assessment</a></li>
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">Campus Hiring</a></li>
+                                <li class="text-md"><a href="#" class="text-sm hover:text-purple-200">Job Posting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Assessments -->
+                    <div class="mb-2">
+                        <button
+                            class="flex justify-between w-full px-5 font-semibold text-left duration-300 ease-in-out rounded-t outline-none cursor-pointer accordion">
+                            <div>Assessments</div>
+                            <div class="text-xl font-bold icon">+</div>
+                        </button>
+                        <div class="hidden p-1 overflow-hidden duration-300 ease-in-out panel transition-height">
+                            <ul class="text-sm font-medium text-gray-50 ps-8">
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Aptitude Test</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Technical Test</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Coding Test</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">English Test</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Psychometric Test</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Interview Prep -->
+                    <div class="mb-2">
+                        <button
+                            class="flex justify-between w-full px-5 font-semibold text-left duration-300 ease-in-out rounded-t outline-none cursor-pointer accordion">
+                            <div>Interview Prep</div>
+                            <div class="text-xl font-bold icon">+</div>
+                        </button>
+                        <div class="hidden p-1 overflow-hidden duration-300 ease-in-out panel transition-height">
+                            <ul class="text-sm font-medium text-gray-50 ps-8">
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Learning Videos</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Practice Questions</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Study Material</a></li>
+                                <li class="mb-3"><a href="#" class="hover:text-purple-200">Skill Tests</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- links -->
+                <div class="justify-center px-4 py-6 mb-8 text-center md:flex md:items-center md:justify-between md:text-start">
+                    <span class="justify-center text-sm text-center text-gray-50 md:text-start dark:text-gray-300">© 2023 <a
+                            href="https://fresherbot.com/">Fresherbot</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex justify-center mt-4 space-x-5 md:mt-0">
+                        <a href="https:wa.me/+918977945750"
+                            class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                            <svg class="w-8 h-8 rounded-full" xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#25d366"></rect><path fill="#25d366" stroke="#ffffff" stroke-width="26" d="M123 393l14-65a138 138 0 1150 47z"></path><path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path></g></svg>
+                            <span class="sr-only">Whatsapp page</span>
+                        </a>
+                        <a href="https://facebook.com/fresherbot"
+                            class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                            <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#3B5998"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"></path> </g></svg>
+                            <span class="sr-only">Facebook page</span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fresherbot"
+                            class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                            <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#0077B5"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7747 14.2839C18.7747 15.529 17.8267 16.5366 16.3442 16.5366C14.9194 16.5366 13.9713 15.529 14.0007 14.2839C13.9713 12.9783 14.9193 12 16.3726 12C17.8267 12 18.7463 12.9783 18.7747 14.2839ZM14.1199 32.8191V18.3162H18.6271V32.8181H14.1199V32.8191Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2393 22.9446C22.2393 21.1357 22.1797 19.5935 22.1201 18.3182H26.0351L26.2432 20.305H26.3322C26.9254 19.3854 28.4079 17.9927 30.8101 17.9927C33.7752 17.9927 35.9995 19.9502 35.9995 24.219V32.821H31.4922V24.7838C31.4922 22.9144 30.8404 21.6399 29.2093 21.6399C27.9633 21.6399 27.2224 22.4999 26.9263 23.3297C26.8071 23.6268 26.7484 24.0412 26.7484 24.4574V32.821H22.2411V22.9446H22.2393Z" fill="white"></path> </g></svg>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                        <a href="https://www.youtube.com/@fresherbot"
+                            class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                            <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#cc0505"></circle> <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3005 16.3781C35.6996 16.7772 35.9872 17.2739 36.1346 17.8187C36.9835 21.2357 36.7873 26.6324 36.1511 30.1813C36.0037 30.7261 35.7161 31.2228 35.317 31.6219C34.9179 32.021 34.4212 32.3086 33.8764 32.456C31.8819 33 23.8544 33 23.8544 33C23.8544 33 15.8269 33 13.8324 32.456C13.2876 32.3086 12.7909 32.021 12.3918 31.6219C11.9927 31.2228 11.7051 30.7261 11.5577 30.1813C10.7038 26.7791 10.9379 21.3791 11.5412 17.8352C11.6886 17.2903 11.9762 16.7936 12.3753 16.3945C12.7744 15.9954 13.2711 15.7079 13.8159 15.5604C15.8104 15.0165 23.8379 15 23.8379 15C23.8379 15 31.8654 15 33.8599 15.544C34.4047 15.6914 34.9014 15.979 35.3005 16.3781ZM27.9423 24L21.283 27.8571V20.1428L27.9423 24Z" fill="white"></path> </g></svg>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                        <a href="https://www.instagram.com/fresherbot/"
+                            class="text-gray-100 hover:text-gray-200 dark:hover:text-white">
+                            <svg viewBox="0 0 48 48" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#C13584"></circle> <path d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z" fill="white"></path> <path d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z" fill="white"></path> <path d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z" fill="white"></path> </g></svg>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+    
+                    </div>
+                </div>
+            </section>
+        </footer>
     </footer>
 
+    <!--Messages-->
+    <div
+        class="fixed bottom-0 flex items-center justify-center w-full py-1 space-x-2 bg-purple-200">
+        <a href="tel:+918977945750" target="_blank"  class="flex items-center px-8 py-1 space-x-2 bg-black rounded">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                    stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+            </div>
+            <div class="text-sm font-semibold text-white">Call</div>
+
+        </a>
+        <div>
+            <h1 class="hidden md:block">We would love to hear from you!</h1>
+        </div>
+        <a href="https:wa.me/+918977945750" target="_blank"  class="flex items-center px-4 py-1 bg-black rounded">
+            <div>
+                <svg fill="#ffffff" class="w-4 h-4 text-white me-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"></path><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"></path></g></svg>
+            </div>
+            <div class="text-sm font-semibold text-white">WhatsApp</div>
+
+        </a>
+
+    </div>
+    <button id="scrollToTop"
+        class="fixed z-10 px-3 py-4 rounded-lg bg-gray-200 transition-opacity duration-300 ease-in-out shadow-2xl opacity-0 bottom-[50px] right-10 group-hover:opacity-100">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+
+    </button>
+    
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3Q48CYWJG"></script>
     <script>
@@ -643,6 +874,7 @@
     </script>
 
     <script src="../dist/voilaui.js"></script>
+    
 </body>
 
 </html>
