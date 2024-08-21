@@ -205,11 +205,15 @@
             </ul>
         </div>
     </nav>
-    <section class="max-w-screen-xl py-12 mx-auto sm:px-16 grid grid-cols-1 md:grid-cols-2 gap-12 p-6 bg-gray-900 rounded-lg">
+    
+    <section class="max-w-screen-xl py-12 mx-auto sm:px-16 grid grid-cols-1 md:grid-cols-2 gap-12 p-6  ">
         <!-- Image Section -->
         <div class="flex items-center justify-center relative">
-            <div class="absolute inset-0 bg-white opacity-20 rounded-lg"></div>
-            <img src="../assets/propel.png" alt="Propel Image" class="relative z-10 object-cover h-64 md:h-96 w-auto rounded-lg transition-transform duration-300 hover:scale-105">
+            <!-- Updated Background -->
+            <div class="absolute inset-0 bg-yellow-50 opacity-60" style="border-radius: 20% 50% 80% 20% / 40% 30% 60% 50%;"></div>
+    
+            <!-- Image without Hover Effect -->
+            <img src="../assets/propel.png" alt="Propel Image" class="relative z-10 object-cover h-64 md:h-96 w-auto rounded-lg">
         </div>
         
         <!-- Text Section -->
@@ -232,24 +236,21 @@
     </section>
     
     
-    
-    
-    
-    <div class="w-full mx-auto mb-16 mt-10  bg-white py-12  overflow-hidden">
+    <section class="w-full mx-auto mb-16 mt-10  bg-white py-12  ">
         <!-- About Section -->
        <div class="max-w-screen-xl py-12 mx-auto px-5 sm:px-16">
-        <h1 class="text-4xl font-extrabold text-center mb-6 text-black font-julius animate-fade-in">About Us</h1>
-        <p class="text-lg text-indigo-800 leading-relaxed mb-4 opacity-0 transition-opacity duration-500 ease-in-out">
+        <h1 class="text-4xl font-extrabold text-center mb-6 text-black font-julius ">About Us</h1>
+        <p class="text-lg text-indigo-800 leading-relaxed mb-4 ">
             At <span class="text-yellow-400 font-semibold">FresherBot</span>, we are on a mission to empower fresh graduates with genuine opportunities to kickstart their careers. We understand the challenges of finding the right job, especially with limited experience, and that's why we focus on providing access to <span class="text-yellow-400 font-semibold">internships</span> that offer hands-on experience.
         </p>
-        <p class="text-lg text-indigo-800 leading-relaxed mb-4 opacity-0 transition-opacity duration-500 ease-in-out delay-150">
+        <p class="text-lg text-indigo-800 leading-relaxed mb-4  delay-150">
             Our platform is designed to bridge the gap between fresh talent and companies seeking innovative minds. Whether you are looking to gain industry experience through internships or preparing for your first job, FresherBot is here to guide you every step of the way.
         </p>
-        <p class="text-lg text-indigo-800 leading-relaxed opacity-0 transition-opacity duration-500 ease-in-out delay-300">
+        <p class="text-lg text-indigo-800 leading-relaxed  delay-300">
             Join our community of ambitious graduates and take the first step towards a fulfilling career. Together, we can unlock a world of opportunities and make your aspirations a reality.
         </p>
        </div>
-    </div>
+   </section>
     
     
     <section class="max-w-6xl py-12 mx-auto mb-16 sm:px-16 flex flex-col md:flex-row items-center bg-gray-100 rounded-lg shadow-lg overflow-hidden">
@@ -260,7 +261,7 @@
             
             <!-- Image Section -->
             <div class="">
-                <img src="../assets/register.png" alt="Register Program Image" class="object-cover  ">
+                <img src="../assets/register-min.png" alt="Register Program Image" class="object-cover  ">
             </div>
         </div>
     
@@ -484,18 +485,17 @@
             typeWriter();
         });
     
-        document.addEventListener("DOMContentLoaded", function() {
-            const paragraphs = document.querySelectorAll("p");
-        
-            // Add fade-in effect to paragraphs
-            paragraphs.forEach((paragraph, index) => {
-                setTimeout(() => {
-                    paragraph.classList.remove("opacity-0");
-                }, index * 500);
-            });
-        });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E3Q48CYWJG');
         
         </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3Q48CYWJG"></script>
         <script src="../dist/voilaui.js"></script>
         
 </body>
