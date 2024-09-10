@@ -230,8 +230,9 @@
             class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-10 sm:px-16">
             <!-- text -->
             <div class="w-screen my-auto lg:w-3/5" id="content">
-                <h1 class="py-2 text-4xl font-bold text-center sm:py-4 sm:text-5xl md:text-7xl font-julius md:text-start w-[80vw] mx-auto md:mx-0 lg:w-fit word-wrap"
-                    id="text"></h1>
+                <h1 class="py-2 text-4xl font-bold text-center sm:py-4 sm:text-5xl md:text-7xl font-julius md:text-start w-[80vw] mx-auto md:mx-0 lg:w-fit word-wrap">
+                    Connecting Colleges & Companies
+                </h1>
                 <p
                     class="py-4 text-lg tracking-wider text-center text-gray-200 md:text-xl font-archivo md:text-start w-[80vw] mx-auto md:mx-0 md:w-fit">
                     Your gateway to talent and opportunity through HR Campus Connect.</p>
@@ -255,8 +256,8 @@
                 <img src="../assets/hrcc/Picture1.png" alt="Background" class="w-full h-full" />
 
                 <!-- Foreground Image -->
-                <img src="../assets/hrcc/Picture2.png" alt="Foreground"
-                    class="absolute top-[3.5%]  left-[5%] w-[90%] h-auto" />
+                <img src="../assets/hrcc/header.jpg" alt="Foreground"
+                    class="absolute top-[5%]  left-[5%] w-[90%] h-[90%]" />
             </div>
         </section>
 
@@ -316,11 +317,18 @@
                                 network.
                             </p>
                         </div>
+                        <div class="text-center mt-4">
+                            <h2 class="text-xl font-semibold mb-2">HR Campus Connect</h2>
+                            <p class="text-gray-300">
+                                Facilitate networking opportunities between HR professionals and college
+                                students.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="relative w-full flex items-center justify-center mt-8">
+                    <div class="relative w-full hidden lg:flex items-center justify-center mt-8">
                         <div class="absolute w-full h-[1px] bg-gray-400"></div>
-                        <div class="flex space-x-16">
+                        <div class="grid grid-cols-3 justify-between w-full">
                             <div class="flex flex-col items-center">
                                 <div
                                     class="bg-[#282452] rounded-full w-12 h-12 flex items-center justify-center text-xl font-semibold">
@@ -330,13 +338,6 @@
                                 <div
                                     class="bg-[#282452] rounded-full w-12 h-12 flex items-center justify-center text-xl font-semibold">
                                     2</div>
-                                <div class="text-center mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">HR Campus Connect</h2>
-                                    <p class="text-gray-300">
-                                        Facilitate networking opportunities between HR professionals and college
-                                        students.
-                                    </p>
-                                </div>
                             </div>
                             <div class="flex flex-col items-center">
                                 <div
@@ -610,7 +611,7 @@
                 class="flex lg:flex-row flex-col items-center justify-between gap-5 max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-10 sm:px-16">
                 <!-- text -->
                 <div class="w-full my-auto lg:w-3/5" id="content">
-                    <h1 class="text-5xl font-bold mb-4">Hiring Knowledgeable Candidates</h1>
+                    <h1 class="lg:text-5xl text-4xl  font-bold mb-4">Hiring Knowledgeable Candidates</h1>
                     <p class="text-xl mb-8">We connect companies with top talent from college campuses.</p>
 
                     <div class="bg-opacity-20 border-2 bg-white rounded-lg">
@@ -1192,62 +1193,7 @@
         gtag('config', 'G-E3Q48CYWJG');
     </script>
 
-    <!-- <script src="../dist/voilaui.js"></script>
-    <script>
-        // typewriter effect
-        const sentence = "Connecting Colleges & Companies";
-        let currentLetterIndex = 0;
-        const textElement = document.getElementById("text");
-        let isTypewriting = true;
-
-        function showNextLetter() {
-            if (isTypewriting && currentLetterIndex < sentence.length) {
-                const letter = sentence[currentLetterIndex];
-
-                if (letter === "?") {
-                    textElement.innerHTML += `<span class="color-change">${letter}</span>`;
-                } else if (currentLetterIndex > sentence.indexOf("?")) {
-                    textElement.innerHTML += `<span class="color-change">${letter}</span>`;
-                } else {
-                    textElement.innerHTML += `<span>${letter}</span>`;
-                }
-                currentLetterIndex++;
-            } else {
-                isTypewriting = false;
-                clearInterval(typewriterInterval); // Stop the interval once typing is done
-            }
-            // Update the cursor position
-            updateCursor();
-        }
-
-        function updateCursor() {
-            // Remove existing cursor
-            document.querySelectorAll(".cursor").forEach(cursor => cursor.remove());
-
-            // Add the cursor at the end
-            if (isTypewriting || !isTypewriting && currentLetterIndex === sentence.length) {
-                textElement.innerHTML += `<span class="cursor text-gray-500">|</span>`;
-            }
-        }
-
-        const typewriterInterval = setInterval(() => {
-            showNextLetter();
-        }, 150);
-
-        const style = document.createElement('style');
-        style.innerHTML = `
-    @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-    }
-    .cursor {
-        animation: blink 1s step-end infinite;
-    }
-`;
-        document.head.appendChild(style);
-    </script> -->
-    <script src="../dist/hrcc.js"></script>
-
+     <script src="../dist/voilaui.js"></script>
 </body>
 
 </html>
