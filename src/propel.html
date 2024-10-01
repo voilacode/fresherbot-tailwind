@@ -27,31 +27,7 @@
                 clip-path: path("M20,10 C40,0, 60,0, 80,20 C100,40, 100,60, 80,80 C60,100, 40,100, 20,80 C0,60, 0,40, 20,10 Z");
             }
            
-            .accordion-content {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease-in-out;
-              }
-            
-              .rotate-180 {
-                transform: rotate(180deg);
-              }
-            
-              /* Optional: Adjust the transition for better collapse effect */
-              .transition-max-height {
-                transition: max-height 0.3s ease-in-out;
-              }
-            
-              /* Additional styling for rounded corners and overflow */
-              .rounded-lg {
-                border-radius: 0.5rem;
-              }
-            
-              .overflow-hidden {
-                overflow: hidden;
-              }
-             
-              
+           
               
         </style>
     </head>
@@ -224,7 +200,7 @@
     <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 lg:pt-10 lg:pb-10 sm:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div class="p-4">
-                <h1 id="propel-heading" class="text-3xl md:text-4xl lg:text-5xl font-bold font-julius text-white leading-tight">
+                <h1 id="propel-heading" class="text-3xl md:text-4xl lg:text-7xl font-bold font-julius text-white leading-tight">
                
                 </h1>
                 <p class="mt-4 text-md text-gray-400">
@@ -260,10 +236,32 @@
                 
             </div>
             <div class="flex items-center justify-center relative">
-                <!-- Background -->
-             <!-- Image on the Right with Reduced Height -->
-             <img src="../assets/group-business-man-people-with-laptop_862994-615194-removebg-preview.png" alt="Propel Image" class="relative z-10 object-cover h-48 md:h-72 w-auto rounded-lg">
+                <!-- Main Background Shape for the Image -->
+                <div class="relative rounded-full bg-gradient-to-b from-blue-800 to-blue-600 border-t-8 border-yellow-500 flex items-center justify-center overflow-hidden shadow-lg w-60 h-80 transition-transform transform hover:scale-105">
+                    <img src="../assets/istockphoto-1181196053-612x612-removebg-preview (1).png" alt="Main Image" class="object-cover w-full h-full">
+                </div>
+            
+                <!-- Top Right Image with Background -->
+                <div class="absolute bottom-0 right-16 bg-gradient-to-t from-red-700 to-red-400 p-2 rounded-full rounded-br-none border-t-8 border-yellow-300 shadow-xl transition-transform transform hover:scale-105">
+                    <img src="../assets/properl5000.png" alt="Top Right Image" class="w-28 h-32 object-cover rounded-full border-4 border-white shadow-md">
+                </div>
+            
+                <!-- Bottom Left Image with Background -->
+                <div class="absolute top-0 left-12 bg-gradient-to-t from-green-700 to-green-400 p-2 border-l-4 shadow-xl border-yellow-500 rounded-full rounded-tr-none transition-transform transform hover:scale-105">
+                    <img src="../assets/istockphoto-1392990621-612x612-removebg-preview.png" alt="Bottom Left Image" class="w-28 h-40 object-cover rounded-full border-4 border-white shadow-md">
+                </div>
             </div>
+            
+            
+            
+            
+                <!-- Bubbles Positioned Outside the Image -->
+                
+            </div>
+            
+            
+            
+            
             
         
             
@@ -271,11 +269,13 @@
             
         </div>
     </section>
-   <!-----hero end--> 
+   
 <!-- About FresherBot Section -->
-<section class="bg-white py-10">
+<section class="bg-white ">
+    
     <div class="max-w-screen-xl p-4 mx-auto mb-4 lg:pt-10 lg:pb-10 sm:px-20">
         <div class="text-center mb-8">
+            
             <!-- Centered Heading with Button-like About tag -->
             <h3 class="inline-block px-4 py-2 bg-purple-100 text-purple-600 text-sm font-bold rounded-full mb-2">ABOUT US</h3>
             <h2 class="text-2xl  md:text-4xl font-extrabold mt-3 font-julius">Discover <span class="text-violet-900">FresherBot</span></h2>
@@ -436,69 +436,69 @@
     </div>
     </div>
 </section>
-<!-----Companies Section----->
-
 
 
 <!-- Accordion Section -->
-<section class="max-w-6xl mx-auto py-10 sm:px-0 px-5">
-    <h2 class="text-xl font-bold text-center md:text-3xl font-julius text-white">Frequently Asked Questions</h2>
-    <p class="py-2 italic tracking-wider text-center text-teal-400 font-archivo">Have questions? We’ve got answers!</p>
+<section class="max-w-6xl mx-auto py-8 pb-16 sm:px-0 px-5">
+    <h2 class="text-2xl font-bold text-center md:text-4xl font-julius text-gray-100">Frequently Asked Questions</h2>
+    <p class="py-3 italic tracking-wide text-center text-teal-400 font-archivo">Have questions? We’ve got answers!</p>
 
     <div class="space-y-4">
         <!-- Accordion 1 -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <button class="w-full px-4 py-3 text-left bg-purple-700 text-white font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 flex justify-between items-center accordion-btn">
-                <span class="text-base md:text-lg">What is Propel 5000 Internship Program?</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="border-b border-teal-500">
+            <button class="accordion-btn w-full px-4 py-4 text-left bg-transparent text-gray-100 font-semibold text-lg focus:outline-none flex justify-between items-center hover:text-teal-400 transition duration-300">
+                <span>What is Propel 5000 Internship Program?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform accordion-icon transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
             </button>
-            <div class="accordion-content px-4 py-3 hidden text-white">
-                The Propel 5000 Internship Program offers over 5000 internships to students, providing hands-on experience in various industries and real-world projects.
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-200">
+                <p>The Propel 5000 Internship Program offers over 5000 internships to students, providing hands-on experience in various industries and real-world projects.</p>
             </div>
         </div>
 
         <!-- Accordion 2 -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <button class="w-full px-4 py-3 text-left bg-purple-700 text-white font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 flex justify-between items-center accordion-btn">
-                <span class="text-base md:text-lg">How can I apply for the Propel Internship?</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="border-b border-teal-500">
+            <button class="accordion-btn w-full px-4 py-4 text-left bg-transparent text-gray-100 font-semibold text-lg focus:outline-none flex justify-between items-center hover:text-teal-400 transition duration-300">
+                <span>How can I apply for the Propel Internship?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform accordion-icon transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
             </button>
-            <div class="accordion-content px-4 py-3 hidden text-white">
-                Students can apply for the Propel Internship through our website by filling out the registration form and selecting the industry of interest.
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-200">
+                <p>Students can apply for the Propel Internship through our website by filling out the registration form and selecting the industry of interest.</p>
             </div>
         </div>
 
         <!-- Accordion 3 -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <button class="w-full px-4 py-3 text-left bg-purple-700 text-white font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 flex justify-between items-center accordion-btn">
-                <span class="text-base md:text-lg">What industries are available for internships?</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="border-b border-teal-500">
+            <button class="accordion-btn w-full px-4 py-4 text-left bg-transparent text-gray-100 font-semibold text-lg focus:outline-none flex justify-between items-center hover:text-teal-400 transition duration-300">
+                <span>What industries are available for internships?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform accordion-icon transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
             </button>
-            <div class="accordion-content px-4 py-3 hidden text-white">
-                The Propel Internship Program offers opportunities across IT, Marketing, Finance, Engineering, and many other industries.
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-200">
+                <p>The Propel Internship Program offers opportunities across IT, Marketing, Finance, Engineering, and many other industries.</p>
             </div>
         </div>
 
         <!-- Accordion 4 -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden">
-            <button class="w-full px-4 py-3 text-left bg-purple-700 text-white font-medium focus:outline-none focus:ring-2 focus:ring-purple-500 flex justify-between items-center accordion-btn">
-                <span class="text-base md:text-lg">Are there any eligibility criteria for the Propel Internship?</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="border-b border-teal-500">
+            <button class="accordion-btn w-full px-4 py-4 text-left bg-transparent text-gray-100 font-semibold text-lg focus:outline-none flex justify-between items-center hover:text-teal-400 transition duration-300">
+                <span>Are there any eligibility criteria for the Propel Internship?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform accordion-icon transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
             </button>
-            <div class="accordion-content px-4 py-3 hidden text-white">
-                Yes, applicants must be current students or recent graduates from any discipline. Selection is based on skills, aptitude, and interest in the chosen field.
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-200">
+                <p>Yes, applicants must be current students or recent graduates from any discipline. Selection is based on skills, aptitude, and interest in the chosen field.</p>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Accordion JavaScript -->
 
 
 
@@ -719,6 +719,8 @@
 <!-- Slick Carousel JS -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript">
+
+        
         document.addEventListener("DOMContentLoaded", function() {
             const text = "PROPEL 5000";
             let i = 0;
@@ -784,19 +786,29 @@
                 ]
             });
         });
-        document.querySelectorAll('.accordion-btn').forEach(button => {
+
+        const accordionButtons = document.querySelectorAll('.accordion-btn');
+
+        accordionButtons.forEach((button) => {
             button.addEventListener('click', () => {
-              const content = button.nextElementSibling;
-              const icon = button.querySelector('svg');
-          
-              // Toggle content visibility
-              content.classList.toggle('hidden');
-              content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
-          
-              // Rotate the icon smoothly
-              icon.classList.toggle('rotate-180');
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.accordion-icon');
+    
+                // Toggle accordion content
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    document.querySelectorAll('.accordion-content').forEach((element) => {
+                        element.style.maxHeight = null;
+                        element.previousElementSibling.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+                    });
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
             });
-          });
+        });
+       
           
     </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
