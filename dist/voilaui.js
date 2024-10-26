@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // current scenarios carousel
-const carousel = document.getElementById('carousel');
+const carousel = document.getElementById('slides');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
@@ -108,7 +108,7 @@ window.addEventListener('resize', () => {
 // load effect
 
 // typewriter effect
-const sentence = "Building Your Future?";
+const sentence = "Future?";
 let currentLetterIndex = 0;
 const textElement = document.getElementById("text");
 let isTypewriting = true;
