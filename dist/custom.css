@@ -57,6 +57,7 @@
     width: 18vw;
 }
 
+
 /* Responsive sizes */
 @media (max-width: 768px) {
     .video-wrapper {
