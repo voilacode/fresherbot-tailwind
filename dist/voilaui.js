@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // current scenarios carousel
 const carousel = document.getElementById('slides');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+const prevBtn1 = document.getElementById('prevBtn1');
+const nextBtn1 = document.getElementById('nextBtn1');
 
 let index = 0;
 
@@ -72,7 +72,7 @@ function moveCarousel() {
   carousel.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
+nextBtn1.addEventListener('click', () => {
   const visibleCards = getVisibleCards();
   const totalCards = carousel.children.length;
 
@@ -85,7 +85,7 @@ nextBtn.addEventListener('click', () => {
   moveCarousel();
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn1.addEventListener('click', () => {
   const visibleCards = getVisibleCards();
   const totalCards = carousel.children.length;
 

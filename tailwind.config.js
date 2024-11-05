@@ -8,6 +8,7 @@ module.exports = {
         'noto': ['Noto Serif', 'serif'],
         'archivo': ["Archivo", 'sans-serif'],
         'julius': ["Julius Sans One", 'sans-serif'],
+        'poppins': ["Poppins", 'sans-serif'],
     }
     },
   },

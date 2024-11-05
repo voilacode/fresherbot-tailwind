@@ -482,23 +482,34 @@
             </h1>
 
             <!-- Video Carousel -->
-            <div id="carousel" class="carousel-container">
-                <div id="video1" class="video-wrapper front" data-index="0">
-                    <video src="https://voilacode.github.io/fresherbot-tailwind/assets/reviews/review1%20(1).mp4"
-                        controls></video>
+            <div id="carousel" class="min-h-fit carousel-container">
+                <div id="video1" class="video-wrapper front " data-index="0">
+                    <video src="../assets/review1.mp4" controls=""></video>
                 </div>
 
-                <div id="video2" class="video-wrapper left" data-index="1">
-                    <video src="../assets/review1.mp4"
-                        controls></video>
+                <div id="video2" class="video-wrapper right" data-index="1">
+                    <video src="../assets/review2.mp4" controls=""></video>
                 </div>
 
-                <div id="video3" class="video-wrapper right" data-index="2">
-                    <video src="../assets/review2.mp4"
-                        controls></video>
+                <div id="video3" class="video-wrapper left" data-index="2">
+                    <video src="../assets/reviews/review1 (1).mp4" controls=""></video>
+                </div>
+                <div class="flex justify-center mt-10 carousel-controls">
+                    <span id="prevBtn" class="bg-white carousel-icon">&#9665;</span> <!-- Left Arrow Icon -->
+                    <span id="nextBtn" class="bg-white carousel-icon">&#9655;</span> <!-- Right Arrow Icon -->
+                </div>
+
+            </div>
+
+            <div class="-mt-10">
+                <div class="flex justify-center mt-10">
+                    <a href="#"
+                        class="p-2 text-black transition duration-300 bg-white rounded-lg hover:text-white hover:bg-slate-700 mar">
+                        See More
+                    </a>
                 </div>
             </div>
-            
+
             <a href="https://www.instagram.com/fresherbot/?hl=en" class="block w-fit mx-auto px-8 p-2 text-white transition duration-300 bg-gray-900 rounded-lg hover:bg-gray-800">
                 See More
             </a>
@@ -667,6 +678,14 @@
     <script>
         const videos = document.querySelectorAll('.video-wrapper');
         let currentIndex = 0;
+        let userInteracted = false;
+
+        // Detect user interaction
+        document.addEventListener('click', () => {
+            userInteracted = true;
+            updateCarousel(); // Run the update as soon as they interact
+        }, { once: true }); // Run only once for initial interaction
+
         const updateCarousel = () => {
             videos.forEach((video, index) => {
                 video.classList.remove('front', 'left', 'right');
@@ -678,9 +697,11 @@
             videos[(currentIndex + totalVideos - 1) % totalVideos].classList.add('left');
             videos[(currentIndex + 1) % totalVideos].classList.add('right');
 
-            // Play the front video
+            // Only play the front video if user has interacted
             const frontVideoElement = videos[currentIndex].querySelector('video');
-            frontVideoElement.play();
+            if (userInteracted) {
+                frontVideoElement.play();
+            }
 
             // Add click event to front video for toggling play/pause
             frontVideoElement.onclick = () => {
@@ -701,7 +722,6 @@
             updateCarousel();
         };
 
-        // Play video on click
         videos.forEach((video) => {
             video.addEventListener('click', () => {
                 currentIndex = parseInt(video.getAttribute('data-index'));
@@ -709,11 +729,10 @@
             });
         });
 
-        document.getElementById('nextBtnn').addEventListener('click', () => rotateCarousel('next'));
-        document.getElementById('prevBtnn').addEventListener('click', () => rotateCarousel('prev'));
-
-        // Initial update to set video positions
+        document.getElementById('nextBtn').addEventListener('click', () => rotateCarousel('next'));
+        document.getElementById('prevBtn').addEventListener('click', () => rotateCarousel('prev'));
         updateCarousel();
+
     </script>
 </body>
 
