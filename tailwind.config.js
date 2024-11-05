@@ -13,5 +13,12 @@ module.exports = {
     },
   },
   plugins: [],
+  theme: {
+    extend: {
+        backgroundImage: {
+            'hero-image': "url('../assets/hero_image_lms.avif')",
+        },
+    },
+},
 }
 
