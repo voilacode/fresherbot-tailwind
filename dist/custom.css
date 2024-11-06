@@ -163,6 +163,9 @@ video {
         opacity: 1;
     }
 }
+.start{
+    align-items: start;
+}
 
 .perspective {
     perspective: 1000px;

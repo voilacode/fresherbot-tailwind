@@ -9,6 +9,8 @@ module.exports = {
         'archivo': ["Archivo", 'sans-serif'],
         'julius': ["Julius Sans One", 'sans-serif'],
         'poppins': ["Poppins", 'sans-serif'],
+        'notosans': ["Noto Sans", 'sans-serif'],
+        'ptsans': ["PT Sans", 'sans-serif'],
     }
     },
   },
