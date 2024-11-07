@@ -309,3 +309,21 @@ video {
         margin-top: 20px;
     }
 }
+
+/* fade */
+.fade-section {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media (min-width: 1024px) and (max-width: 1124px) {
+    .item {
+        font-size: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

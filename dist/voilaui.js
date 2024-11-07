@@ -1,43 +1,71 @@
-// Navbar toggle button for mobile menu
-document.getElementById('menuToggle').addEventListener('click', function() {
-  var mobileMenu = document.getElementById('mobileMenu');
-  mobileMenu.classList.toggle('hidden');
-});
-
-document.getElementById('dropdownToggle2').addEventListener('click', function (event) {
-  event.stopPropagation();
-  toggleDropdown('dropdownMenu2');
-});
-
-// Close the dropdowns when clicking outside of them
-document.addEventListener('click', function (event) {
-  const dropdowns = ['dropdownMenu', 'dropdownMenu1', 'dropdownMenu2'];
-
-  dropdowns.forEach((dropdownId) => {
-      const dropdownMenu = document.getElementById(dropdownId);
-      const dropdownToggle = document.getElementById(`dropdownToggle${dropdownId === 'dropdownMenu' ? '' : dropdownId.slice(-1)}`);
-      
-      if (dropdownToggle && dropdownMenu && !dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-          dropdownMenu.classList.add('hidden');
+function toggleMobileMenu() {
+    const mainMenu = document.getElementById('mainMenu');
+    const menuIcon = document.getElementById('menuIcon');
+  
+    mainMenu.classList.toggle('hidden');
+  
+    // Toggle between icons
+    if (mainMenu.classList.contains('hidden')) {
+      menuIcon.innerHTML =
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />';
+    } else {
+      menuIcon.innerHTML =
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />';
+    }
+  }
+  
+  function closeOtherDropdowns(currentDropdownId) {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach((dropdown) => {
+      if (dropdown.id !== currentDropdownId) {
+        dropdown.classList.add('hidden');
       }
+    });
+  }
+  
+  document.querySelectorAll('[id^="dropdownToggle"]').forEach((toggle) => {
+    toggle.addEventListener('click', function (event) {
+      event.stopPropagation(); // Prevent event from bubbling up
+      const dropdownId = this.id.replace('Toggle', 'Menu'); // Replace 'Toggle' with 'Menu'
+      const dropdownMenu = document.getElementById(dropdownId);
+      closeOtherDropdowns(dropdownId);
+      dropdownMenu.classList.toggle('hidden');
+    });
   });
-});
-
-// Toggle the dropdown and handle the show/hide behavior
-function toggleDropdown(dropdownId) {
-  const dropdownMenu = document.getElementById(dropdownId);
-  dropdownMenu.classList.toggle('hidden');
-}
-
-// Appear on hover
-function showDropdown(id) {
-  document.getElementById(id).classList.remove("hidden");
-}
-
-function hideDropdown(id) {
-  document.getElementById(id).classList.add("hidden");
-}
-
+  
+  // Close the dropdowns when clicking outside of them
+  document.addEventListener('click', function (event) {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach((dropdown) => {
+      if (!dropdown.classList.contains('hidden')) {
+        const toggle = document.getElementById(
+          dropdown.id.replace('menu', 'Toggle')
+        );
+        if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+          dropdown.classList.add('hidden');
+        }
+      }
+    });
+  });
+  
+  // appear on hover
+  function showDropdown(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+  
+  function hideDropdown(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+  
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    if (dropdown.classList.contains('hidden')) {
+      showDropdown(id);
+    } else {
+      hideDropdown(id);
+    }
+  }
+  
 // hero section transitions
 document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('.transition-transform');
@@ -254,3 +282,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Scroll to top button logic
+window.addEventListener('scroll', function () {
+  var scrollToTopButton = document.getElementById('scrollToTop');
+  // Check if user has scrolled more than 200px
+  if (window.scrollY > 200) {
+    scrollToTopButton.classList.remove('opacity-0');
+    scrollToTopButton.classList.add('visible'); // Add a class to make the button visible
+    scrollToTopButton.classList.remove('hidden');
+  } else {
+    scrollToTopButton.classList.add('opacity-0');
+    scrollToTopButton.classList.remove('visible'); // Hide the button
+    scrollToTopButton.classList.add('hidden');
+  }
+});
+
+document.getElementById('scrollToTop').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
