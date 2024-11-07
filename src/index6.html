@@ -52,6 +52,16 @@
         .to-purple-500 {
             --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
         }
+
+        .fade-section {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .fade-in {
+            opacity: 1;
+            /* Fully visible */
+        }
     </style>
 </head>
 
@@ -361,7 +371,7 @@
         </nav>
     </header>
 
-    <section class="relative" style="background: linear-gradient(rgb(126 34 206),rgb(230, 206, 237));">
+    <section class="relative fade-section" style="background: linear-gradient(rgb(126 34 206),rgb(230, 206, 237));">
         <!-- hero -->
         <section
             class="items-center max-w-screen-xl p-4 py-8 mx-auto text-purple-100 sm:flex sm:py-20 lg:pb-40 sm:px-16">
@@ -448,7 +458,7 @@
 
     </section>
 
-    <main>
+    <main class="-mt-10">
         <!-- what we offer -->
         <section id="fade-section"
             class="w-full pb-10 overflow-hidden lg:pt-20 bg-gradient-to-tl from-gray-400 to-gray-300 animate-fade-in ">
@@ -553,7 +563,7 @@
         </section>
 
         <!-- model -->
-        <section class="w-full mt-4">
+        <section class="w-full mt-4 fade-section">
             <section class="transition-opacity duration-1000 opacity-100 ">
                 <div class="max-w-screen-xl p-4 py-8 mx-auto sm:px-16 sm:py-12">
                     <h1 class="my-2 text-3xl font-semibold text-center md:text-4xl notosans">Our Models</h1>
@@ -571,7 +581,7 @@
         </section>
 
         <!-- colleges -->
-        <section class="w-full bg-white">
+        <section class="w-full bg-white fade-section">
             <section class="transition-opacity duration-1000 ">
                 <section class=" lg:py-8">
                     <h1 class="my-4 text-3xl font-semibold text-center md:text-4xl notosans">Partnered Colleges</h1>
@@ -597,7 +607,7 @@
         </section>
 
         <!-- resources -->
-        <section class="w-full mt-16 " style="background: linear-gradient(rgb(91, 91, 91),rgb(126 34 206));">
+        <section class="w-full mt-16 fade-section" style="background: linear-gradient(rgb(91, 91, 91),rgb(126 34 206));">
             <section class="transition-opacity duration-1000 opacity-100 lg:py-16">
                 <div class="justify-between max-w-screen-xl p-4 py-8 mx-auto sm:px-16 sm:py-12 sm:flex sm:space-x-16">
                     <div class="my-2 sm:w-2/5">
@@ -637,7 +647,7 @@
         </section>
 
         <!-- companies -->
-        <section class="max-w-screen-xl p-4 py-12 mx-auto sm:py-20">
+        <section class="max-w-screen-xl p-4 py-12 mx-auto sm:py-20 fade-section">
             <h1 class="text-2xl font-semibold text-center md:text-4xl md:pb-4 title notosans">Associated With</h1>
             <div class="px-4 sm:px-16">
                 <div class="grid grid-cols-6 gap-4 mt-8">
@@ -694,7 +704,7 @@
         </section>
 
         <!-- reviews -->
-        <section class="hidden text-black shadow bg-gradient-to-b from-white to-purple-500 lg:block">
+        <section class="hidden text-black shadow bg-gradient-to-b from-white to-purple-500 lg:block fade-section">
             <div class="flex flex-col max-w-screen-xl p-4 mx-auto sm:p-16">
                 <h1 class="mt-4 text-2xl font-semibold text-center md:text-4xl notosans">Hear it from them</h1>
 
@@ -753,7 +763,7 @@
             </div>
         </section>
 
-        <section class="p-3 text-orange-400 bg-gray-800 lg:hidden">
+        <section class="p-3 text-orange-400 bg-gray-800 lg:hidden fade-section">
             <h1 class="mt-4 text-2xl font-semibold text-center md:text-4xl notosans">Hear it from them</h1>
 
             <div class="w-screen p-4 mx-auto sm:p-16">
@@ -787,7 +797,7 @@
 
 
         <!-- current scenarios -->
-        <section class="sm:pb-8">
+        <section class="sm:pb-8 fade-section">
             <div class="max-w-screen-xl p-4 mx-auto sm:px-16 sm:py-10">
                 <h1 class="my-6 text-3xl font-semibold text-center text-gray-800 md:text-4xl ">Current Scenarios
                 </h1>
@@ -904,7 +914,7 @@
 
     <!-- footer -->
     <footer>
-        <footer class="py-12 bg-black">
+        <footer class="py-12 bg-black fade-section">
             <div class="flex flex-col items-center">
                 <img src="https://voilacode.github.io/fresherbot-tailwind/assets/logo_fresherbot_dark.png"
                     alt="Fresherbot Logo" class="h-12 mb-4" />
@@ -1089,6 +1099,46 @@
     </script>
 
     <script src="../dist/voilaui.js"></script>
+    <script>
+        function fadeInAll() {
+            const sections = document.querySelectorAll(".fade-section");
+            sections.forEach(section => {
+                section.classList.add("fade-in");
+            });
+        }
+
+        function fadeOutAll() {
+            const sections = document.querySelectorAll(".fade-section");
+            sections.forEach(section => {
+                section.classList.remove("fade-in");
+            });
+        }
+        function fadeInOnScroll() {
+            const sections = document.querySelectorAll('.fade-section');
+
+            // Options for the observer
+            const options = {
+                threshold: 0.2 // Trigger when 20% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target); // Stop observing once faded in
+                    }
+                });
+            }, options);
+
+            // Observe each section
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Initialize the observer function
+        fadeInOnScroll();
+    </script>
 
 </body>
 
