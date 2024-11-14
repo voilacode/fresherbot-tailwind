@@ -327,3 +327,26 @@ video {
         padding-left: 15px;
     }
 }
+
+  .counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  .counterStudents {
+    margin-left: 10px;
+    color: #4CAF50;
+  }
+  .counterColleges {
+    margin-left: 10px;
+    color: #4CAF50;
+  }
+  .counterCompanies{
+    margin-left: 10px;
+    color: #4CAF50;
+  }
+
+  
