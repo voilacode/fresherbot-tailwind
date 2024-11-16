@@ -163,7 +163,8 @@ video {
         opacity: 1;
     }
 }
-.start{
+
+.start {
     align-items: start;
 }
 
@@ -192,7 +193,14 @@ video {
     transition: background-color 0.3s;
 }
 
+#hrccScrollContainer {
+    scrollbar-width: none;
+}
 
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
 
 
 
@@ -328,25 +336,25 @@ video {
     }
 }
 
-  .counter-container{
+.counter-container {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
     font-weight: bold;
-  }
+}
 
-  .counterStudents {
+.counterStudents {
     margin-left: 10px;
     color: #4CAF50;
-  }
-  .counterColleges {
-    margin-left: 10px;
-    color: #4CAF50;
-  }
-  .counterCompanies{
-    margin-left: 10px;
-    color: #4CAF50;
-  }
+}
 
-  
+.counterColleges {
+    margin-left: 10px;
+    color: #4CAF50;
+}
+
+.counterCompanies {
+    margin-left: 10px;
+    color: #4CAF50;
+}

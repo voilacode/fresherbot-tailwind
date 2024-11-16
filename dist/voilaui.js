@@ -306,51 +306,62 @@ document.getElementById('scrollToTop').addEventListener('click', function () {
 
 
 const targetStudents = 1059820;
-  const targetColleges = 568;
-  const targetCompanies = 102;
+const targetColleges = 568;
+const targetCompanies = 102;
+const targetCand = 10000;
 
-  // Total duration for each counter (in milliseconds)
-  const duration = 5000;
+// Total duration for each counter (in milliseconds)
+const duration = 5000;
 
-  // Function to animate a counter from 0 to target
-  function animateCounter(elementId, target) {
-    const element = document.getElementById(elementId);
-    let startCount = 0;
-    const increment = target / (duration / 10);
+// Function to animate a counter from 0 to target
+function animateCounter(elementId, target) {
+  const element = document.getElementById(elementId);
+  let startCount = 0;
+  const increment = target / (duration / 10);
 
-    function updateCounter() {
-      startCount += increment;
-      if (startCount < target) {
-        element.textContent = Math.floor(startCount);
-        requestAnimationFrame(updateCounter);
-      } else {
-        element.textContent = target;
-      }
+  function updateCounter() {
+    startCount += increment;
+    if (startCount < target) {
+      element.textContent = Math.floor(startCount);
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target;
     }
-
-    updateCounter();
   }
 
-  // Initialize counters
-  animateCounter("counterStudents", targetStudents);
-  animateCounter("counterCollege", targetColleges);
-  animateCounter("counterCompanies", targetCompanies);
+  updateCounter();
+}
+
+// Initialize counters
+animateCounter("counterStudents", targetStudents);
+animateCounter("counterCollege", targetColleges);
+animateCounter("counterCompanies", targetCompanies);
+animateCounter("counterCand", targetCand);
 
 
-  
 
-  const scrollElement = document.getElementById("hrccScrollContainer");
 
-    // Set the interval to scroll every 2 seconds
-    setInterval(() => {
-        // Scroll the content horizontally by 200px
-        scrollElement.scrollBy({
-            left: 200, // Adjust the scroll distance as needed
-            behavior: 'smooth'
-        });
+const scrollElement = document.getElementById("hrccScrollContainer");
 
-        // Check if the scroll has reached the end and reset to the start
-        if (scrollElement.scrollLeft + scrollElement.clientWidth >= scrollElement.scrollWidth) {
-            scrollElement.scrollLeft = 0;
-        }
-    }, 2000);
+// Set the interval to scroll every 2 seconds
+setInterval(() => {
+  // Scroll the content horizontally by 200px
+  scrollElement.scrollBy({
+    left: 200, // Adjust the scroll distance as needed
+    behavior: 'smooth'
+  });
+
+  // Check if the scroll has reached the end and reset to the start
+  if (scrollElement.scrollLeft + scrollElement.clientWidth >= scrollElement.scrollWidth) {
+    scrollElement.scrollLeft = 0;
+  }
+}, 2000);
+
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  if (dropdown.classList.contains('hidden')) {
+      dropdown.classList.remove('hidden');
+  } else {
+      dropdown.classList.add('hidden');
+  }
+}
