@@ -235,6 +235,15 @@ video {
     }
 }
 
+@media (max-width: 640px) {
+    .hider{
+        padding-bottom: 100px;
+    }
+    .padUp{
+        padding-top: 80px;
+    }
+}
+
 .front {
     z-index: 3;
     transform: translateX(0%) scale(1);
@@ -357,4 +366,8 @@ video {
 .counterCompanies {
     margin-left: 10px;
     color: #4CAF50;
+}
+
+.vid{
+    border-radius: 0;
 }

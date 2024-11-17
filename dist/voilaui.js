@@ -365,3 +365,23 @@ function toggleDropdown(id) {
       dropdown.classList.add('hidden');
   }
 }
+
+
+const hrccScrollContainer = document.getElementById('hrccScrollContainer');
+const prevHrccButton = document.getElementById('prevHrccButton');
+const nextHrccButton = document.getElementById('nextHrccButton');
+const scrollStep = 300;
+
+prevHrccButton.addEventListener('click', () => {
+    hrccScrollContainer.scrollBy({
+        left: -scrollStep,
+        behavior: 'smooth'
+    });
+});
+
+nextHrccButton.addEventListener('click', () => {
+    hrccScrollContainer.scrollBy({
+        left: scrollStep,
+        behavior: 'smooth'
+    });
+});
