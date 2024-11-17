@@ -349,23 +349,19 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-weight:normal
 }
 
 .counterStudents {
     margin-left: 10px;
-    color: #4CAF50;
 }
 
 .counterColleges {
     margin-left: 10px;
-    color: #4CAF50;
 }
 
 .counterCompanies {
     margin-left: 10px;
-    color: #4CAF50;
 }
 
 .vid{
