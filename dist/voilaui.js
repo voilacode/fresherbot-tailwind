@@ -1,82 +1,121 @@
-function toggleMobileMenu() {
-  const mainMenu = document.getElementById('mainMenu');
-  const menuIcon = document.getElementById('menuIcon');
+// typewriter
+const sentence = "Building Your \n Future?";
+let currentLetterIndex = 0;
+const textElement = document.getElementById("text");
+let isTypewriting = true;
 
-  mainMenu.classList.toggle('hidden');
+function showNextLetter() {
+if (isTypewriting && currentLetterIndex < sentence.length) {
+    const letter = sentence[currentLetterIndex];
 
-  // Toggle between icons
-  if (mainMenu.classList.contains('hidden')) {
-    menuIcon.innerHTML =
-      '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />';
-  } else {
-    menuIcon.innerHTML =
-      '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />';
-  }
-}
-
-function closeOtherDropdowns(currentDropdownId) {
-  const dropdowns = document.querySelectorAll('.dropdown-menu');
-  dropdowns.forEach((dropdown) => {
-    if (dropdown.id !== currentDropdownId) {
-      dropdown.classList.add('hidden');
+    if (letter === "?") {
+    textElement.innerHTML += `<span class="color-change">${letter}</span>`;
+    } else if (currentLetterIndex > sentence.indexOf("?")) {
+    textElement.innerHTML += `<span class="color-change">${letter}</span>`;
+    } else {
+    textElement.innerHTML += `<span>${letter}</span>`;
     }
-  });
+    currentLetterIndex++;
+} else {
+    isTypewriting = false;
+    clearInterval(typewriterInterval); // Stop the interval once typing is done
+}
+// Update the cursor position
+updateCursor();
 }
 
-document.querySelectorAll('[id^="dropdownToggle"]').forEach((toggle) => {
-  toggle.addEventListener('click', function (event) {
-    event.stopPropagation(); // Prevent event from bubbling up
-    const dropdownId = this.id.replace('Toggle', 'Menu'); // Replace 'Toggle' with 'Menu'
-    const dropdownMenu = document.getElementById(dropdownId);
-    closeOtherDropdowns(dropdownId);
-    dropdownMenu.classList.toggle('hidden');
-  });
-});
+function updateCursor() {  
+// Remove existing cursor
+document.querySelectorAll(".cursor").forEach(cursor => cursor.remove());
 
-// Close the dropdowns when clicking outside of them
-document.addEventListener('click', function (event) {
-  const dropdowns = document.querySelectorAll('.dropdown-menu');
-  dropdowns.forEach((dropdown) => {
-    if (!dropdown.classList.contains('hidden')) {
-      const toggle = document.getElementById(
-        dropdown.id.replace('menu', 'Toggle')
-      );
-      if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.classList.add('hidden');
-      }
+// Add the cursor at the end
+if (isTypewriting || !isTypewriting && currentLetterIndex === sentence.length) {
+    textElement.innerHTML += `<span class="cursor text-gray-500">|</span>`;
+}
+}
+
+const typewriterInterval = setInterval(() => {
+showNextLetter();
+}, 150);
+
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
     }
-  });
+    .cursor {
+        animation: blink 1s step-end infinite;
+    }
+`;
+document.head.appendChild(style);
+
+// loading fade effect
+function fadeInAll() {
+    const sections = document.querySelectorAll(".fade-section");
+    sections.forEach(section => {
+        section.classList.add("fade-in");
+    });
+}
+
+function fadeOutAll() {
+    const sections = document.querySelectorAll(".fade-section");
+    sections.forEach(section => {
+        section.classList.remove("fade-in");
+    });
+}
+function fadeInOnScroll() {  
+    const sections = document.querySelectorAll('.fade-section');
+
+    // Options for the observer
+    const options = {
+        threshold: 0.2 // Trigger when 20% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target); // Stop observing once faded in
+            }
+        });
+    }, options);
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+}
+
+// Initialize the observer function
+fadeInOnScroll();
+
+// hrcc carousel
+
+
+// college scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const section = document.querySelector('.transition-opacity');
+  section.classList.remove('opacity-0');
 });
 
-// appear on hover
-function showDropdown(id) {
-  document.getElementById(id).classList.remove('hidden');
-}
+const scrollContainer = document.getElementById('scrollContainer');
+const imageContainer = document.getElementById('imageContainer');
 
-function hideDropdown(id) {
-  document.getElementById(id).classList.add('hidden');
-}
+// Duplicate the images to create an infinite scrolling effect
+const clone = imageContainer.cloneNode(true);
+imageContainer.appendChild(clone);
 
-function toggleDropdown(id) {
-  const dropdown = document.getElementById(id);
-  if (dropdown.classList.contains('hidden')) {
-    showDropdown(id);
-  } else {
-    hideDropdown(id);
+let scrollSpeed = 1;  // Change this value to adjust the speed of the scroll
+let scrollPosition = 0;
+
+setInterval(() => {
+  scrollPosition += scrollSpeed;
+  if (scrollPosition >= imageContainer.scrollWidth / 2) {
+      scrollPosition = 0;
   }
-}
-
-// hero section transitions
-document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('.transition-transform');
-
-  images.forEach(image => {
-    setTimeout(() => {
-      image.classList.remove('translate-y-20', '-translate-x-20', 'translate-x-20');
-    }, 0); // Slight delay to ensure it starts immediately
-  });
-});
-
+  scrollContainer.scrollLeft = scrollPosition;
+}, 10);
 
 // current scenarios carousel
 const carousel = document.getElementById('slides');
@@ -132,61 +171,6 @@ window.addEventListener('resize', () => {
   carousel.style.transition = 'none';
   moveCarousel();
 });
-
-// load effect
-
-// typewriter effect
-const sentence = "Future?";
-let currentLetterIndex = 0;
-const textElement = document.getElementById("text");
-let isTypewriting = true;
-
-function showNextLetter() {
-  if (isTypewriting && currentLetterIndex < sentence.length) {
-    const letter = sentence[currentLetterIndex];
-
-    if (letter === "?") {
-      textElement.innerHTML += `<span class="color-change">${letter}</span>`;
-    } else if (currentLetterIndex > sentence.indexOf("?")) {
-      textElement.innerHTML += `<span class="color-change">${letter}</span>`;
-    } else {
-      textElement.innerHTML += `<span>${letter}</span>`;
-    }
-    currentLetterIndex++;
-  } else {
-    isTypewriting = false;
-    clearInterval(typewriterInterval); // Stop the interval once typing is done
-  }
-  // Update the cursor position
-  updateCursor();
-}
-
-function updateCursor() {
-  // Remove existing cursor
-  document.querySelectorAll(".cursor").forEach(cursor => cursor.remove());
-
-  // Add the cursor at the end
-  if (isTypewriting || !isTypewriting && currentLetterIndex === sentence.length) {
-    textElement.innerHTML += `<span class="cursor text-gray-500">|</span>`;
-  }
-}
-
-const typewriterInterval = setInterval(() => {
-  showNextLetter();
-}, 150);
-
-const style = document.createElement('style');
-style.innerHTML = `
-    @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-    }
-    .cursor {
-        animation: blink 1s step-end infinite;
-    }
-`;
-document.head.appendChild(style);
-
 
 /** 
  * Accordion script to handle multiple accordions 
@@ -254,33 +238,6 @@ document.getElementById('scrollToTop').addEventListener('click', function () {
   });
 });
 
-
-// load effect
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100');
-        entry.target.classList.remove('opacity-0');
-      } else {
-        entry.target.classList.remove('opacity-100');
-        entry.target.classList.add('opacity-0');
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-});
 
 // Scroll to top button logic
 window.addEventListener('scroll', function () {
@@ -356,16 +313,6 @@ setInterval(() => {
     scrollElement.scrollLeft = 0;
   }
 }, 2000);
-
-function toggleDropdown(id) {
-  const dropdown = document.getElementById(id);
-  if (dropdown.classList.contains('hidden')) {
-      dropdown.classList.remove('hidden');
-  } else {
-      dropdown.classList.add('hidden');
-  }
-}
-
 
 const hrccScrollContainer = document.getElementById('hrccScrollContainer');
 const prevHrccButton = document.getElementById('prevHrccButton');

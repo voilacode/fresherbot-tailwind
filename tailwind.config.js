@@ -14,7 +14,8 @@ module.exports = {
         'archivo': ["Archivo", 'sans-serif'],
         'julius': ["Julius Sans One", 'sans-serif'],
         'poppins': ["Poppins", 'sans-serif'],
-        'roboto': ["Roboto", 'sans-serif'],
+        'prata': ["Prata", 'sans-serif'],
+        'play': ["Playfair Display", 'serif'],
     }
     },
   },

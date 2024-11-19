@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=League+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="../dist/output.css" rel="stylesheet">
     <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
+   
 </head>
 
 <body class="h-screen font-open bg-gradient-to-br from-gray-900 to-purple-900 ">
@@ -198,8 +199,9 @@
         <section class="flex items-center justify-between max-w-screen-xl p-4 mx-auto mb-4 text-white lg:pt-10 lg:pb-0 lg:mb-0 sm:px-16">
             <!-- text -->
             <div class="lg:w-3/5" id="content">
-                <h1 class="py-2 text-4xl font-bold sm:py-4 sm:text-7xl font-julius" id="text"></h1>
-                <p class="py-4 text-lg tracking-wider text-yellow-400 uppercase md:text-xl font-archivo">We have got your back!</p>
+                <h1 class=" py-2 text-4xl text-center sm:py-4 sm:text-5xl md:text-7xl lg:text-start w-[80vw] mx-auto lg:mx-0 lg:w-fit word-wrap h-48" id="text"> </h1>           
+                
+                <p class="py-4 pt-8 text-lg tracking-wider text-yellow-400 uppercase md:text-xl font-archivo">We have got your back!</p>
                 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-x-2 w-fit">
                     <div class="p-4 rounded-lg shadow-xl bg-cyan-500" id="job-openings">
@@ -253,17 +255,6 @@
         </section>  
     </main>
     
-    <script src="../dist/voilaui.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const images = document.querySelectorAll('.transition-transform');
-        
-            images.forEach(image => {
-                setTimeout(() => {
-                    image.classList.remove('translate-y-20', '-translate-x-20', 'translate-x-20');
-                }, 0); // Slight delay to ensure it starts immediately
-            });
-        });        
-    </script>
+   
 </body>
 </html>

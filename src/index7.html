@@ -15,14 +15,16 @@
     <link rel="shortcut icon" href="../assets/favicon_fresherbot.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link href="../dist/output.css" rel="stylesheet">
     <link href="../dist/custom.css" rel="stylesheet">
     <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
 </head>
 
-<body class="font-poppins">
+<body class="font-open">
     <header class="fixed z-10 w-screen text-white bg-purple-custom" id="header">
         <nav class="text-sm transition-all duration-500 ease-in-out">
             <div class="items-center justify-between max-w-screen-xl px-4 py-2 mx-auto lg:flex sm:px-[60px] ">
@@ -36,7 +38,7 @@
                         <nav>
                             <ul>
                                 <li class="flex items-center gap-2">
-                                    <a href="/login"
+                                    <a href="#"
                                         class="flex items-center px-5 py-2 font-semibold text-white rounded bg-purple-lite group"
                                         id="chatButton">
                                         <span class="mr-2 ">Chat</span>
@@ -69,13 +71,7 @@
                     <div class="w-full mt-2 lg:inline-flex lg:w-auto lg:mt-0" id="mainMenu">
                         <ul
                             class="flex flex-col w-full space-y-2 lg:w-auto lg:flex-row lg:space-y-0 lg:space-x-1 mt-1.5 transition-all duration-300 ease-in-out text-xl ls-2">
-                            <li>
-                                <a href="/"
-                                    class="flex px-4 py-2 font-medium duration-300 ease-in-out rounded-md text-[16px] hover:text-purple-text item">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="relative lg:hover:block" onclick="toggleDropdown('dropdownMenu1')">
+                            <li class="relative">
                                 <button
                                     class="flex justify-between items-center w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-purple-text text-[16px] item"
                                     id="dropdownToggle1">
@@ -86,41 +82,41 @@
                                             d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </button>
-                                <div class="right-0 hidden w-full p-2 rounded-md lg:absolute lg:group-hover:block dropdown-menu lg:w-52"
+                                <div class="dropdown-menu hidden lg:absolute rounded-lg transition-all transform scale-y-0 opacity-0 origin-top duration-300 w-full lg:w-52"
                                     id="dropdownMenu1">
                                     <div
-                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow md:bg-white lg:translate-x-16 lg:border-none">
+                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow md:bg-white lg:translate-x-4 lg:border-none">
                                         <ul class="text-[16px]">
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./lms.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     LMS
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./hrcc.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     HRCC
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 rounded-b hover:bg-purple-text">
-                                                <a href="./crt.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     CRT
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="" class="block w-full m-0 font-medium text-purple-custom ">
+                                                <a href="#" class="block w-full m-0 font-medium text-purple-custom ">
                                                     Job Openings
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="" class="block w-full m-0 font-medium text-purple-custom ">
+                                                <a href="#" class="block w-full m-0 font-medium text-purple-custom ">
                                                     Interview Prep
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 rounded hover:bg-purple-text">
-                                                <a href="" class="block w-full m-0 font-medium text-purple-custom ">
+                                                <a href="#" class="block w-full m-0 font-medium text-purple-custom ">
                                                     Internships
                                                 </a>
                                             </li>
@@ -128,8 +124,7 @@
                                     </div>
                                 </div>
                             </li>
-
-                            <li class="relative lg:hover:block" onclick="toggleDropdown('dropdownMenu')">
+                            <li class="relative">
                                 <button
                                     class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-purple-text text-[16px] item"
                                     id="dropdownToggle">
@@ -140,25 +135,25 @@
                                             d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </button>
-                                <div class="right-0 hidden w-full p-2 rounded-md lg:absolute dropdown-menu lg:w-52"
+                                <div class="dropdown-menu hidden lg:absolute rounded-lg transition-all transform scale-y-0 opacity-0 origin-top duration-300 w-full lg:w-52"
                                     id="dropdownMenu">
                                     <div
-                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow lg:border-0 md:bg-white lg:translate-x-12">
+                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow lg:border-0 md:bg-white lg:translate-x-4">
                                         <ul class="text-[16px]">
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./lms.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     LMS
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./hrcc.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     HRCC
                                                 </a>
                                             </li>
                                             <li class="w-full px-6 py-3 m-0 rounded-b hover:bg-purple-text">
-                                                <a href="./crt.html"
+                                                <a href="#"
                                                     class="block w-full m-0 font-medium text-purple-custom ">
                                                     CRT
                                                 </a>
@@ -167,7 +162,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="relative lg:hover:block" onclick="toggleDropdown('dropdownMenu2')">
+                            <li class="relative">
                                 <button
                                     class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-purple-text text-[16px] item"
                                     id="dropdownToggle2">
@@ -178,43 +173,43 @@
                                             d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </button>
-                                <div class="right-0 hidden w-full p-2 rounded-md lg:absolute dropdown-menu lg:w-52"
-                                    id="dropdownMenu2">
+                                <div class="dropdown-menu hidden lg:absolute rounded-lg transition-all transform scale-y-0 opacity-0 origin-top duration-300 w-full lg:w-52 lg:z-50"
+                                id="dropdownMenu2">
                                     <div
-                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow lg:border-0 md:bg-white lg:translate-x-10">
-                                        <ul class="text-[16px] lg:w-48">
+                                        class="transform bg-gray-100 border-l-4 border-gray-500 rounded-b shadow lg:border-0 md:bg-white lg:translate-x-4">
+                                        <ul class="text-[16px]">
                                             <li class="px-4 py-3 m-0 rounded-t-lg hover:bg-purple-text">
-                                                <a href="./propel.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom ">
                                                     Propel5000
                                                 </a>
                                             </li>
                                             <li class="px-4 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./internships.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom ">
                                                     Internships
                                                 </a>
                                             </li>
                                             <li class="px-4 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./launchpad.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom ">
                                                     Launchpad
                                                 </a>
                                             </li>
                                             <li class="px-4 py-3 m-0 hover:bg-purple-text ">
-                                                <a href="./super15.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom">
                                                     Super 15
                                                 </a>
                                             </li>
                                             <li class="px-4 py-3 m-0 hover:bg-purple-text">
-                                                <a href="./launchpad.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom ">
                                                     Job Openings
                                                 </a>
                                             </li>
                                             <li class="px-4 py-3 m-0 rounded hover:bg-purple-text ">
-                                                <a href="./super15.html"
+                                                <a href="#"
                                                     class="block m-0 font-medium text-purple-custom">
                                                     Interview Prep
                                                 </a>
@@ -260,21 +255,19 @@
 
     <section class="relative fade-section bg-gradient-to-b from-purple-custom to-purple-900">
         <!-- hero -->
-        <section class="items-center max-w-screen-xl p-4 py-20 mx-auto text-purple-100 sm:flex sm:pb-10 lg:pt-40 sm:px-16">
+        <section class="items-center max-w-screen-xl p-4 py-20 mx-auto text-purple-100 flex pb-32 sm:pb-10 lg:pt-40 sm:px-16 flex-col md:flex-row">
             <!-- text -->
-            <div class="w-full my-auto lg:w-3/5 " id="content">
-                <h1 class=" py-2 text-4xl text-center sm:py-4 sm:text-5xl md:text-7xl lg:text-start w-[80vw] mx-auto lg:mx-0 lg:w-fit word-wrap "
-                    id="text">Building Your <br> </h1>
-                <p
-                    class="py-4 text-lg text-center text-purple-300 md:text-xl lg:text-start w-[80vw] mx-auto md:mx-0 lg:w-fit">
-                    We have got your back!</p>
+            <div class="w-full my-auto lg:w-1/2 " id="content">
+                <h1 class=" py-2 text-4xl text-center sm:py-4 sm:text-5xl md:text-7xl lg:text-start w-[80vw] mx-auto lg:mx-0 lg:w-fit word-wrap h-fit lg:h-44 font-play" id="text"> </h1>           
+
+                <p class="py-4 text-lg text-center text-purple-300 md:text-xl lg:text-start w-[80vw] mx-auto md:mx-0 lg:w-fit">We have got your back!</p>
                 <p class="mx-auto text-center text-white lg:text-start md:mx-0 lg:w-3/4 ">Lorem ipsum dolor, sit amet
                     consectetur
                     adipisicing
                     elit. Itaque cumque optio inventore, at aliquid
                     praesentium nulla.</p>
 
-                <div class="flex flex-wrap justify-center gap-3 my-4 font-medium lg:justify-start sm:items-start hider">
+                <div class="flex flex-wrap justify-center gap-3 my-4 font-medium lg:justify-start sm:items-start">
                     <button class="px-8 py-3 duration-300 bg-gray-900 rounded hover:bg-purple-custom">Register</button>
                     <button
                         class="px-8 py-3 duration-300 bg-gray-200 rounded text-purple-custom hover:bg-gray-300">Login</button>
@@ -283,26 +276,28 @@
             </div>
 
             <!-- img -->
-            <div class="relative flex-col items-center hidden my-auto lg:flex lg:w-2/5 lg:mb-8">
-                <img src="../assets/main/4-min.jpg"
-                    class="transition-transform ease-in-out transform translate-y-20 rounded-bl-none shadow-xl w-72 duration-[1000ms]"
-                    style="border-radius: 100px; border-bottom-left-radius: 0;" />
-                <img src="../assets/main/2-min.jpg"
-                    class="z-0 absolute w-40 transition-transform ease-in-out transform -translate-x-20 rounded-full rounded-tr-none -left-8 duration-[1000ms]" />
-                <img src="../assets/main/1-min.jpg"
-                    class="absolute w-32 transition-transform ease-in-out transform translate-x-20 rounded-full rounded-br-none bottom-6 right-0 duration-[1000ms]" />
+            <div class="w-full md:hidden lg:block lg:w-1/2 lg:mb-8 relative">
+                <div class="grid grid-cols-2 items-center gap-6 my-4">
+                    <img src="../assets/trial/IMG_0191.JPG" alt="" class="rounded-xl" style="border-top-left-radius: 40px;" />
+                    <img src="../assets/trial/IMG-20241026-WA0016.jpg" alt="" class="rounded-xl pe-2 border-r-4 border-purple-text" style="border-top-right-radius: 40px;" />
+                </div>
+                <div class="grid grid-cols-2 items-center gap-6 my-4">
+                    <img src="../assets/trial/_DSC3022.jpg" alt="" class="rounded-xl pl-2 border-l-4 border-purple-lite" style="border-bottom-left-radius: 40px;" />
+                    <img src="../assets/trial/IMG_0136.jpg" alt="" class="rounded-xl pe-2 border-r-4 border-gray-400" style="border-bottom-right-radius: 40px;" />
+                </div>
             </div>
+            
         </section>
 
         <!-- blocks -->
-        <section class="relative flex items-center justify-center max-w-screen-xl rounded-md opacity-100 fade-section md:mx-auto sm:px-16 sm:mt-48 md:mt-24 sm:mx-16 sm:pb-20 md:pb-6">
+        <section class="relative flex items-center justify-center max-w-screen-xl rounded-md opacity-100 fade-section md:mx-auto sm:px-16 sm:mt-28 sm:mx-16 sm:pb-20 md:pb-6">
             <div class="border-b-4 m-5 gap-5 border-gray-700 grid grid-cols-2 md:grid-cols-4 justify-center bg-white shadow-2xl rounded-xl p-5 lg:p-8 w-[80vw] md:w-[90vw] lg:w-[80vw] absolute transition-transform text-gray-700 items-center">
 
                 <!-- Each item -->
                 <div class="p-2 space-x-2 text-sm rounded-lg shadow-xl sm:p-4 md:text-xl relative overflow-hidden">
                     <div class="flex flex-col items-start justify-start">
 
-                        <div class="py-3 sm:text-xl counter-container text-start">
+                        <div class="py-3 sm:text-xl counter-container text-start font-play">
                             Student Network
                         </div>
                         <div class="flex space-x-1 items-center text-lg sm:text-2xl lg:text-4xl">
@@ -312,30 +307,30 @@
                     </div>
 
                     <div>
-                        <svg  class="hidden sm:block w-12 h-12 xl:w-16 xl:h-16 absolute -right-2 -bottom-3 opacity-25 overflow-hidden " version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000" transform="rotate(-20)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#374151;} </style> <g> <path class="st0" d="M473.61,63.16L276.16,2.927C269.788,0.986,263.004,0,256.001,0c-7.005,0-13.789,0.986-20.161,2.927 L38.386,63.16c-3.457,1.064-5.689,3.509-5.689,6.25c0,2.74,2.232,5.186,5.691,6.25l91.401,27.88v77.228 c0.023,39.93,13.598,78.284,38.224,107.981c11.834,14.254,25.454,25.574,40.483,33.633c15.941,8.564,32.469,12.904,49.124,12.904 c16.646,0,33.176-4.34,49.126-12.904c22.597-12.143,42.04-31.646,56.226-56.39c14.699-25.683,22.471-55.155,22.478-85.224v-78.214 l45.244-13.804v64.192c-6.2,0.784-11.007,6.095-11.007,12.5c0,5.574,3.649,10.404,8.872,12.011l-9.596,63.315 c-0.235,1.576,0.223,3.168,1.262,4.386c1.042,1.204,2.554,1.902,4.148,1.902h36.273c1.592,0,3.104-0.699,4.148-1.91 c1.036-1.203,1.496-2.803,1.262-4.386l-9.596-63.307c5.223-1.607,8.872-6.436,8.872-12.011c0-6.405-4.81-11.716-11.011-12.5V81.544 l19.292-5.885c3.457-1.064,5.691-3.517,5.691-6.25C479.303,66.677,477.069,64.223,473.61,63.16z M257.62,297.871 c-10.413,0-20.994-2.842-31.448-8.455c-16.194-8.649-30.908-23.564-41.438-42.011c-4.854-8.478-8.796-17.702-11.729-27.445 c60.877-10.776,98.51-49.379,119.739-80.97c10.242,20.776,27.661,46.754,54.227,58.648c-3.121,24.984-13.228,48.812-28.532,67.212 c-8.616,10.404-18.773,18.898-29.375,24.573C278.606,295.029,268.025,297.871,257.62,297.871z"></path> <path class="st0" d="M373.786,314.23l-1.004-0.629l-110.533,97.274L151.714,313.6l-1.004,0.629 c-36.853,23.036-76.02,85.652-76.02,156.326v0.955l0.846,0.45C76.291,472.365,152.428,512,262.249,512 c109.819,0,185.958-39.635,186.712-40.038l0.846-0.45v-0.955C449.808,399.881,410.639,337.265,373.786,314.23z"></path> </g> </g></svg>
+                        <svg  class="hidden sm:block w-12 h-12  absolute -right-2 -bottom-3 opacity-25 overflow-hidden " version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000" transform="rotate(-20)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#374151;} </style> <g> <path class="st0" d="M473.61,63.16L276.16,2.927C269.788,0.986,263.004,0,256.001,0c-7.005,0-13.789,0.986-20.161,2.927 L38.386,63.16c-3.457,1.064-5.689,3.509-5.689,6.25c0,2.74,2.232,5.186,5.691,6.25l91.401,27.88v77.228 c0.023,39.93,13.598,78.284,38.224,107.981c11.834,14.254,25.454,25.574,40.483,33.633c15.941,8.564,32.469,12.904,49.124,12.904 c16.646,0,33.176-4.34,49.126-12.904c22.597-12.143,42.04-31.646,56.226-56.39c14.699-25.683,22.471-55.155,22.478-85.224v-78.214 l45.244-13.804v64.192c-6.2,0.784-11.007,6.095-11.007,12.5c0,5.574,3.649,10.404,8.872,12.011l-9.596,63.315 c-0.235,1.576,0.223,3.168,1.262,4.386c1.042,1.204,2.554,1.902,4.148,1.902h36.273c1.592,0,3.104-0.699,4.148-1.91 c1.036-1.203,1.496-2.803,1.262-4.386l-9.596-63.307c5.223-1.607,8.872-6.436,8.872-12.011c0-6.405-4.81-11.716-11.011-12.5V81.544 l19.292-5.885c3.457-1.064,5.691-3.517,5.691-6.25C479.303,66.677,477.069,64.223,473.61,63.16z M257.62,297.871 c-10.413,0-20.994-2.842-31.448-8.455c-16.194-8.649-30.908-23.564-41.438-42.011c-4.854-8.478-8.796-17.702-11.729-27.445 c60.877-10.776,98.51-49.379,119.739-80.97c10.242,20.776,27.661,46.754,54.227,58.648c-3.121,24.984-13.228,48.812-28.532,67.212 c-8.616,10.404-18.773,18.898-29.375,24.573C278.606,295.029,268.025,297.871,257.62,297.871z"></path> <path class="st0" d="M373.786,314.23l-1.004-0.629l-110.533,97.274L151.714,313.6l-1.004,0.629 c-36.853,23.036-76.02,85.652-76.02,156.326v0.955l0.846,0.45C76.291,472.365,152.428,512,262.249,512 c109.819,0,185.958-39.635,186.712-40.038l0.846-0.45v-0.955C449.808,399.881,410.639,337.265,373.786,314.23z"></path> </g> </g></svg>
                     </div>
                 </div>
 
                 <div class="p-2 space-x-2 text-sm rounded-lg shadow-xl sm:p-4 md:text-xl relative overflow-hidden">
                     <div class="flex flex-col items-start justify-start">
 
-                        <div class="py-3 sm:text-xl counter-container text-start">
+                        <div class="py-3 sm:text-xl counter-container text-start font-play">
                             College Network
                         </div>
                         <div class="flex space-x-1 items-center text-lg sm:text-2xl lg:text-4xl">
-                            <div id="counterCollege" class="counter-container countStudents">0</div>
+                            <div id="counterCollege" class="counter-container countStudents ">0</div>
                             <div>+</div>
                         </div>
                     </div>
 
                     <div>
-                        <svg class="hidden sm:block w-12 h-12 xl:w-16 xl:h-16 absolute -right-2 -bottom-3 opacity-25 overflow-hidden"  viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(-20)"><g id="SVGRepo_bgCarrier" stroke-width="0" ></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M372.288 745.792a394.048 394.048 0 0 0 113.728 102.848v-127.744a390.08 390.08 0 0 0-113.728 24.896z m-51.584 24.192a392.96 392.96 0 0 0-60.16 41.6h-1.28a390.336 390.336 0 0 0 205.696 89.6 450.24 450.24 0 0 1-144.256-131.2z m-24.704-230.016c3.968 56.768 20.096 110.208 45.696 157.696a445.696 445.696 0 0 1 144.32-32.896v-124.8h-190.08z m-56.128 0H120.96a390.4 390.4 0 0 0 98.56 233.024c22.208-19.2 46.272-36.224 71.808-50.752a445.312 445.312 0 0 1-51.456-182.272z m445.824 158.784c25.984-47.808 42.24-101.568 46.336-158.72H540.992v124.864c51.072 3.2 99.776 14.976 144.704 33.92z m50.24 24.96c24.448 14.08 47.552 30.464 68.928 48.896a390.4 390.4 0 0 0 98.176-232.576h-114.88a445.312 445.312 0 0 1-52.224 183.68z m-194.944 125.44a394.048 394.048 0 0 0 113.92-102.4 389.888 389.888 0 0 0-113.92-25.728v128.192z m23.104 51.392a390.4 390.4 0 0 0 200.704-88.96h-0.512a392.96 392.96 0 0 0-57.92-40.32 450.24 450.24 0 0 1-142.272 129.28zM341.76 326.144a389.632 389.632 0 0 0-45.76 157.824h190.016V358.976a445.696 445.696 0 0 1-144.256-32.768z m-50.368-24.576a449.216 449.216 0 0 1-71.808-50.56 390.4 390.4 0 0 0-98.56 232.96h118.848a445.312 445.312 0 0 1 51.52-182.4z m194.56-126.208A394.048 394.048 0 0 0 372.48 278.016a390.08 390.08 0 0 0 113.536 24.768V175.36z m-20.992-52.544a390.272 390.272 0 0 0-205.312 89.152h0.512c18.88 15.872 39.168 29.888 60.608 41.92a450.24 450.24 0 0 1 144.192-131.072z m189.76 154.048a394.048 394.048 0 0 0-113.728-102.08v127.808a389.952 389.952 0 0 0 113.728-25.728z m51.392-24.576a392.96 392.96 0 0 0 57.856-40.32h0.384A390.336 390.336 0 0 0 564.16 123.52a450.24 450.24 0 0 1 141.952 128.832z m25.92 231.68a389.632 389.632 0 0 0-46.528-159.168 445.568 445.568 0 0 1-144.512 33.92v125.248h191.04z m56.128 0h114.88a390.4 390.4 0 0 0-98.56-232.96 449.28 449.28 0 0 1-68.736 48.896c29.824 55.424 48.32 117.76 52.416 184.128zM512 960A448 448 0 1 1 512 64a448 448 0 0 1 0 896z" fill="#374151"></path></g></svg>
+                        <svg class="hidden sm:block w-12 h-12  absolute -right-2 -bottom-3 opacity-25 overflow-hidden"  viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(-20)"><g id="SVGRepo_bgCarrier" stroke-width="0" ></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M372.288 745.792a394.048 394.048 0 0 0 113.728 102.848v-127.744a390.08 390.08 0 0 0-113.728 24.896z m-51.584 24.192a392.96 392.96 0 0 0-60.16 41.6h-1.28a390.336 390.336 0 0 0 205.696 89.6 450.24 450.24 0 0 1-144.256-131.2z m-24.704-230.016c3.968 56.768 20.096 110.208 45.696 157.696a445.696 445.696 0 0 1 144.32-32.896v-124.8h-190.08z m-56.128 0H120.96a390.4 390.4 0 0 0 98.56 233.024c22.208-19.2 46.272-36.224 71.808-50.752a445.312 445.312 0 0 1-51.456-182.272z m445.824 158.784c25.984-47.808 42.24-101.568 46.336-158.72H540.992v124.864c51.072 3.2 99.776 14.976 144.704 33.92z m50.24 24.96c24.448 14.08 47.552 30.464 68.928 48.896a390.4 390.4 0 0 0 98.176-232.576h-114.88a445.312 445.312 0 0 1-52.224 183.68z m-194.944 125.44a394.048 394.048 0 0 0 113.92-102.4 389.888 389.888 0 0 0-113.92-25.728v128.192z m23.104 51.392a390.4 390.4 0 0 0 200.704-88.96h-0.512a392.96 392.96 0 0 0-57.92-40.32 450.24 450.24 0 0 1-142.272 129.28zM341.76 326.144a389.632 389.632 0 0 0-45.76 157.824h190.016V358.976a445.696 445.696 0 0 1-144.256-32.768z m-50.368-24.576a449.216 449.216 0 0 1-71.808-50.56 390.4 390.4 0 0 0-98.56 232.96h118.848a445.312 445.312 0 0 1 51.52-182.4z m194.56-126.208A394.048 394.048 0 0 0 372.48 278.016a390.08 390.08 0 0 0 113.536 24.768V175.36z m-20.992-52.544a390.272 390.272 0 0 0-205.312 89.152h0.512c18.88 15.872 39.168 29.888 60.608 41.92a450.24 450.24 0 0 1 144.192-131.072z m189.76 154.048a394.048 394.048 0 0 0-113.728-102.08v127.808a389.952 389.952 0 0 0 113.728-25.728z m51.392-24.576a392.96 392.96 0 0 0 57.856-40.32h0.384A390.336 390.336 0 0 0 564.16 123.52a450.24 450.24 0 0 1 141.952 128.832z m25.92 231.68a389.632 389.632 0 0 0-46.528-159.168 445.568 445.568 0 0 1-144.512 33.92v125.248h191.04z m56.128 0h114.88a390.4 390.4 0 0 0-98.56-232.96 449.28 449.28 0 0 1-68.736 48.896c29.824 55.424 48.32 117.76 52.416 184.128zM512 960A448 448 0 1 1 512 64a448 448 0 0 1 0 896z" fill="#374151"></path></g></svg>
                     </div>
                 </div>
 
                 <div class="p-2 space-x-2 text-sm rounded-lg shadow-xl sm:p-4 md:text-xl relative overflow-hidden">
                     <div class="flex flex-col items-start justify-start">
-                        <div class="py-3 sm:text-xl counter-container text-start">
+                        <div class="py-3 sm:text-xl counter-container text-start font-play">
                             Corporate Network
                         </div>
                         <div class="flex space-x-1 items-center text-lg sm:text-2xl lg:text-4xl">
@@ -345,13 +340,13 @@
                     </div>
 
                     <div>
-                        <svg class="hidden sm:block w-16 h-16 xl:w-20 xl:h-20 absolute -right-3 -bottom-4 opacity-25 overflow-hidden" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"  transform="rotate(-15)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#374151;} </style> <g> <path class="st0" d="M326.527,171.735c-15.637-2.602-55.941-2.43-82.686,7.296c-26.752,9.725-75.397,40.124-89.988,44.997 c-14.591,4.859-15.81,24.322,17.02,27.964c32.836,3.654,62.018-17.028,69.313-20.669c7.296-3.654,77.826,7.296,77.826,7.296 l22.19,5.468l51.161,69.154c8.977-7.798,26.732-24.349,31.228-36.927c1.641-4.581,4.078-8.792,6.752-12.532l-72.49-99.977 C347.605,169.047,336.444,173.39,326.527,171.735z"></path> <path class="st0" d="M326.527,254.123l-10.752-1.085c-14.107-2.185-54-7.865-68.975-7.865c-0.662,0-1.185,0.007-1.576,0.026 c-0.602,0.344-1.298,0.742-1.98,1.139c-10.625,6.19-35.524,20.681-64.52,20.681c-3.178,0-6.362-0.179-9.46-0.523 c-4.7-0.523-8.832-1.331-12.486-2.35c3.462,1.516,6.653,3.688,9.381,6.475c4.29,4.383,6.944,9.758,7.997,15.379 c2.496-0.669,5.084-1.04,7.732-1.04c8.116,0,15.71,3.191,21.376,8.99c5.588,5.707,8.613,13.254,8.527,21.238 c0,0.079-0.013,0.159-0.013,0.238c8.083,0.026,15.644,3.218,21.297,8.99c5.587,5.707,8.613,13.253,8.527,21.238 c-0.027,2.754-0.45,5.441-1.198,8.024c5.733,1.198,10.983,4.051,15.18,8.341c11.532,11.791,11.327,30.757-0.457,42.29l-5.898,5.773 c0.026,0,0.053,0,0.079,0c9.917-0.715,18.265-6.832,20.602-16.048c4.038,3.184,9.122,5.097,14.664,5.097 c13.095,0,23.713-10.612,23.713-23.713c0-1.377-0.139-2.714-0.371-4.026c4.171,3.635,9.606,5.852,15.571,5.852 c13.095,0,23.714-10.619,23.714-23.713c2.807,1.172,5.885,1.827,9.116,1.827c13.101,0,23.713-10.619,23.713-23.713 c0-9.944-4.859-16.418-16.418-29.791L326.527,254.123z"></path> <path class="st0" d="M155.734,280.829c-5.918-6.044-15.61-6.15-21.654-0.238l-21.88,21.416c-6.044,5.912-6.15,15.604-0.238,21.648 c5.918,6.044,15.61,6.15,21.654,0.231l21.886-21.41C161.539,296.565,161.645,286.873,155.734,280.829z"></path> <path class="st0" d="M192.833,304.158c-5.912-6.051-15.604-6.157-21.648-0.239l-29.175,28.546 c-6.051,5.918-6.15,15.61-0.239,21.648c5.912,6.051,15.611,6.157,21.655,0.239l29.175-28.547 C198.645,319.894,198.751,310.202,192.833,304.158z"></path> <path class="st0" d="M222.643,334.624c-5.912-6.044-15.604-6.157-21.648-0.238l-29.175,28.553 c-6.044,5.911-6.15,15.603-0.238,21.654c5.912,6.038,15.604,6.144,21.655,0.225l29.175-28.546 C228.456,350.353,228.562,340.661,222.643,334.624z"></path> <path class="st0" d="M245.158,372.226c-5.912-6.044-15.604-6.156-21.648-0.238l-17.02,16.657 c-6.044,5.911-6.15,15.603-0.238,21.648c5.918,6.044,15.61,6.144,21.654,0.238l17.02-16.656 C250.971,387.963,251.07,378.271,245.158,372.226z"></path> <path class="st0" d="M510.606,234.991l-97.792-134.866c-2.364-3.27-6.925-3.991-10.189-1.628l-43.315,31.412 c-3.264,2.363-3.992,6.925-1.622,10.188L455.48,274.97c2.363,3.264,6.925,3.992,10.188,1.622l43.323-31.406 C512.248,242.815,512.977,238.254,510.606,234.991z M477.334,247.106c-5.435,3.945-13.042,2.727-16.987-2.708 c-3.939-5.435-2.728-13.035,2.714-16.98c5.435-3.946,13.035-2.728,16.981,2.701C483.98,235.56,482.769,243.167,477.334,247.106z"></path> <path class="st0" d="M144.784,261.63c2.304,0,4.555,0.292,6.739,0.788c-18.384-7.05-21.429-19.946-21.906-24.494 c-1.298-12.248,6.587-23.402,19.622-27.745c5.243-1.748,18.986-9.242,32.28-16.484c14.26-7.779,29.91-16.312,43.521-22.589 c-17.252-1.396-33.419-0.807-42.051,0.629c-9.295,1.549-19.675-2.164-28.553-6.944l-73.06,100.752 c2.191,3.29,4.157,6.892,5.54,10.771c2.046,5.72,6.839,12.26,12.3,18.43c0.854-1.099,1.761-2.172,2.781-3.171l21.879-21.416 C129.498,264.662,136.926,261.63,144.784,261.63z"></path> <path class="st0" d="M152.695,129.902l-43.323-31.406c-3.257-2.363-7.818-1.642-10.188,1.628L1.391,234.991 c-2.37,3.263-1.635,7.824,1.622,10.195l43.316,31.406c3.264,2.37,7.825,1.642,10.189-1.629l97.793-134.866 C156.68,136.834,155.952,132.272,152.695,129.902z M123.745,144.97c-3.939,5.428-11.546,6.646-16.981,2.701 c-5.442-3.94-6.654-11.546-2.708-16.981c3.939-5.435,11.546-6.653,16.981-2.708C126.479,131.928,127.684,139.528,123.745,144.97z"></path> </g> </g></svg>
+                        <svg class="hidden sm:block w-16 h-16 absolute -right-3 -bottom-4 opacity-25 overflow-hidden" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"  transform="rotate(-15)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#374151;} </style> <g> <path class="st0" d="M326.527,171.735c-15.637-2.602-55.941-2.43-82.686,7.296c-26.752,9.725-75.397,40.124-89.988,44.997 c-14.591,4.859-15.81,24.322,17.02,27.964c32.836,3.654,62.018-17.028,69.313-20.669c7.296-3.654,77.826,7.296,77.826,7.296 l22.19,5.468l51.161,69.154c8.977-7.798,26.732-24.349,31.228-36.927c1.641-4.581,4.078-8.792,6.752-12.532l-72.49-99.977 C347.605,169.047,336.444,173.39,326.527,171.735z"></path> <path class="st0" d="M326.527,254.123l-10.752-1.085c-14.107-2.185-54-7.865-68.975-7.865c-0.662,0-1.185,0.007-1.576,0.026 c-0.602,0.344-1.298,0.742-1.98,1.139c-10.625,6.19-35.524,20.681-64.52,20.681c-3.178,0-6.362-0.179-9.46-0.523 c-4.7-0.523-8.832-1.331-12.486-2.35c3.462,1.516,6.653,3.688,9.381,6.475c4.29,4.383,6.944,9.758,7.997,15.379 c2.496-0.669,5.084-1.04,7.732-1.04c8.116,0,15.71,3.191,21.376,8.99c5.588,5.707,8.613,13.254,8.527,21.238 c0,0.079-0.013,0.159-0.013,0.238c8.083,0.026,15.644,3.218,21.297,8.99c5.587,5.707,8.613,13.253,8.527,21.238 c-0.027,2.754-0.45,5.441-1.198,8.024c5.733,1.198,10.983,4.051,15.18,8.341c11.532,11.791,11.327,30.757-0.457,42.29l-5.898,5.773 c0.026,0,0.053,0,0.079,0c9.917-0.715,18.265-6.832,20.602-16.048c4.038,3.184,9.122,5.097,14.664,5.097 c13.095,0,23.713-10.612,23.713-23.713c0-1.377-0.139-2.714-0.371-4.026c4.171,3.635,9.606,5.852,15.571,5.852 c13.095,0,23.714-10.619,23.714-23.713c2.807,1.172,5.885,1.827,9.116,1.827c13.101,0,23.713-10.619,23.713-23.713 c0-9.944-4.859-16.418-16.418-29.791L326.527,254.123z"></path> <path class="st0" d="M155.734,280.829c-5.918-6.044-15.61-6.15-21.654-0.238l-21.88,21.416c-6.044,5.912-6.15,15.604-0.238,21.648 c5.918,6.044,15.61,6.15,21.654,0.231l21.886-21.41C161.539,296.565,161.645,286.873,155.734,280.829z"></path> <path class="st0" d="M192.833,304.158c-5.912-6.051-15.604-6.157-21.648-0.239l-29.175,28.546 c-6.051,5.918-6.15,15.61-0.239,21.648c5.912,6.051,15.611,6.157,21.655,0.239l29.175-28.547 C198.645,319.894,198.751,310.202,192.833,304.158z"></path> <path class="st0" d="M222.643,334.624c-5.912-6.044-15.604-6.157-21.648-0.238l-29.175,28.553 c-6.044,5.911-6.15,15.603-0.238,21.654c5.912,6.038,15.604,6.144,21.655,0.225l29.175-28.546 C228.456,350.353,228.562,340.661,222.643,334.624z"></path> <path class="st0" d="M245.158,372.226c-5.912-6.044-15.604-6.156-21.648-0.238l-17.02,16.657 c-6.044,5.911-6.15,15.603-0.238,21.648c5.918,6.044,15.61,6.144,21.654,0.238l17.02-16.656 C250.971,387.963,251.07,378.271,245.158,372.226z"></path> <path class="st0" d="M510.606,234.991l-97.792-134.866c-2.364-3.27-6.925-3.991-10.189-1.628l-43.315,31.412 c-3.264,2.363-3.992,6.925-1.622,10.188L455.48,274.97c2.363,3.264,6.925,3.992,10.188,1.622l43.323-31.406 C512.248,242.815,512.977,238.254,510.606,234.991z M477.334,247.106c-5.435,3.945-13.042,2.727-16.987-2.708 c-3.939-5.435-2.728-13.035,2.714-16.98c5.435-3.946,13.035-2.728,16.981,2.701C483.98,235.56,482.769,243.167,477.334,247.106z"></path> <path class="st0" d="M144.784,261.63c2.304,0,4.555,0.292,6.739,0.788c-18.384-7.05-21.429-19.946-21.906-24.494 c-1.298-12.248,6.587-23.402,19.622-27.745c5.243-1.748,18.986-9.242,32.28-16.484c14.26-7.779,29.91-16.312,43.521-22.589 c-17.252-1.396-33.419-0.807-42.051,0.629c-9.295,1.549-19.675-2.164-28.553-6.944l-73.06,100.752 c2.191,3.29,4.157,6.892,5.54,10.771c2.046,5.72,6.839,12.26,12.3,18.43c0.854-1.099,1.761-2.172,2.781-3.171l21.879-21.416 C129.498,264.662,136.926,261.63,144.784,261.63z"></path> <path class="st0" d="M152.695,129.902l-43.323-31.406c-3.257-2.363-7.818-1.642-10.188,1.628L1.391,234.991 c-2.37,3.263-1.635,7.824,1.622,10.195l43.316,31.406c3.264,2.37,7.825,1.642,10.189-1.629l97.793-134.866 C156.68,136.834,155.952,132.272,152.695,129.902z M123.745,144.97c-3.939,5.428-11.546,6.646-16.981,2.701 c-5.442-3.94-6.654-11.546-2.708-16.981c3.939-5.435,11.546-6.653,16.981-2.708C126.479,131.928,127.684,139.528,123.745,144.97z"></path> </g> </g></svg>
                     </div>
                 </div>
 
                 <div class="p-2 space-x-2 text-sm rounded-lg shadow-xl sm:p-4 md:text-xl relative overflow-hidden">
                     <div class="flex flex-col items-start justify-start">
-                        <div class="py-3 sm:text-xl counter-container text-start">
+                        <div class="py-3 sm:text-xl counter-container text-start font-play">
                             Placed Candidates
                         </div>
                         <div class="flex space-x-1 items-center text-lg sm:text-2xl lg:text-4xl">
@@ -361,20 +356,18 @@
                     </div>
 
                     <div>
-                        <svg class="hidden sm:block w-12 h-12 xl:w-16 xl:h-16 absolute -right-2 -bottom-3 opacity-25 overflow-hidden " fill="#374151" transform="rotate(-20)" viewBox="0 0 1069 1069" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect height="1066.67" id="Radar" style="fill:none;" width="1066.67" x="1.397" y="1.665"></rect> <g> <path d="M534.731,87.082c-247.212,-0 -447.917,200.704 -447.917,447.916c0,247.212 200.705,447.917 447.917,447.917c247.212,0 447.916,-200.705 447.916,-447.917c0,-247.212 -200.704,-447.916 -447.916,-447.916Zm-0,62.5c212.717,-0 385.416,172.699 385.416,385.416c0,212.718 -172.699,385.417 -385.416,385.417c-212.718,0 -385.417,-172.699 -385.417,-385.417c0,-212.717 172.699,-385.416 385.417,-385.416Zm116.308,456.621c-23.872,40.161 -67.69,67.115 -117.76,67.115c-75.54,0 -136.868,-61.328 -136.868,-136.868c-0,-75.54 61.328,-136.868 136.868,-136.868c75.54,-0 136.868,61.328 136.868,136.868c0,17.247 14.003,31.25 31.25,31.25c17.248,0 31.25,-14.003 31.25,-31.25c0,-110.034 -89.334,-199.368 -199.368,-199.368c-110.034,-0 -199.368,89.334 -199.368,199.368c-0,110.035 89.334,199.368 199.368,199.368c72.903,0 136.728,-39.205 171.486,-97.68c8.812,-14.826 3.93,-34.018 -10.896,-42.83c-14.826,-8.813 -34.017,-3.931 -42.83,10.895Z" style="fill-opacity:0.5;"></path> <path d="M920.147,534.998c0,212.718 -172.699,385.417 -385.416,385.417c-212.718,0 -385.417,-172.699 -385.417,-385.417c0,-212.717 172.699,-385.416 385.417,-385.416c106.358,-0 202.709,43.18 272.473,112.943c12.195,12.196 31.998,12.196 44.194,0c12.196,-12.195 12.196,-31.998 -0,-44.194c-81.078,-81.078 -193.06,-131.249 -316.667,-131.249c-247.212,-0 -447.917,200.704 -447.917,447.916c0,247.212 200.705,447.917 447.917,447.917c247.212,0 447.916,-200.705 447.916,-447.917c0,-17.247 -14.002,-31.25 -31.25,-31.25c-17.247,0 -31.25,14.003 -31.25,31.25Zm-145.338,217.884c3.709,0.571 7.507,0.866 11.373,0.866c41.045,0 74.369,-33.323 74.369,-74.368c-0,-41.045 -33.324,-74.368 -74.369,-74.368c-17.165,-0 -32.979,5.828 -45.573,15.613l-133.861,-72.587c0.592,-3.778 0.899,-7.648 0.899,-11.588c0,-40.885 -33.064,-74.108 -73.887,-74.367l-0.481,-0.001c-41.045,-0 -74.368,33.323 -74.368,74.368c-0,41.045 33.323,74.368 74.368,74.368l0.481,-0.001c13.872,-0.088 26.849,-3.983 37.934,-10.69l140.19,76.019c-0.047,1.072 -0.07,2.15 -0.07,3.234c0,13.947 3.848,27.003 10.54,38.165c-47.679,49.762 -114.783,80.773 -189.075,80.773c-144.529,0 -261.868,-117.339 -261.868,-261.868c-0,-144.529 117.339,-261.868 261.868,-261.868c144.529,-0 261.868,117.339 261.868,261.868c0,17.247 14.003,31.25 31.25,31.25c17.248,0 31.25,-14.003 31.25,-31.25c0,-179.024 -145.344,-324.368 -324.368,-324.368c-179.024,-0 -324.368,145.344 -324.368,324.368c-0,179.024 145.344,324.368 324.368,324.368c95.897,0 182.134,-41.696 241.53,-107.936Zm-241.53,-228.3c-6.55,-0 -11.868,5.318 -11.868,11.868c-0,6.55 5.318,11.868 11.868,11.868l0.306,-0.003c3.629,-0.092 6.855,-1.817 8.97,-4.466c0.135,-0.183 0.272,-0.364 0.41,-0.543c1.374,-1.936 2.182,-4.303 2.182,-6.856c0,-6.448 -5.153,-11.702 -11.562,-11.864l-0.306,-0.004Z"></path> </g> </g></svg>
+                        <svg class="hidden sm:block w-12 h-12  absolute -right-2 -bottom-3 opacity-25 overflow-hidden " fill="#374151" transform="rotate(-20)" viewBox="0 0 1069 1069" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect height="1066.67" id="Radar" style="fill:none;" width="1066.67" x="1.397" y="1.665"></rect> <g> <path d="M534.731,87.082c-247.212,-0 -447.917,200.704 -447.917,447.916c0,247.212 200.705,447.917 447.917,447.917c247.212,0 447.916,-200.705 447.916,-447.917c0,-247.212 -200.704,-447.916 -447.916,-447.916Zm-0,62.5c212.717,-0 385.416,172.699 385.416,385.416c0,212.718 -172.699,385.417 -385.416,385.417c-212.718,0 -385.417,-172.699 -385.417,-385.417c0,-212.717 172.699,-385.416 385.417,-385.416Zm116.308,456.621c-23.872,40.161 -67.69,67.115 -117.76,67.115c-75.54,0 -136.868,-61.328 -136.868,-136.868c-0,-75.54 61.328,-136.868 136.868,-136.868c75.54,-0 136.868,61.328 136.868,136.868c0,17.247 14.003,31.25 31.25,31.25c17.248,0 31.25,-14.003 31.25,-31.25c0,-110.034 -89.334,-199.368 -199.368,-199.368c-110.034,-0 -199.368,89.334 -199.368,199.368c-0,110.035 89.334,199.368 199.368,199.368c72.903,0 136.728,-39.205 171.486,-97.68c8.812,-14.826 3.93,-34.018 -10.896,-42.83c-14.826,-8.813 -34.017,-3.931 -42.83,10.895Z" style="fill-opacity:0.5;"></path> <path d="M920.147,534.998c0,212.718 -172.699,385.417 -385.416,385.417c-212.718,0 -385.417,-172.699 -385.417,-385.417c0,-212.717 172.699,-385.416 385.417,-385.416c106.358,-0 202.709,43.18 272.473,112.943c12.195,12.196 31.998,12.196 44.194,0c12.196,-12.195 12.196,-31.998 -0,-44.194c-81.078,-81.078 -193.06,-131.249 -316.667,-131.249c-247.212,-0 -447.917,200.704 -447.917,447.916c0,247.212 200.705,447.917 447.917,447.917c247.212,0 447.916,-200.705 447.916,-447.917c0,-17.247 -14.002,-31.25 -31.25,-31.25c-17.247,0 -31.25,14.003 -31.25,31.25Zm-145.338,217.884c3.709,0.571 7.507,0.866 11.373,0.866c41.045,0 74.369,-33.323 74.369,-74.368c-0,-41.045 -33.324,-74.368 -74.369,-74.368c-17.165,-0 -32.979,5.828 -45.573,15.613l-133.861,-72.587c0.592,-3.778 0.899,-7.648 0.899,-11.588c0,-40.885 -33.064,-74.108 -73.887,-74.367l-0.481,-0.001c-41.045,-0 -74.368,33.323 -74.368,74.368c-0,41.045 33.323,74.368 74.368,74.368l0.481,-0.001c13.872,-0.088 26.849,-3.983 37.934,-10.69l140.19,76.019c-0.047,1.072 -0.07,2.15 -0.07,3.234c0,13.947 3.848,27.003 10.54,38.165c-47.679,49.762 -114.783,80.773 -189.075,80.773c-144.529,0 -261.868,-117.339 -261.868,-261.868c-0,-144.529 117.339,-261.868 261.868,-261.868c144.529,-0 261.868,117.339 261.868,261.868c0,17.247 14.003,31.25 31.25,31.25c17.248,0 31.25,-14.003 31.25,-31.25c0,-179.024 -145.344,-324.368 -324.368,-324.368c-179.024,-0 -324.368,145.344 -324.368,324.368c-0,179.024 145.344,324.368 324.368,324.368c95.897,0 182.134,-41.696 241.53,-107.936Zm-241.53,-228.3c-6.55,-0 -11.868,5.318 -11.868,11.868c-0,6.55 5.318,11.868 11.868,11.868l0.306,-0.003c3.629,-0.092 6.855,-1.817 8.97,-4.466c0.135,-0.183 0.272,-0.364 0.41,-0.543c1.374,-1.936 2.182,-4.303 2.182,-6.856c0,-6.448 -5.153,-11.702 -11.562,-11.864l-0.306,-0.004Z"></path> </g> </g></svg>
                     </div>
                 </div>
             </div>
         </section>
     </section>
 
-    </section>
-
     <main>
         <!-- what we offer -->
         <section class="w-full py-6 overflow-hidden lg:py-20 bg-violet-100 animate-fade-in">
             <div class="w-full p-5 padUp" id="content">
-                <h1 class="pt-16 text-4xl text-center lg:py-4 sm:text-5xl md:text-5xl text-purple-custom">What We Offer</h1>
+                <h1 class="pt-16 text-4xl text-center lg:py-4 sm:text-4xl text-purple-custom font-play">What We Offer</h1>
             </div>
             <section class="grid grid-cols-6 max-w-screen-xl gap-5 p-4 opacity-100 sm:px-16 mx-auto">
                 <div class="col-span-6 sm:col-span-3 lg:col-span-2 p-5 shadow-2xl rounded-xl bg-white border-t-4 border-gray-800" id="content">
@@ -653,124 +646,102 @@
         <section class="w-full fade-section">
             <section class="mx-auto transition-opacity duration-1000 opacity-100">
                 <div class="max-w-screen-xl p-5 pb-4 mx-auto sm:px-16">
-                    <h1 class="pb-4 my-5 text-3xl text-center md:text-4xl ">HRCC</h1>
-                    <div class="relative overflow-visible">
-                        <!-- Navigation Buttons -->
-                        <button
-                            class="absolute -left-1 z-10 flex items-center p-3 text-white transform bg-purple-custom rounded-md top-1/2 hover:bg-gray-800"
-                            id="prevHrccButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                            </svg>
-                        </button>
-
-                        <button
-                            class="absolute -right-1 z-10 flex items-center p-3 text-white transform bg-purple-custom rounded-md top-1/2 hover:bg-gray-800"
-                            id="nextHrccButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5L15.75 12l-7.5 7.5" />
-                            </svg>
-                        </button>
-
-                        <!-- Scrollable Content -->
-                        <div class="flex items-center gap-5 overflow-x-auto whitespace-nowrap custom-scroll" id="hrccScrollContainer">
-                            <!-- Cards -->
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #1</p>
-                                        <img src="../assets/hrcc/hrcc1.png"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #2</p>
-                                        <img src="../assets/hrcc/hrcc2.png" width="295px"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #3</p>
-                                        <img src="../assets/hrcc/hrcc31.png"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #4</p>
-                                        <img src="../assets/hrcc/1.png"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #5</p>
-                                        <img src="../assets/hrcc/2.png"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #6</p>
-                                        <img src="../assets/hrcc/HRCC6.png"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
-                                        <p class="text-lg font-semibold text-gray-700">Edition #7</p>
-                                        <img src="../assets/hrcc/HRCC8.png" width="285px" 
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center gap-5 p-4">
-                                <div class="max-w-md border border-gray-300 rounded-lg shadow-md">
-                                    <div class="flex flex-col items-center p-4">
+                    <h1 class="pb-4 my-5 text-3xl text-center md:text-4xl  font-play">HRCC</h1>
+              
+                    <div class="relative w-full glide-04">
+                        <!-- Slides -->
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] text-center">
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
                                         <p class="text-lg font-semibold text-gray-700">Edition #8</p>
-                                        <img src="../assets/hrcc/hrcc8.jpg"
-                                            alt="Not Found" class="object-cover max-w-xs p-3 rounded-md">
+                                        <img src="../assets/hrcc/hrcc8.jpg" class="w-full max-w-full max-h-full m-auto" />
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-[350px] p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #7</p>
+                                        <img src="../assets/hrcc/HRCC8.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #6</p>
+                                        <img src="../assets/hrcc/HRCC6.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #5</p>
+                                        <img src="../assets/hrcc/2.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #4</p>
+                                        <img src="../assets/hrcc/1.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #3</p>
+                                        <img src="../assets/hrcc/hrcc31.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-[350px] p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #2</p>
+                                        <img src="../assets/hrcc/hrcc2.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border border-gray-300 rounded-lg shadow-md h-84 p-6 pb-10">
+                                        <p class="text-lg font-semibold text-gray-700">Edition #1</p>
+                                        <img src="../assets/hrcc/hrcc1.png" class="w-full max-w-full max-h-full m-auto" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Controls -->
+                        <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
+                            <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <title>prev slide</title>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                                </svg>
+                            </button>
+
+                            <a href="#" class="border border-slate-900 text-slate-900 px-8 py-3 rounded hover:bg-slate-900 hover:text-white duration-300 mx-2">View More</a>
+
+                            <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <title>next slide</title>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
+                    
                 </div>
             </section>
         </section>
 
         <!-- colleges -->
         <section class="w-full bg-white fade-section transition-opacity duration-1000 lg:py-8">
-            <h1 class="my-4 text-3xl text-center md:text-4xl ">Partnered Colleges</h1>
+            <h1 class="my-4 text-3xl text-center md:text-4xl font-play">Our Partnered Colleges</h1>
 
             <div class="block mx-auto overflow-hidden text-center" id="scrollContainer">
                 <div class="flex items-center gap-8 p-4" id="imageContainer">
                     <img src="../assets/gnit.png" class="w-[120px] -md" height="auto" alt="ziegler">
                     <img src="../assets/ace.jpg" class="w-[120px] -md" height="auto" alt="peopletech">
-                    <img src="../assets/stmarys.png" class="w-[120px] -md" height="auto" alt="smarketers">
+                    <img src="../assets/stmarys.png" class="w-[140px] -md" height="auto" alt="smarketers">
                     <img src="../assets/megha.png" class="w-[120px] -md" height="auto" alt="townhall">
                     <img src="../assets/pydah.png" class="w-[120px] -md" height="auto" alt="digitaltrust">
                     <img src="../assets/bits.png" class="w-[120px] -md" height="auto" alt="zestiot">
                     <img src="../assets/mits.jpeg" class="w-[110px] -md" height="auto" alt="accellor">
                     <img src="../assets/vemu.jpeg" class="w-[110px] -md" height="auto" alt="raybiz">
                     <img src="../assets/hindu.jpeg" class="w-[110px] -md" height="auto" alt="adp">
-                    <img src="../assets/kbn.jpg" class="w-[110px] -md" height="auto" alt="quixy">
+                    <img src="../assets/kbn.jpg" class="w-[100px] -md" height="auto" alt="quixy">
                     <img src="../assets/aits.jpeg" class="w-[110px] -md" height="auto" alt="netenrich">
                 </div>
             </div>
@@ -779,8 +750,7 @@
         <!-- EduTech Partners-->
         <section class="w-full bg-purple-custom fade-section">
             <section class="transition-opacity duration-1000 opacity-100 sm:py-8 max-w-screen-xl p-4 mx-auto sm:px-16">
-                <h1 class="py-6 text-3xl text-center text-white md:text-4xl ">EduTech Partners
-                </h1>
+                <h1 class="py-6 text-3xl text-center text-white md:text-4xl font-play">Our EduTech Partner</h1>
 
                 <div class="justify-between items-center md:flex md:space-x-10 text-white">
 
@@ -793,44 +763,43 @@
                     </div>
 
                     <div class="md:w-3/5 gap-x-4">
-                        <h1 class="text-xl sm:text-3xl text-gray-200">Courses Offered</h1>
                         <div class="grid grid-cols-2 gap-8 my-4">
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/coreJava.png" alt="java" class="w-12 h-12 mt-1" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Core Java</h3>
                                     <p class="text-gray-400 text-sm">A comprehensive full-stack Java course with hands-on experience through a real-time project</p>
                                 </div>
                             </div>
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/python.png" alt="java" class="w-12 h-12 mt-1" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Python Full Stack</h3>
                                     <p class="text-gray-400 text-sm">Master full-stack development with Python through an in-depth course featuring a real-world project</p>
                                 </div>
                             </div>
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/testing.png" alt="java" class="w-12 h-12 mt-1" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Software Testing</h3>
                                     <p class="text-gray-400 text-sm">An in-depth software testing course with practical experience through real-world projects</p>
                                 </div>
                             </div>
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/DS.png" alt="java" class="w-16 h-12 mt-1" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Data Science</h3>
                                     <p class="text-gray-400 text-sm">A comprehensive data science course with hands-on learning through real-world projects</p>
                                 </div>
                             </div>
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/cyber-security.png" alt="java" class="w-12 h-12 mt-1 bg-white rounded-full p-1" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Cyber Security</h3>
                                     <p class="text-gray-400 text-sm">An advanced cybersecurity course offering practical insights and real-world project experience</p>
                                 </div>
                             </div>
-                            <div class="col-span-2 md:col-span-1 flex space-x-4">
+                            <div class="col-span-2 lg:col-span-1 flex space-x-4 rounded-lg p-2">
                                 <img src="../assets/cloud.jpg" alt="java" class="w-12 h-12 mt-1 rounded-full" />
                                 <div>
                                     <h3 class="text-gray-200 text-xl">Cloud Computing</h3>
@@ -846,190 +815,137 @@
 
         <!-- companies -->
         <section class="max-w-screen-xl p-4 mx-auto sm:px-16 sm:py-8 fade-section">
-            <h1 class="py-6 text-3xl text-center md:text-4xl">Associated With</h1>
+            <h1 class="py-6 text-3xl text-center md:text-4xl font-play">Associated With</h1>
 
-            <div class="grid items-center grid-cols-6 gap-4 mx-auto lg:my-8">
-                <img src="../assets/companies/Inncircles Word Mark.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="inncircles">
-                <img src="../assets/companies/constructn.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="constructn">
-                <img src="../assets/companies/chezuba.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="chezuba">
-                <img src="../assets/companies/acads360_procure-to-pay-suites_1591087483499.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="prm360">
-                <img src="../assets/companies/voltus.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="voltus">
-                <img src="../assets/companies/prudent.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="prudent">
-                <img src="../assets/companies/voila.png" class="col-span-2 md:col-span-1 w-[130px]" height="auto" alt="voila">
-                <img src="../assets/companies/Zithara_Technologies_Logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="zithara">
-                <img src="../assets/companies/bbg logo.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="bbg">
-                <img src="../assets/companies/ziegler.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="ziegler">
-                <img src="../assets/companies/peopletech.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="peopletech">
-                <img src="../assets/companies/smarketers.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="smarketers">
-                <img src="../assets/companies/townhall.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="townhall">
-                <img src="../assets/companies/digitaltrust.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="digitaltrust">
-                <img src="../assets/companies/zestiot_logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="zestiot">
-                <img src="../assets/companies/accellor.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="accellor">
-                <img src="../assets/companies/raybiz.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="raybiz">
-                <img src="../assets/companies/yupptv.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="yupptv">
-                <img src="../assets/companies/adp.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="adp">
+            <div class="grid items-center grid-cols-6 gap-4 mx-auto my-4 lg:my-8">
                 <img src="../assets/companies/quixy_logo.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="quixy">
-                <img src="../assets/companies/netenrich.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="netenrich">
-                <img src="../assets/companies/ibaseit.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="ibaseit">
-                <img src="../assets/companies/autocracy.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto"
-                    alt="autocracy">
+                <img src="../assets/companies/Zithara_Technologies_Logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="zithara">
+                <img src="../assets/companies/ibaseit.jpg" class="col-span-2 md:col-span-1 w-[140px]" height="auto" alt="ibaseit">
+                <img src="../assets/companies/Track3D_Logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="track3d">
+                <img src="../assets/companies/acads360_procure-to-pay-suites_1591087483499.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="prm360">
+                <img src="../assets/companies/digitaltrust.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="digitaltrust">
+                <img src="../assets/companies/Inncircles Word Mark.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="inncircles">
+                <img src="../assets/companies/chezuba.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="chezuba">
+                <img src="../assets/companies/zestiot_logo.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="zestiot">
+                <img src="../assets/companies/peopletech.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="peopletech">
+                <img src="../assets/companies/smarketers.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="smarketers">
+                <img src="../assets/companies/constructn.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="constructn">
+                <img src="../assets/companies/autocracy.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="autocracy">
                 <img src="../assets/companies/download (6).jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="planful">
+                <img src="../assets/companies/townhall.png" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="townhall">
+                <img src="../assets/companies/voltus.jpg" class="col-span-2 md:col-span-1 w-[120px]" height="auto" alt="voltus">
             </div>
        </section>
 
         <!-- reviews -->
-        <section class="p-3 bg-purple-custom fade-section">
-            <h1 class="py-6 text-3xl text-center text-white md:text-4xl ">Reviews</h1>
+        <section class="bg-purple-custom fade-section py-6 lg:py-8">
+            <h1 class="text-3xl text-center text-white md:text-4xl font-play">Reviews</h1>
 
-            <div class="max-w-screen-xl p-4 sm:px-16 mx-auto flex flex-col justify-center gap-5 lg:flex-row items-center">
-                <div class="text-3xl text-white hidden lg:block text-center lg:w-1/4">
-                    What Students Say
-                </div>
-                <div id="" class="flex flex-col sm:flex-row justify-center gap-5 lg:w-3/4">
+            <div class="max-w-screen-xl p-4 sm:px-16 mx-auto flex justify-center gap-5 items-center">
+                <div id="" class="flex flex-col sm:flex-row justify-center gap-5 lg:w-3/4 pt-3">
                     <div id="" class="sm:w-2/3 md:w-1/3">
-                        <video src="../assets/review1.1.mp4" controls="" class="w- h-fit vid"></video>
+                        <video src="../assets/review1.1.mp4" controls="" class="h-fit" style="border-top-left-radius: 40px; border-bottom-right-radius: 40px;"></video>
                     </div>
 
                     <div id="" class="sm:w-2/3 md:w-1/3">
-                        <video src="../assets/review1.mp4" controls="" class="w- h-fit vid"></video>
+                        <video src="../assets/review1.mp4" controls="" class="h-fit" style="border-top-left-radius: 40px; border-bottom-right-radius: 40px;"></video>
                     </div>
 
                     <div id="" class="sm:w-2/3 md:w-1/3">
-                        <video src="../assets/review2.mp4" controls="" class="w- h-fit vid"></video>
+                        <video src="../assets/review2.mp4" controls="" class="h-fit" style="border-top-left-radius: 40px; border-bottom-right-radius: 40px;"></video>
                     </div>
                 </div>
-            </div>
-            <div class="">
-                <a href="https://www.instagram.com/fresherbot/?hl=en" target="_blank"
-                    class="block px-12 py-4 mx-auto my-4 text-center duration-300 rounded bg-purple-lite hover:bg-purple-lite w-fit text-purple-text">
-                    See More
-                </a>
             </div>
         </section>
 
         <!-- current scenarios -->
         <section class="sm:pb-8 fade-section">
             <div class="max-w-screen-xl p-4 mx-auto sm:px-16 sm:py-10">
-                <h1 class="my-6 text-3xl text-center text-purple-custom md:text-4xl ">Current Scenarios
-                </h1>
+                <h1 class="my-6 text-3xl text-center text-purple-custom md:text-4xl font-play">Current Scenarios</h1>
 
-                <div class="relative w-full overflow-hidden">
-                    <div class="flex transition-transform duration-300" id="slides">
-
-                        <!-- Card 1 -->
-                        <div
-                            class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
+                <div class="relative w-full glide-05">
+                    <!-- Slides -->
+                    <div class="overflow-hidden" data-glide-el="track">
+                        <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                            <li>
+                                <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
                             <img src="https://b2bblogassets.airtel.in/wp-content/uploads/2022/06/startup-company-scaled.jpg"
                                 class="rounded-t-xl h-[230px]" alt="ielts">
-                            <div
-                                class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                <p class="pb-2 font-medium tracking-wider text-purple-lite">Digital Credentials</p>
-                                <p class="text-black ">Wonderlic recently introduced the “Soft Skills
-                                    Training Bootcamp,” with corresponding digital badges for competencies like...</p>
-                            </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div
+                                    <div
+                                        class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
+                                        <p class="pb-2 font-medium tracking-wider text-purple-lite">Digital Credentials</p>
+                                        <p class="text-black ">Wonderlic recently introduced the “Soft Skills
+                                            Training Bootcamp,” with corresponding digital badges for competencies like...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div
                             class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
                             <img src="https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2021-06/web-design-header.jpg?itok=4d7TmUMl"
                                 class="rounded-t-2xl h-[230px]" alt="ielts">
-                            <div
-                                class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                <p class="pb-2 font-medium tracking-wider text-purple-lite ">Skill Development</p>
-                                <p class="text-black ">Students can access a personalized learning pathway
-                                    based on their career goals, current skills, and industry trends....
-                                </p>
+                                <div
+                                    class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
+                                    <p class="pb-2 font-medium tracking-wider text-purple-lite ">Skill Development</p>
+                                    <p class="text-black ">Students can access a personalized learning pathway
+                                        based on their career goals, current skills, and industry trends....
+                                    </p>
 
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div
-                            class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
-                            <img src="https://ndmamedia.com/wp-content/uploads/2024/01/Website-Design-Company.jpg"
-                                class="rounded-t-2xl h-[230px]" alt="ielts">
-                            <div
-                                class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                <p class="pb-2 font-medium tracking-wider text-purple-lite ">Coding Challenges</p>
-                                <p class="text-black ">An interactive platform where students can
-                                    participate in real-time coding challenges and hackathons. These events are the ....
-                                </p>
+                            </li>
+                            <li>
+                                <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
+                                <img src="https://ndmamedia.com/wp-content/uploads/2024/01/Website-Design-Company.jpg"
+                                    class="rounded-t-2xl h-[230px]" alt="ielts">
+                                <div
+                                    class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
+                                    <p class="pb-2 font-medium tracking-wider text-purple-lite ">Coding Challenges</p>
+                                    <p class="text-black ">An interactive platform where students can
+                                        participate in real-time coding challenges and hackathons. These events are the ....
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div
-                            class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
-                            <img src="https://edotechsolutions.com/wp-content/uploads/2017/07/2016-09-22-1474505349-8662319-WebDesign.jpg"
-                                class="rounded-t-2xl h-[230px]" alt="ielts">
-                            <div
-                                class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                <p class="pb-2 font-medium tracking-wider text-purple-lite ">Networking</p>
+                            </li>
+                            <li>
+                                <div class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
+                                    <img src="https://edotechsolutions.com/wp-content/uploads/2017/07/2016-09-22-1474505349-8662319-WebDesign.jpg"
+                                        class="rounded-t-2xl h-[230px]" alt="ielts">
+                                    <div
+                                        class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
+                                        <p class="pb-2 font-medium tracking-wider text-purple-lite ">Networking</p>
 
-                                <p class="text-black ">Regularly scheduled virtual workshops focusing on
-                                    professional networking skills. These workshops can cover topics such as ....</p>
-                            </div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div
-                            class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
-                            <img src="https://blog.ipleaders.in/wp-content/uploads/2017/05/iPleaders-12.jpg"
-                                class="rounded-t-2xl h-[230px]" alt="ielts">
-                            <div
-                                class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
-                                <p class="pb-2 font-medium tracking-wider text-purple-lite ">Peer Learning</p>
-
-                                <p class="text-black ">Regularly scheduled tech talks and webinars
-                                    featuring industry leaders, innovators, and subject matter experts. These
-                                    sessions....
-                                </p>
-
-                            </div>
-                        </div>
+                                        <p class="text-black ">Regularly scheduled virtual workshops focusing on
+                                            professional networking skills. These workshops can cover topics such as ....</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div
+                                class="min-w-[85vw] sm:min-w-[45%] lg:min-w-[30%]  mx-3 sm:mx-4 my-2 duration-200 ease-in bg-white shadow-lg rounded-2xl relative overflow-hidden h-[230px]">
+                                <img src="https://blog.ipleaders.in/wp-content/uploads/2017/05/iPleaders-12.jpg"
+                                    class="rounded-t-2xl h-[230px]" alt="ielts">
+                                    <div
+                                        class="absolute bottom-0 w-full p-5 transition-transform duration-300 ease-in-out transform translate-y-[115px] shadow-xl rounded-2xl bg-gray-50 hover:translate-y-0">
+                                        <p class="pb-2 font-medium tracking-wider text-purple-lite ">Peer Learning</p>
+        
+                                        <p class="text-black ">Regularly scheduled tech talks and webinars
+                                            featuring industry leaders, innovators, and subject matter experts. These
+                                            sessions....
+                                        </p>
+        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- Navigation Buttons -->
-                    <button
-                        class="absolute left-0 p-2 text-white transform -translate-y-1/2 rounded-full bg-purple-custom top-1/2"
-                        id="prevBtn1">
-                        <svg fill="#ffffff" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
-                            class="w-10 h-10 p-2" stroke="#ffffff">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M656 852L294 535q-16-14-16-35t16-35l362-317q13-10 28-9t26 11.5 11 27.5v644q0 17-11 27.5T684 861t-28-9z">
-                                </path>
-                            </g>
-                        </svg>
-                    </button>
-                    <button
-                        class="absolute right-0 p-2 text-white transform -translate-y-1/2 rounded-full bg-purple-custom top-1/2"
-                        id="nextBtn1">
-                        <svg fill="#fff" viewBox="0 0 24 24" id="next" data-name="Flat Color"
-                            xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 p-2 icon flat-color" stroke="#fff">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path id="primary"
-                                    d="M18.6,11.2l-12-9A1,1,0,0,0,5,3V21a1,1,0,0,0,.55.89,1,1,0,0,0,1-.09l12-9a1,1,0,0,0,0-1.6Z"
-                                    style="fill: #fff;"></path>
-                            </g>
-                        </svg>
-                    </button>
+                    <!-- Indicators -->
+                    <div class="flex items-center justify-center w-full gap-2" data-glide-el="controls[nav]">
+                        <button class="p-4 group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                        <button class="p-4 group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                        <button class="p-4 group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                        <button class="p-4 group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                    </div>
                 </div>
 
             </div>
@@ -1039,12 +955,12 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-black text-white pb-20">
+    <footer class="bg-black text-white pb-12 py-6">
         <div class="max-w-screen-xl p-4 sm:px-16 mx-auto md:flex justify-between sm:py-10">
             <!-- first -->
             <div class="text-center md:text-start">
                 <img src="https://voilacode.github.io/fresherbot-tailwind/assets/logo_fresherbot_dark.png"
-                alt="Fresherbot Logo" class="h-12 mb-4 w-fit block mx-auto md:mx-0" />
+                alt="Fresherbot Logo" class="h-12 bg-blue-500 p-2 rounded mb-4 w-fit block mx-auto md:mx-0" />
                 <p class="mb-2 text-xs">
                     2nd Floor, Oyester Uptown, Beside Durgam Cheruvu <br> Metro Station,
                     Madhapur, Hyderabad, Telangana, 500081.
@@ -1185,88 +1101,53 @@
     </div>
 
     <script src="../dist/voilaui.js"></script>
-    <script src="../dist/carousel.js"></script>
+    <script src="../dist/navbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>                 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const section = document.querySelector('.transition-opacity');
-            section.classList.remove('opacity-0');
+        var glide05 = new Glide('.glide-04', {
+            type: 'carousel',
+            focusAt: 'center',
+            perView: 3,
+            autoplay: 3500,
+            animationDuration: 700,
+            gap: 24,
+            classes: {
+                activeNav: '[&>*]:bg-slate-700',
+            },
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                640: {
+                    perView: 1
+                }
+            },
         });
-
-        const scrollContainer = document.getElementById('scrollContainer');
-        const imageContainer = document.getElementById('imageContainer');
-
-        // Duplicate the images to create an infinite scrolling effect
-        const clone = imageContainer.cloneNode(true);
-        imageContainer.appendChild(clone);
-
-        let scrollSpeed = 1;  // Change this value to adjust the speed of the scroll
-        let scrollPosition = 0;
-
-        setInterval(() => {
-            scrollPosition += scrollSpeed;
-            if (scrollPosition >= imageContainer.scrollWidth / 2) {
-                scrollPosition = 0;
-            }
-            scrollContainer.scrollLeft = scrollPosition;
-        }, 10);
+    
+        glide05.mount();
     </script>
     <script>
-        function fadeInAll() {
-            const sections = document.querySelectorAll(".fade-section");
-            sections.forEach(section => {
-                section.classList.add("fade-in");
-            });
-        }
-
-        function fadeOutAll() {
-            const sections = document.querySelectorAll(".fade-section");
-            sections.forEach(section => {
-                section.classList.remove("fade-in");
-            });
-        }
-        function fadeInOnScroll() {
-            const sections = document.querySelectorAll('.fade-section');
-
-            // Options for the observer
-            const options = {
-                threshold: 0.2 // Trigger when 20% of the section is visible
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                        observer.unobserve(entry.target); // Stop observing once faded in
-                    }
-                });
-            }, options);
-
-            // Observe each section
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        }
-
-        // Initialize the observer function
-        fadeInOnScroll();
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script>
-        function initMap() {
-            // Set the map's center location
-            var location = { lat: 37.7749, lng: -122.4194 }; // Example coordinates for San Francisco
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: location
-            });
-
-            // Add a marker at the location
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
+        var glide05 = new Glide('.glide-05', {
+            type: 'carousel',
+            focusAt: 'center',
+            perView: 3,
+            autoplay: 3000,
+            animationDuration: 700,
+            gap: 24,
+            classes: {
+                activeNav: '[&>*]:bg-slate-700',
+            },
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                640: {
+                    perView: 1
+                }
+            },
+        });
+    
+        glide05.mount();
     </script>
 
 </body>
