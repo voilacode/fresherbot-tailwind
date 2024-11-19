@@ -90,9 +90,6 @@ function fadeInOnScroll() {
 // Initialize the observer function
 fadeInOnScroll();
 
-// hrcc carousel
-
-
 // college scroll
 document.addEventListener('DOMContentLoaded', () => {
   const section = document.querySelector('.transition-opacity');
@@ -116,61 +113,6 @@ setInterval(() => {
   }
   scrollContainer.scrollLeft = scrollPosition;
 }, 10);
-
-// current scenarios carousel
-const carousel = document.getElementById('slides');
-const prevBtn1 = document.getElementById('prevBtn1');
-const nextBtn1 = document.getElementById('nextBtn1');
-
-let index = 0;
-
-function getVisibleCards() {
-  const cardWidth = carousel.children[0].offsetWidth;
-  return Math.floor(carousel.offsetWidth / cardWidth);
-}
-
-function getCardWidth() {
-  return carousel.children[0].offsetWidth + parseFloat(window.getComputedStyle(carousel.children[0]).marginRight);
-}
-
-function moveCarousel() {
-  const cardWidth = getCardWidth();
-  carousel.style.transition = 'transform 0.3s ease-in-out';
-  carousel.style.transform = `translateX(-${index * cardWidth}px)`;
-}
-
-nextBtn1.addEventListener('click', () => {
-  const visibleCards = getVisibleCards();
-  const totalCards = carousel.children.length;
-
-  if (index >= totalCards - visibleCards) {
-    index = 0;
-  } else {
-    index++;
-  }
-
-  moveCarousel();
-});
-
-prevBtn1.addEventListener('click', () => {
-  const visibleCards = getVisibleCards();
-  const totalCards = carousel.children.length;
-
-  if (index <= 0) {
-    index = totalCards - visibleCards;
-  } else {
-    index--;
-  }
-
-  moveCarousel();
-});
-
-// Recalculate and reset the carousel on window resize
-window.addEventListener('resize', () => {
-  index = 0;
-  carousel.style.transition = 'none';
-  moveCarousel();
-});
 
 /** 
  * Accordion script to handle multiple accordions 
