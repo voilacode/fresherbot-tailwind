@@ -4366,6 +4366,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[350px\] {
+    height: 350px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
