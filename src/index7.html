@@ -845,9 +845,9 @@
             <!-- Subtle Starry Background -->
             <div class="absolute top-0 left-0 w-52 h-full bg-[url('../assets/star.png')] bg-contain bg-no-repeat opacity-20 z-0 "></div>
             <div class="absolute top-[900px] right-0 w-48 h-full bg-[url('../assets/star.png')] bg-contain bg-no-repeat opacity-20 z-0 "></div>
-
+        
             <!-- Title Section -->
-            <div class="relative  text-center mb-12">
+            <div class="relative text-center mb-12">
                 <h2 class="text-4xl font-extrabold text-white mb-4 font-play">What Our Students Say</h2>
                 <p class="text-lg text-white max-w-2xl mx-auto font-open">
                     Our students' success stories speak for themselves. Hear from the ones who’ve taken their careers to the next level with our guidance.
@@ -856,10 +856,12 @@
             </div>
         
             <!-- Video Reviews Section -->
-            <div class="relative  max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 flex flex-wrap justify-center gap-8 lg:gap-16">
+            <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-16 flex flex-wrap justify-center gap-8 lg:gap-16">
                 <!-- Video 1 -->
                 <div class="sm:w-full md:w-1/2 lg:w-1/3 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
-                    <video src="../assets/review1.1.mp4" controls class="w-full h-96 object-cover"></video>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <video src="../assets/review1.1.mp4" controls class="w-full h-full sm:h-[500px] object-cover"></video>
+                    </div>
                     <div class="bg-black bg-opacity-60 p-4 text-white text-center">
                         <h4 class="text-xl font-bold">Rahul Sharma</h4>
                         <p class="text-sm">"Thanks to Fresher Bot!"</p>
@@ -875,7 +877,9 @@
         
                 <!-- Video 2 -->
                 <div class="sm:w-full md:w-1/2 lg:w-1/3 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
-                    <video src="../assets/review1.mp4" controls class="w-full h-96 object-cover"></video>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <video src="../assets/review1.mp4" controls class="w-full h-full sm:h-[500px] object-cover"></video>
+                    </div>
                     <div class="bg-black bg-opacity-60 p-4 text-white text-center">
                         <h4 class="text-xl font-bold">Nasir</h4>
                         <p class="text-sm">"Thanks to Fresher Bot"</p>
@@ -891,7 +895,9 @@
         
                 <!-- Video 3 -->
                 <div class="sm:w-full md:w-1/2 lg:w-1/3 rounded-xl overflow-hidden shadow-xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
-                    <video src="../assets/review2.mp4" controls class="w-full h-96 object-cover"></video>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <video src="../assets/review2.mp4" controls class="w-full h-full sm:h-[500px] object-cover"></video>
+                    </div>
                     <div class="bg-black bg-opacity-60 p-4 text-white text-center">
                         <h4 class="text-xl font-bold">Radhika Mudhikonda</h4>
                         <p class="text-sm">"Thanks to Fresher Bot!"</p>
@@ -917,6 +923,7 @@
                 </a>
             </div>
         </section>
+        
         
 
         <!-- current scenarios -->
