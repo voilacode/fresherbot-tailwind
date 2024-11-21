@@ -366,3 +366,81 @@ video {
 .vid{
     border-radius: 0;
 }
+
+
+/* First Div (Top-left) */
+.custom-div1 {
+    position: absolute;
+    top: 10%;
+    width: 38%;
+    border-radius: 0.75rem;
+    transition: transform 0.3s;
+}
+.custom-div1:hover {
+    transform: scale(1.1);
+}
+
+/* Second Div (Center, slightly lower) */
+.custom-div2 {
+    position: absolute;
+    top: 800%;
+    left: 50%;
+    width: 38%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.75rem;
+    transition: transform 0.3s;
+}
+.custom-div2:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Third Div (Closer to the second div) */
+.custom-div3 {
+    position: absolute;
+    top: 35%; 
+    left: 63%;
+    width: 38%;
+    border-radius: 0.75rem;
+    transition: transform 0.3s;
+}
+.custom-div3:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+    .custom-div1,
+    .custom-div2,
+    .custom-div3 {
+        position: relative;
+        top: 0;
+        left: auto;
+        bottom: -400px;
+        width: 100%;
+        margin: 7px 0;
+        transform: none; /* Reset any translation or positioning */
+    }
+}
+
+/* @media (max-width: 850px) {
+    .custom-div1,
+    .custom-div2,
+    .custom-div3 {
+        position: relative;
+        top: 0;
+        left: auto;
+        bottom: -200px;
+        width: 100%;
+        margin: 7px 0;
+        transform: none; 
+    }
+} */
+
+.mb{
+    padding-bottom: 30px;
+}
+
+@media(min-width:850px){
+    .mb{
+        padding-bottom: 420px;
+    }
+}
