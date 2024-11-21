@@ -3972,6 +3972,11 @@ video {
     height: 500px;
   }
 
+  .sm\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
   .sm\:min-h-\[380px\] {
     min-height: 380px;
   }
@@ -4205,6 +4210,11 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .sm\:hover\:shadow-2xl:hover {
