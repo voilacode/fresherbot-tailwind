@@ -377,7 +377,7 @@ video {
     transition: transform 0.3s;
 }
 .custom-div1:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 /* Second Div (Center, slightly lower) */
@@ -391,7 +391,7 @@ video {
     transition: transform 0.3s;
 }
 .custom-div2:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+    /* transform: translate(-50%, -50%) scale(1.1); */
 }
 
 /* Third Div (Closer to the second div) */
@@ -404,7 +404,7 @@ video {
     transition: transform 0.3s;
 }
 .custom-div3:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 @media (max-width: 850px) {
