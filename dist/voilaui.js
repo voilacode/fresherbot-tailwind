@@ -237,40 +237,36 @@ animateCounter("counterCollege", targetColleges);
 animateCounter("counterCompanies", targetCompanies);
 animateCounter("counterCand", targetCand);
 
+// videos
+const videos = document.querySelectorAll('.custom-video');
 
-
-
-const scrollElement = document.getElementById("hrccScrollContainer");
-
-// Set the interval to scroll every 2 seconds
-setInterval(() => {
-  // Scroll the content horizontally by 200px
-  scrollElement.scrollBy({
-    left: 200, // Adjust the scroll distance as needed
-    behavior: 'smooth'
-  });
-
-  // Check if the scroll has reached the end and reset to the start
-  if (scrollElement.scrollLeft + scrollElement.clientWidth >= scrollElement.scrollWidth) {
-    scrollElement.scrollLeft = 0;
-  }
-}, 2000);
-
-const hrccScrollContainer = document.getElementById('hrccScrollContainer');
-const prevHrccButton = document.getElementById('prevHrccButton');
-const nextHrccButton = document.getElementById('nextHrccButton');
-const scrollStep = 300;
-
-prevHrccButton.addEventListener('click', () => {
-    hrccScrollContainer.scrollBy({
-        left: -scrollStep,
-        behavior: 'smooth'
+videos.forEach(video => {
+    video.addEventListener('play', () => {
+        videos.forEach(otherVideo => {
+            if (otherVideo !== video) {
+                otherVideo.pause();
+            }
+        });
     });
 });
 
-nextHrccButton.addEventListener('click', () => {
-    hrccScrollContainer.scrollBy({
-        left: scrollStep,
-        behavior: 'smooth'
+const videoContainers = document.querySelectorAll('.review');
+
+videoContainers.forEach(container => {
+    const video = container.querySelector('video');
+    const playPauseBtn = container.querySelector('.playPauseBtn');
+    const playIcon = container.querySelector('.playIcon');
+    const pauseIcon = container.querySelector('.pauseIcon');
+
+    playPauseBtn.addEventListener('click', () => {
+        if (video.paused || video.ended) {
+            video.play();
+            playIcon.classList.add('hidden');
+            pauseIcon.classList.remove('hidden');
+        } else {
+            video.pause();
+            playIcon.classList.remove('hidden');
+            pauseIcon.classList.add('hidden');
+        }
     });
 });
