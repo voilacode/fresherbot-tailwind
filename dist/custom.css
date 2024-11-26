@@ -444,3 +444,10 @@ video {
         padding-bottom: 420px;
     }
 }
+
+.te{
+    top: 20%;
+}
+.w-3\/5 {
+    width: 60%;
+}
