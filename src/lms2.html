@@ -13,29 +13,29 @@
         content="Unlocking Opportunities for Fresh Graduates. A pool of genuine fresher job openings, hackathons and job interview preparation" />
     <meta property="og:image" content="../assets/fresherbot_banner.jpg" />
     <link rel="shortcut icon" href="../assets/favicon_fresherbot.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <link href="../dist/output.css" rel="stylesheet">
+    <link href="../dist/custom.css" rel="stylesheet">
     <title>FresherBot - Job search for Freshers, Interview Prep, Hiring assessments </title>
     <style>
-        @media (max-width:700px) {
-            .hide {
-                display: none;
-            }
-        }
-
-        .fade-section {
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-
-        .fade-in {
-            opacity: 1;
-            /* Fully visible */
+        button:hover{
+            background: #666666;
         }
     </style>
 </head>
 
-<body class="bg-gray-800 font-open">
+<body class="bg-gray-800 font-poppins">
     <!-- <nav class="">
         <header class="border-b border-white">
             <div class="max-w-screen-xl p-4 py-2 mx-auto sm:px-16">
@@ -99,7 +99,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
-                    <div class="right-0 hidden p-2 lg:absolute font-open dropdown-menu" id="dropdownMenu">
+                    <div class="right-0 hidden p-2 lg:absolute font-poppins dropdown-menu" id="dropdownMenu">
                         <div
                             class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
                             <ul class=" text-[15px] lg:w-44">
@@ -133,7 +133,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
-                    <div class="right-0 hidden p-2 lg:absolute dropdown-menu font-open" id="dropdownMenu1">
+                    <div class="right-0 hidden p-2 lg:absolute dropdown-menu font-poppins" id="dropdownMenu1">
                         <div
                             class="z-50 transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-16">
                             <ul class=" text-[15px] lg:w-44">
@@ -167,7 +167,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
-                    <div class="right-0 z-30 hidden p-2 font-open lg:absolute dropdown-menu" id="dropdownMenu2">
+                    <div class="right-0 z-30 hidden p-2 font-poppins lg:absolute dropdown-menu" id="dropdownMenu2">
                         <div
                             class="transform bg-gray-100 border-l-4 border-gray-500 rounded shadow lg:border-0 md:bg-white lg:translate-x-20 ">
                             <ul class="text-[16px] lg:w-48">
@@ -438,22 +438,21 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </nav>
         </header>
         <div class="w-full fade-section">
             <div class="flex ">
                 <div class="w-screen font-sans text-white md:p-6 rounded-2xl">
-                    <div class="flex max-w-screen-xl p-4 py-20 mx-auto sm:px-16">
-                        <div class="relative w-full py-20">
+                    <div class="flex max-w-screen-xl mx-auto sm:px-16" style="height: 800px; align-items: center;">
+                        <div class="relative w-full ">
                             <h1 class="mb-4 text-2xl font-semibold text-left md:text-4xl lg:text-6xl">Empowering
                                 Education</h1>
                             <h1 class="mb-4 text-2xl font-semibold text-left md:text-4xl lg:text-6xl">with LMS</h1>
                             <p class="w-3/5 text-gray-400 md:w-2/5">Platform designed to create, distribute, and manage
                                 educational content in a structured and efficient way.</p>
                             <div class="flex flex-wrap gap-2 mt-5">
-                                <button class="px-12 py-5 text-black bg-gray-200 rounded-xl sm:pad">View
+                                <button class="px-8 py-2 text-black bg-gray-200 rounded-xl sm:pad ">View
                                     Products</button>
                                 <!-- <button class="px-12 py-5 bg-orange-500 rounded-xl md:pad">Register Now</button> -->
                             </div>
@@ -466,23 +465,23 @@
         <!-- Responsive grid positioned at the bottom of the background image -->
         <div
             class="absolute bottom-0 grid w-full grid-cols-2 gap-1 text-center fade-section sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 bg-violet-600">
-            <div class="col-span-1 p-6 text-white transition duration-500 ease-in-out transform bg-red-400 hover:scale-105"
+            <div class="col-span-1 p-6 text-white transition duration-500 ease-in-out transform bg-red-400 "
                 style="background-image: linear-gradient(rgb(235, 126, 126), rgba(247, 131, 131, 0.61)), url('../assets/vemu.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 LearnCloud
             </div>
-            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-gray-800 hover:scale-105"
+            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-gray-800 "
                 style="background-image: linear-gradient(rgb(44, 227, 252), rgba(92, 196, 203, 0.61)), url('../assets/t1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 Teach360
             </div>
-            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-white hover:scale-105"
+            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-white "
                 style="background-image: linear-gradient(rgb(200, 57, 57), rgba(167, 61, 61, 0.61)), url('../assets/t2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 EduSphere
             </div>
-            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-yellow-400 hover:scale-105"
+            <div class="col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-yellow-400 "
                 style="background-image: linear-gradient(rgb(88, 235, 80), rgba(97, 224, 95, 0.61)), url('../assets/t3.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 Virtual Classrooms
             </div>
-            <div class="w-full col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-green-500 hover:scale-105"
+            <div class="w-full col-span-1 p-5 text-white transition duration-500 ease-in-out transform bg-green-500 "
                 style="background-image: linear-gradient(rgb(100, 100, 100), rgba(0, 0, 0, 0.61)), url('../assets/test.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 Study SmartNow
             </div>
@@ -492,7 +491,7 @@
         <div class="max-w-screen-lg mx-auto">
             <h1 class="py-2 font-sans text-2xl font-semibold tracking-wide text-center text-gray-600 lg:text-3xl">About
             </h1>
-            <p class="py-4 text-center font-open">A Learning Management System (LMS) is a software
+            <p class="py-4 text-center font-poppins">A Learning Management System (LMS) is a software
                 platform designed to create, distribute, and manage educational content in a structured and efficient
                 way. LMS platforms are widely used in educational institutions, corporate training programs, and even
                 individual learning environments. They serve as the backbone for e-learning initiatives, providing a
@@ -503,7 +502,7 @@
                 course creation tools, multimedia content integration, assignment and assessment management, discussion
                 forums, and real-time messaging capabilities. Additionally, LMS platforms often support mobile learning,
                 allowing students to access materials and complete assignments on-the-go through mobile apps.</p>
-            <p class="py-4 text-center font-open">Incorporating analytics and reporting tools, an LMS
+            <p class="py-4 text-center font-poppins">Incorporating analytics and reporting tools, an LMS
                 can track student engagement, monitor progress, and identify areas where learners may need additional
                 support. This data-driven approach enables instructors to tailor their teaching strategies to meet the
                 unique needs of each student, fostering a more personalized learning experience.
@@ -588,38 +587,38 @@
                 <div class="p-5 bg-blue-50 lg:col-span-2 rounded-xl fade-section">
                     <div class="flex gap-2 px-2 py-3 border border-indigo-500 rounded-full">
                         <img src="../assets/stat.png" class="w-5 h-5" />
-                        <p class="text-sm font-open">Power of Learning Management System</p>
+                        <p class="text-sm font-poppins">Power of Learning Management System</p>
                     </div>
-                    <h1 class="mt-2 text-xl font-semibold font-open">Achieve Your Career Goals with Ongoing Support
+                    <h1 class="mt-2 text-xl font-semibold font-poppins">Achieve Your Career Goals with Ongoing Support
                     </h1>
-                    <p class="mt-2 text-base font-open">Unlock endless possibilities with dedicated guidance and
+                    <p class="mt-2 text-base font-poppins">Unlock endless possibilities with dedicated guidance and
                         opportunities for success.
                     </p>
 
                     <div class="flex items-center gap-3 pt-3">
                         <img src="../assets/comprehensive.png" class="w-8 h-8" />
-                        <p class="text-base font-normal font-open">Comprehensive Practice Modules</p>
+                        <p class="text-base font-normal font-poppins">Comprehensive Practice Modules</p>
                     </div>
                     <div class="flex items-center gap-3 pt-5">
                         <img class="w-8 h-8" src="../assets/batchTracking.png" />
-                        <p class="text-base font-normal font-open">Batch Creation and Tracking</p>
+                        <p class="text-base font-normal font-poppins">Batch Creation and Tracking</p>
                     </div>
 
                     <div class="flex items-center gap-3 mt-5">
                         <img class="w-8 h-8" src="../assets/recordedVideo.png" />
-                        <p class="text-base font-normal font-open">Recorded Video Lectures</p>
+                        <p class="text-base font-normal font-poppins">Recorded Video Lectures</p>
                     </div>
                     <div class="flex items-center gap-3 mt-5">
                         <img class="w-8 h-8" src="../assets/progress.png" />
-                        <p class="text-base font-normal font-open">Progress Analytics and Reports</p>
+                        <p class="text-base font-normal font-poppins">Progress Analytics and Reports</p>
                     </div>
                     <div class="flex items-center gap-3 mt-5">
                         <img class="w-8 h-8" src="../assets/mobileAccesibility.png" />
-                        <p class="text-base font-normal font-open">Mobile Accessibility</p>
+                        <p class="text-base font-normal font-poppins">Mobile Accessibility</p>
                     </div>
                     <div class="flex items-center gap-3 mt-5">
                         <img class="w-8 h-8" src="../assets/projectIdea.png" />
-                        <p class="text-base font-normal font-open">Project Ideas and Guidance</p>
+                        <p class="text-base font-normal font-poppins">Project Ideas and Guidance</p>
                     </div>
 
                 </div>
