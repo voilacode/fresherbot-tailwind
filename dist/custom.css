@@ -44,9 +44,6 @@
 
 
 
-
-
-/* Custom CSS for the cylindrical slider with closer side views */
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -58,7 +55,6 @@
     perspective: 1000px;
 }
 
-/* Dynamic video sizes for different screen sizes */
 .video-wrapper {
     position: absolute;
     transition: transform 1s ease;
@@ -66,7 +62,7 @@
     height: 32vw;
 }
 
-/* Responsive sizes */
+
 @media (max-width: 708px) {
     .video-wrapper {
         width: 50vw;
@@ -116,16 +112,14 @@ video {
     transition: background-color 0.3s;
 }
 
-.carousel-controls button:hover {
-    background-color: #1e2024;
-}
+
 
 .typewriter {
     opacity: 0;
     display: inline-block;
-    /* Ensures letters stay in line without gaps */
+   
     animation: typewriter 0.5s forwards;
-    /* Adjusted duration for smoother effect */
+   
 }
 
 @keyframes typewriter {
@@ -199,12 +193,11 @@ video {
 
 .custom-scroll::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari, Opera */
+    
 }
 
 
 
-/* Custom CSS for the cylindrical slider with closer side views */
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -216,7 +209,6 @@ video {
     perspective: 1000px;
 }
 
-/* Dynamic video sizes for different screen sizes */
 .video-wrapper {
     position: absolute;
     transition: transform 1s ease;
@@ -224,13 +216,10 @@ video {
     height: 32vw;
 }
 
-/* Responsive sizes */
 @media (max-width: 708px) {
     .video-wrapper {
         width: 36vw;
-        /* Larger size for smaller screens */
         height: 66vw;
-        /* Maintaining 9:16 ratio */
         border-radius: 100px;
     }
 }
@@ -281,16 +270,12 @@ video {
     transition: background-color 0.3s;
 }
 
-.carousel-controls button:hover {
-    background-color: #1e2024;
-}
+
 
 .typewriter {
     opacity: 0;
     display: inline-block;
-    /* Ensures letters stay in line without gaps */
     animation: typewriter 0.5s forwards;
-    /* Adjusted duration for smoother effect */
 }
 
 @keyframes typewriter {
@@ -410,23 +395,11 @@ video {
         bottom: -400px;
         width: 100%;
         margin: 7px 0;
-        transform: none; /* Reset any translation or positioning */
+        transform: none;
     }
 }
 
-/* @media (max-width: 850px) {
-    .custom-div1,
-    .custom-div2,
-    .custom-div3 {
-        position: relative;
-        top: 0;
-        left: auto;
-        bottom: -200px;
-        width: 100%;
-        margin: 7px 0;
-        transform: none; 
-    }
-} */
+
 
 .mb{
     padding-bottom: 30px;
